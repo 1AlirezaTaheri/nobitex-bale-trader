@@ -1,0 +1,15 @@
+{
+  "endpoint": "https://apiv2.nobitex.ir/v2/options",
+  "observed_date_utc": "2026-11-20",
+  "method": "public GET response; no credentials",
+  "taker_fees_tether_percent": [
+    "0.13",
+    "0.12",
+    "0.11",
+    "0.1",
+    "0.1",
+    "0.095",
+    "0.09"
+  ],
+  "maximum_fee": "0.0013"
+}

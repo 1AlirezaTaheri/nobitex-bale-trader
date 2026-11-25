@@ -1,0 +1,8 @@
+Python=3.13.10
+Platform=Windows-11-10.0.26300-SP0
+Dataset SHA256=d0d0c6927691028f99cf7b69cb7bdb900487b12a7a50b84db47cf1563b3df80b
+Input candles=3041
+Evaluated bars=2439
+Trades=8
+Snapshot hash/report/summary consistency=PASS
+CSV replay with shared engine reproduces all full-sample metrics=PASS

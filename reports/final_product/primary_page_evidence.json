@@ -1,0 +1,207 @@
+[
+  {
+    "id": "R1",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304405X11002613",
+    "accessed_utc": "2026-11-25T04:22:36.167488+00:00",
+    "status": 403,
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S0304405X11002613",
+    "sha256": "e79a8fcf20f0eeba8bad96ad3a53ddb4a1fa6e68c43e77a30520a566aa350660"
+  },
+  {
+    "id": "R2",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1386418116301379",
+    "accessed_utc": "2026-11-25T04:22:36.226472+00:00",
+    "status": 403,
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S1386418116301379",
+    "sha256": "0cd592f60474dacfc6e4ef254745bc6610439a2cde86b286681475f009234f28"
+  },
+  {
+    "id": "R3",
+    "url": "https://davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+    "accessed_utc": "2026-11-25T04:22:36.227464+00:00",
+    "status": 200,
+    "final_url": "https://davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+    "sha256": "ca4a1e834a2954b84eb560776e903329cd9cef318d458aadf6d67bc8166d10b5",
+    "retrieval": "UNVERIFIED; unavailable or PDF parser absent"
+  },
+  {
+    "id": "R4",
+    "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+    "accessed_utc": "2026-11-25T04:22:36.228230+00:00",
+    "status": 200,
+    "final_url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+    "sha256": "d8bfbadaaedb430d9dec929646d92f3580fdf18238f34121ae7738fa1c69a63d",
+    "retrieval": "UNVERIFIED; unavailable or PDF parser absent"
+  },
+  {
+    "id": "R5",
+    "url": "https://www.nber.org/papers/w22208",
+    "accessed_utc": "2026-11-25T04:22:37.808763+00:00",
+    "status": 403,
+    "final_url": "https://www.nber.org/papers/w22208",
+    "sha256": "589cbf23a17ae9c91b0262a1754dc17511f1d36ae9fe1fcdcdb48b6f7824c90f"
+  },
+  {
+    "id": "R6",
+    "url": "https://ieeexplore.ieee.org/abstract/document/6771227",
+    "accessed_utc": "2026-11-25T04:22:37.839227+00:00",
+    "status": 418,
+    "final_url": "https://ieeexplore.ieee.org/abstract/document/6771227",
+    "sha256": "a4deef7c02079c7b86f3d51c1ca075a6dba87425cf427e70cd83d3c5f44edf24"
+  },
+  {
+    "id": "R7",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304405X2030132X",
+    "accessed_utc": "2026-11-25T04:22:38.558971+00:00",
+    "status": 403,
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S0304405X2030132X",
+    "sha256": "d166d63f9d00f096468843f64161c95a1d3acf53278c2e37dae25daf71c90721"
+  },
+  {
+    "id": "R8",
+    "url": "https://caia.org/sites/default/files/dynamic_strategies_for_asset_allocation.pdf",
+    "accessed_utc": "2026-11-25T04:22:38.836512+00:00",
+    "status": 403,
+    "final_url": "https://caia.org/sites/default/files/dynamic_strategies_for_asset_allocation.pdf",
+    "sha256": "589cbf23a17ae9c91b0262a1754dc17511f1d36ae9fe1fcdcdb48b6f7824c90f"
+  },
+  {
+    "id": "R9",
+    "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/cost_averaging_invest_now_or_temporarily_hold_your_cash.pdf",
+    "accessed_utc": "2026-11-25T04:22:38.857195+00:00",
+    "status": 200,
+    "final_url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/cost_averaging_invest_now_or_temporarily_hold_your_cash.pdf",
+    "sha256": "4af2ba290b24d1908a512a8b1b58d6e985cf006b61d8be4d5a3dececcb283925",
+    "retrieval": "UNVERIFIED; unavailable or PDF parser absent"
+  },
+  {
+    "id": "R10",
+    "url": "https://www.math.nyu.edu/~chriss/optliq_f.pdf",
+    "accessed_utc": "2026-11-25T04:22:39.082187+00:00",
+    "status": 403,
+    "final_url": "https://math.nyu.edu/~chriss/optliq_f.pdf",
+    "sha256": "9531dd4efe7be977b999c60f7961142766fe393c7614dfcb4f277d05d6588a63"
+  },
+  {
+    "id": "R11",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1271972",
+    "accessed_utc": "2026-11-25T04:22:39.307274+00:00",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1271972",
+    "sha256": "158561dcb156c3b1c2e9a2034df4517eeeb79e414da76ee5ea4a7db45f8903d1"
+  },
+  {
+    "id": "R12",
+    "url": "https://www.nber.org/papers/w24877",
+    "accessed_utc": "2026-11-25T04:22:39.627943+00:00",
+    "status": 403,
+    "final_url": "https://www.nber.org/papers/w24877",
+    "sha256": "589cbf23a17ae9c91b0262a1754dc17511f1d36ae9fe1fcdcdb48b6f7824c90f"
+  },
+  {
+    "id": "R13",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/0022-1082.00226",
+    "accessed_utc": "2026-11-25T04:22:39.956754+00:00",
+    "status": 403,
+    "final_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/0022-1082.00226",
+    "sha256": "187e0c20b78a7bfd1159c85a55dd64e47ceed7409026964f41aeb467ff0b2688"
+  },
+  {
+    "id": "R14",
+    "url": "https://www.bis.org/publ/bisbull69.htm",
+    "accessed_utc": "2026-11-25T04:22:40.178646+00:00",
+    "status": 200,
+    "final_url": "https://www.bis.org/publications/bulletin-69-crypto-shocks-and-retail-losses",
+    "sha256": "9354de0065e69dda91a283be06cdd1daad6e3d67711f3124c831fcbdd8bf6dfc",
+    "text_characters_reviewed": 9286,
+    "terms": {
+      "momentum": false,
+      "drawdown": false,
+      "77%": false,
+      "83%": false,
+      "iran": false,
+      "abstract": false,
+      "bitcoin": true
+    }
+  },
+  {
+    "id": "R15",
+    "url": "https://www.sec.gov/Archives/edgar/data/1980994/000143774923035270/bit20231221_s1a.htm",
+    "accessed_utc": "2026-11-25T04:22:40.655101+00:00",
+    "status": 403,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1980994/000143774923035270/bit20231221_s1a.htm",
+    "sha256": "d5e945ee9b304271fc5bbc668d77d6a0db5a7d2597a04932f81ced4e2a2c8c07"
+  },
+  {
+    "id": "R16",
+    "url": "https://www.wellsfargoadvisors.com/research-analysis/reports/digital-assets/digital-asset-volatility.htm",
+    "accessed_utc": "2026-11-25T04:22:40.668471+00:00",
+    "status": 200,
+    "final_url": "https://www.wellsfargoadvisors.com/research-analysis/reports/digital-assets/digital-asset-volatility.htm",
+    "sha256": "26962afba0dbf6c9f8ba80b58a62461b73c466d9d4319c0e5a7a00e521849284",
+    "text_characters_reviewed": 22213,
+    "terms": {
+      "momentum": false,
+      "drawdown": true,
+      "77%": true,
+      "83%": true,
+      "iran": false,
+      "abstract": false,
+      "bitcoin": true
+    }
+  },
+  {
+    "id": "nobitex_start",
+    "url": "https://apidocs.nobitex.ir/getting-started",
+    "accessed_utc": "2026-11-25T04:22:41.402228+00:00",
+    "status": 200,
+    "final_url": "https://apidocs.nobitex.ir/getting-started",
+    "sha256": "e5d5af46506d1fd28e53b13fb21a5ba5b1ad964deaf0b03797dac6bca6b19033",
+    "text_characters_reviewed": 7050,
+    "terms": {
+      "momentum": false,
+      "drawdown": false,
+      "77%": false,
+      "83%": false,
+      "iran": false,
+      "abstract": false,
+      "bitcoin": false
+    }
+  },
+  {
+    "id": "ms_wake",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-waketorun",
+    "accessed_utc": "2026-11-25T04:22:41.523381+00:00",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-waketorun",
+    "sha256": "fe6e965a2d380fcb64a81eacf4e30585e8e62e6ff038e68d868a2409c74edbf9",
+    "text_characters_reviewed": 2277,
+    "terms": {
+      "momentum": false,
+      "drawdown": false,
+      "77%": false,
+      "83%": false,
+      "iran": false,
+      "abstract": false,
+      "bitcoin": false
+    }
+  },
+  {
+    "id": "ms_delayed",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-startwhenavailable",
+    "accessed_utc": "2026-11-25T04:22:41.814596+00:00",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-startwhenavailable",
+    "sha256": "a71ec1886c214a54c77ca282e9d792b90b28509d7d6c8d04842e18f62d797757",
+    "text_characters_reviewed": 2472,
+    "terms": {
+      "momentum": false,
+      "drawdown": false,
+      "77%": false,
+      "83%": false,
+      "iran": false,
+      "abstract": false,
+      "bitcoin": false
+    }
+  }
+]

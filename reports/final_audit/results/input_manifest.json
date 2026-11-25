@@ -1,0 +1,16 @@
+{
+  "audit_protocol_sha256": "ce32f959aeb29a5f914fb0c44d010d1f49243f71170f05b01ab4c9994e644911",
+  "files": {
+    "BTC-USDT.csv": "3ba47ab212366e9ae6d09d75ce709c1c431a4bf48ed502b990a4d7ab94ab74b2",
+    "BTC-USDT_4h.csv": "bb42465b4fd480089f90f3e6743ce0cdd200d6edd4cd8a1a53b8683e1d079c5f",
+    "DOGE-USDT.csv": "877b09e9cf7d03742f74d4fac9c51630f872b77761462952d332012e3c86cdf3",
+    "ETH-USDT.csv": "5d980d9b29e27eff9a60830b41a2f73baa240d8603a4a533aada889e7ee32d60",
+    "SOL-USDT.csv": "70cf5ca987e14be6012cea2a3533d5b941b70f23128f267390fd5567b59fcaec",
+    "XRP-USDT.csv": "d49d1e41892ff37871f04605058af9c3a40b6cfaa0d6d12c343b9123d914aa5e",
+    "archived_v3_metrics.csv": "d1b59cee7e9359fdc22c6cf16086b5932ed59760aff2f6e30c112e44c28ac787",
+    "archived_v3_robustness.csv": "fe0bdd1fd0e73781aac9604153fbbf48924fde16e5b48ecc2ec71e9609984b72",
+    "archived_v3_summary.json": "39d6ca893428e5972773fd52fc7fa7a4c5234efb3e2e933d90e18389d2bc3b86",
+    "metadata.json": "2953609d659947e4a6ca904430d1d46bd916194f5244a851889e807683621559"
+  },
+  "v3_protocol_sha256": "6f26ccabb14fa92b477a94b873f3309a0eb9b30a3d873118def5fa81ec3489af"
+}

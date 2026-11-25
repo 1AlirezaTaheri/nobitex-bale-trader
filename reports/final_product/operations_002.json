@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "check": "old_root_refusal",
+      "exit_code": 2,
+      "seconds": 2.1782576999999037,
+      "bale_requested": false
+    },
+    {
+      "check": "smoke",
+      "exit_code": 0,
+      "seconds": 22.75088199999982,
+      "bale_requested": false
+    },
+    {
+      "check": "weekly",
+      "exit_code": 0,
+      "seconds": 2.214895500000239,
+      "bale_requested": false
+    },
+    {
+      "check": "doctor",
+      "exit_code": 2,
+      "seconds": 2.7285397000000557,
+      "bale_requested": false
+    }
+  ],
+  "old_root_unchanged_after_refusal": false,
+  "old_root_file_count": 6
+}

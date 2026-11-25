@@ -1,0 +1,112 @@
+{
+  "chart_qa": "chart_qa_001.json",
+  "checked_utc": "2026-11-25T04:59:50.832062+00:00",
+  "configured_secret_scan": {
+    "checked_utc": "2026-11-25T04:59:50.818569+00:00",
+    "configured_value_matches_outside_env": [],
+    "configured_values_never_recorded": true,
+    "env_excluded_from_publication": true,
+    "files_scanned": 620,
+    "method_limitations": "Exact configured-value/word-boundary heuristic; not proof of no secrets, historical exposure or vulnerabilities"
+  },
+  "corrected_checks": [
+    "pytest_full_005.xml: 304 passed",
+    "live_refusals_003.json: 7 expected refusals, UTF-8-safe diagnostics",
+    "operations_003.json: all eight old-root file hashes unchanged"
+  ],
+  "dependency_installations": 0,
+  "disclosed_changed_files": 11,
+  "doctor": {
+    "evidence": "doctor_003.log",
+    "failed_checks": 1,
+    "reason": "Invalid local optional Bale configuration; values not recorded",
+    "status": "FAIL"
+  },
+  "existing_audit_multiple_testing_family": 287,
+  "frozen_replay": {
+    "artifacts": 30,
+    "byte_identical": 30,
+    "evidence": "frozen_replay_comparison.json",
+    "input": "reports/final_audit/inputs",
+    "reference": "reports/final_audit/results_verified_002"
+  },
+  "genuine_clean_forward_intervals": 0,
+  "genuine_forward_snapshots": 0,
+  "git_repository_present": false,
+  "historical_parameter_searches": 0,
+  "investment_verdict": "All seven variants remain category 1 / NOT_VALIDATED",
+  "live_refusal_evidence": "live_refusals_003.json",
+  "live_refusal_paths": 7,
+  "live_refusal_successes": 7,
+  "missing_files": 0,
+  "new_strategy_candidates": 0,
+  "operations_evidence": "operations_003.json",
+  "original_protected_file_count": 541,
+  "preserved_failures": [
+    "pytest_full_001.log: 289 passed and 2 failed",
+    "safety_001.json: product-shadow refused but printed UnicodeEncodeError exit 1",
+    "operations_002.json: incompatible-root DB check created WAL/SHM before refusal"
+  ],
+  "process_audit": {
+    "checked_utc": "2026-11-25T04:56:15.143643+00:00",
+    "command_lines_and_secrets_not_recorded": true,
+    "processes": [],
+    "project_process_count_excluding_current_audit_and_ancestors": 0,
+    "query_exit": 0,
+    "termination_performed": false
+  },
+  "pytest": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 304
+  },
+  "pytest_evidence": "pytest_full_005.xml",
+  "quality": [
+    {
+      "check": "ruff_check",
+      "exit_code": 0,
+      "seconds": 0.38336619999972754
+    },
+    {
+      "check": "ruff_format",
+      "exit_code": 0,
+      "seconds": 0.34398240000064106
+    },
+    {
+      "check": "pip_check",
+      "exit_code": 0,
+      "seconds": 1.2121585000004416
+    },
+    {
+      "check": "compileall",
+      "exit_code": 0,
+      "seconds": 0.3983170000001337
+    }
+  ],
+  "real_bale_requests_during_implementation": 0,
+  "real_order_or_cancel_requests": 0,
+  "release_status": "ENGINEERING_CHECKS_PASS_OPERATOR_BALE_CONFIGURATION_INVALID",
+  "research_review": "PARTIALLY_VERIFIED_NOT_SYSTEMATIC_NOT_REPLICATED",
+  "scope": "PAPER_SHADOW_ONLY",
+  "setup_check_only": {
+    "evidence": "setup_check_001.log",
+    "exit_code": 1,
+    "reason": "Doctor local configuration failure; pip check passed",
+    "status": "FAIL"
+  },
+  "smoke_requested_seconds": 20,
+  "smoke_root": "reports/final_product/shadow_smoke_003",
+  "unchanged_files": 530,
+  "unverified": [
+    "real Bale configuration and delivery",
+    "physical sleep/lid/reboot/power loss",
+    "registered Task Scheduler tasks",
+    "independent UTC and hash anchoring",
+    "advisory-backed vulnerability scan",
+    "multi-month forward performance",
+    "unavailable full primary papers and replications",
+    "private/executable exchange contracts and FX/native comparability"
+  ],
+  "weekly_report": "reports/final_product/weekly_20261125T044752298983Z/weekly.json"
+}

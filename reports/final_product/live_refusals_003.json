@@ -1,0 +1,56 @@
+{
+  "checked_utc": "2026-11-25T04:58:09.345342+00:00",
+  "checks": [
+    {
+      "path": "legacy",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 1.103660800000398,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "portfolio",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 0.9995940999997401,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "timing_A",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 1.3019862000001012,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "timing_D",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 1.018093200000294,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "forward_shadow",
+      "exit_code": 2,
+      "pass": true
+    },
+    {
+      "path": "product_shadow",
+      "exit_code": 2,
+      "pass": true,
+      "unicode_encode_error": false,
+      "forced_ascii_pipe": true
+    },
+    {
+      "path": "product_weekly",
+      "exit_code": 2,
+      "pass": true,
+      "unicode_encode_error": false,
+      "forced_ascii_pipe": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "baseline_files": 720,
+  "blocking_secret_findings": [],
+  "candidate_files_scanned": 597,
+  "changed_existing_files": [
+    {
+      "after": "c3e8a3e044a5353ef0a096462db25be421b736381ebb6e604eaa19d46f810bf3",
+      "before": "493f9e41bff1ebe194d275c2b974c0670e49b294b2ac71dda26f1681486c0c8a",
+      "file": ".gitignore"
+    },
+    {
+      "after": "3b7c5dcba94341edf870789ce5c07786889c3cf2a97e3486a53e68795ecf2a63",
+      "before": "cb19b632a901d467f7c3baeb442bf35b2a39c27eeb56ad5c114fa6d20857efab",
+      "file": "docs/ASSUMPTIONS.md"
+    }
+  ],
+  "configured_value_matches": 0,
+  "created_utc": "2026-11-25T06:50:01.025322+00:00",
+  "ignore_probes": {
+    ".bale_verified.json": true,
+    ".env": true,
+    ".venv/pyvenv.cfg": true,
+    "data/paper.db": true,
+    "reports/final_product/pytest_full_005.log": true,
+    "reports/final_product/pytest_full_005.xml": true,
+    "reports/final_product/shadow_v2/state.db": true,
+    "requirements.lock": false
+  },
+  "limitations": [
+    "Heuristic and configured-value scans do not prove absence of all secrets.",
+    "Private and runtime evidence is preserved locally and omitted publicly.",
+    "This file and later publication supplements are not included in this scan count."
+  ],
+  "missing_baseline_files": [],
+  "prior_baseline_files_checked": 541,
+  "prior_indexed_evidence_verified": 152,
+  "reviewed_synthetic_fixture": [
+    {
+      "classification": "Previously reviewed synthetic credential-shaped test fixture; not a configured credential.",
+      "file": "tests/test_final_audit_ops.py",
+      "line": 5,
+      "rule": "bot_token"
+    }
+  ],
+  "sealed_completion_sha256": "f2331a82fb4ee4d0cb590c7508ef49072e1dacb53d44d54e13a5358e38ba4032",
+  "status": "PASS",
+  "unchanged_baseline_files": 718
+}

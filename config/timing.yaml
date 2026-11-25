@@ -1,0 +1,4 @@
+enabled: false
+candidate: A
+symbols: [BTC/USDT, ETH/USDT]
+preregistration: docs/STRATEGY_V3_PREREGISTRATION.md

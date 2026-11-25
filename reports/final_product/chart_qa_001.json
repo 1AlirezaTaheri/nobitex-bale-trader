@@ -1,0 +1,16 @@
+{
+  "file": "reports/final_product/weekly_20261125T044752298983Z/weekly.png",
+  "sha256": "a25a122a70bfc16999c0e842b78fbd5495cb733eca3a8bbcccb71d94f50b225b",
+  "dimensions": [
+    1560,
+    1040
+  ],
+  "inspection": "Model visual inspection using image read tool",
+  "zero_forward_snapshots": true,
+  "zero_observed_intervals": true,
+  "explicit_zero_data_text_all_panels": true,
+  "no_performance_curve_fabricated": true,
+  "labels_readable_no_visible_overlap": true,
+  "live_or_delivered_image_tested": false,
+  "nonempty_forward_performance_visual_review": "NOT_AVAILABLE_ZERO_OBSERVATIONS"
+}

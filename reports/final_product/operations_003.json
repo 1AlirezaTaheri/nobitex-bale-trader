@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "check": "old_root_refusal",
+      "exit_code": 2,
+      "seconds": 2.5181367000000137,
+      "bale_requested": false
+    },
+    {
+      "check": "smoke",
+      "exit_code": 0,
+      "seconds": 22.74134260000028,
+      "bale_requested": false
+    },
+    {
+      "check": "weekly",
+      "exit_code": 0,
+      "seconds": 2.8330605000001015,
+      "bale_requested": false
+    },
+    {
+      "check": "doctor",
+      "exit_code": 2,
+      "seconds": 2.2614803000001302,
+      "bale_requested": false
+    }
+  ],
+  "old_root_unchanged_after_refusal": true,
+  "old_root_file_count": 8,
+  "old_root_before": {
+    "clock.json": "7015b53cbcc41b01aefc5e8138408e53384cd770030162b9488833d87ddc8e81",
+    "configuration.json": "425732c017758f77db949df8dfd48a0749f152fce0eaeb2a67b9ccbb6240ee14",
+    "product.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shadow.db": "929626becb2364d51ae733bdcf734429a472f39f7e1402cf616baa1743fb0b50",
+    "shadow.db-shm": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+    "shadow.db-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shadow.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/operations.jsonl": "02a20d8e2f6639ac979a9461a3bc43361d63a03177f40a16ea3a174cb1db2b37"
+  },
+  "old_root_after": {
+    "clock.json": "7015b53cbcc41b01aefc5e8138408e53384cd770030162b9488833d87ddc8e81",
+    "configuration.json": "425732c017758f77db949df8dfd48a0749f152fce0eaeb2a67b9ccbb6240ee14",
+    "product.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shadow.db": "929626becb2364d51ae733bdcf734429a472f39f7e1402cf616baa1743fb0b50",
+    "shadow.db-shm": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+    "shadow.db-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shadow.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/operations.jsonl": "02a20d8e2f6639ac979a9461a3bc43361d63a03177f40a16ea3a174cb1db2b37"
+  }
+}

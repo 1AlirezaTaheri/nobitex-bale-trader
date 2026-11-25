@@ -1,0 +1,10 @@
+{
+  "source": "reports\\portfolio",
+  "input_files": 6,
+  "equity_rows": 701,
+  "trades": 0,
+  "pngs": 4,
+  "exact_replay": true,
+  "ARTIFACT_AUDIT_PASS": true,
+  "strategy_validated": false
+}

@@ -1,0 +1,31 @@
+base_url: https://apiv2.nobitex.ir
+auth:
+  scheme: Ed25519
+  key_header: Nobitex-Key
+  signature_header: Nobitex-Signature
+  timestamp_header: Nobitex-Timestamp
+endpoints:
+  candles: [GET, /market/udf/history, false, 60]
+  book: [GET, '/v3/orderbook/{symbol}', false, 30]
+  books: [GET, /v3/orderbook/all, false, 10]
+  market_stats: [GET, /market/stats, false, 10]
+  options: [GET, /v2/options, false, 10]
+  profile: [GET, /users/profile, true, 10]
+  balances: [POST, /v2/wallets, true, 10]
+  place: [POST, /market/orders/add, true, 30]
+  status: [POST, /market/orders/status, true, 20]
+  orders: [GET, /market/orders/list, true, 15]
+  cancel: [POST, /market/orders/update-status, true, 20]
+resolutions: {'1h': '60', '4h': '240', '1d': 'D'}
+history_limit: 500
+order_types: {normal: limit, protective: stop_market, bracket: oco}
+precision: {quantity_key: amountPrecisions, price_key: pricePrecisions, minimum_key: minOrders}
+alignment_offset_seconds: 1800
+alignment_by_frame: {'1h': 1800, '4h': 1800, '1d': 73800}
+verification:
+  authenticated_read_contract: UNVERIFIED
+  fee_currency_and_fill_accounting: UNVERIFIED
+  terminal_client_order_id_recovery: UNVERIFIED
+  live_limit_and_cancel_semantics: UNVERIFIED
+  executable_symbol_precision: UNVERIFIED
+  native_protection_lifecycle: UNVERIFIED

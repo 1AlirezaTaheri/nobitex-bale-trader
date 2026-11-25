@@ -1,0 +1,147 @@
+{
+  "B1": {
+    "calmar_percentile": 0.28928928928928926,
+    "return_percentile": 0.0,
+    "trials": 999,
+    "unshifted_return_error": 1.199040866595169e-14,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B2": {
+    "calmar_percentile": 0.7757757757757757,
+    "return_percentile": 0.37037037037037035,
+    "trials": 999,
+    "unshifted_return_error": -4.440892098500626e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B3": {
+    "calmar_percentile": 0.2852852852852853,
+    "return_percentile": 0.3103103103103103,
+    "trials": 999,
+    "unshifted_return_error": 7.327471962526033e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B4_25": {
+    "calmar_percentile": 0.5575575575575575,
+    "return_percentile": 0.44344344344344344,
+    "trials": 999,
+    "unshifted_return_error": 8.881784197001252e-16,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B4_50": {
+    "calmar_percentile": 0.8498498498498499,
+    "return_percentile": 0.7137137137137137,
+    "trials": 999,
+    "unshifted_return_error": 4.218847493575595e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B4_75": {
+    "calmar_percentile": 0.3883883883883884,
+    "return_percentile": 0.36236236236236236,
+    "trials": 999,
+    "unshifted_return_error": 1.6431300764452317e-14,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B5_25": {
+    "calmar_percentile": 0.6176176176176176,
+    "return_percentile": 0.5995995995995996,
+    "trials": 999,
+    "unshifted_return_error": 3.1086244689504383e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B5_50": {
+    "calmar_percentile": 0.5775775775775776,
+    "return_percentile": 0.5615615615615616,
+    "trials": 999,
+    "unshifted_return_error": -1.5543122344752192e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B5_75": {
+    "calmar_percentile": 0.6686686686686687,
+    "return_percentile": 0.34234234234234234,
+    "trials": 999,
+    "unshifted_return_error": 7.771561172376096e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B6": {
+    "calmar_percentile": null,
+    "return_percentile": 0.0,
+    "trials": 999,
+    "unshifted_return_error": 0.0,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B7_S2_A": {
+    "calmar_percentile": 0.8988988988988988,
+    "return_percentile": 0.8018018018018018,
+    "trials": 999,
+    "unshifted_return_error": 1.3322676295501878e-14,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B7_S2_B": {
+    "calmar_percentile": 0.8978978978978979,
+    "return_percentile": 0.8018018018018018,
+    "trials": 999,
+    "unshifted_return_error": -4.440892098500626e-16,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B7_S2_C": {
+    "calmar_percentile": 0.8978978978978979,
+    "return_percentile": 0.8038038038038038,
+    "trials": 999,
+    "unshifted_return_error": 2.220446049250313e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B7_S2_D": {
+    "calmar_percentile": 0.7237237237237237,
+    "return_percentile": 0.7267267267267268,
+    "trials": 999,
+    "unshifted_return_error": 2.4424906541753444e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "B8": {
+    "calmar_percentile": 0.4864864864864865,
+    "return_percentile": 0.43243243243243246,
+    "trials": 999,
+    "unshifted_return_error": 4.218847493575595e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "S0": {
+    "reason": "Native engine does not expose exact post-open weights",
+    "status": "unavailable"
+  },
+  "S1_L1": {
+    "reason": "Native engine does not expose exact post-open weights",
+    "status": "unavailable"
+  },
+  "S1_full": {
+    "reason": "Native engine does not expose exact post-open weights",
+    "status": "unavailable"
+  },
+  "S2_A": {
+    "calmar_percentile": 0.14214214214214213,
+    "return_percentile": 0.16016016016016016,
+    "trials": 999,
+    "unshifted_return_error": 5.10702591327572e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "S2_B": {
+    "calmar_percentile": 0.31931931931931934,
+    "return_percentile": 0.3713713713713714,
+    "trials": 999,
+    "unshifted_return_error": 1.1546319456101628e-14,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "S2_C": {
+    "calmar_percentile": 0.4244244244244244,
+    "return_percentile": 0.45845845845845845,
+    "trials": 999,
+    "unshifted_return_error": 3.1086244689504383e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  },
+  "S2_D": {
+    "calmar_percentile": 0.7337337337337337,
+    "return_percentile": 0.6256256256256256,
+    "trials": 999,
+    "unshifted_return_error": 4.884981308350689e-15,
+    "warning": "Circular observed-weight surrogate, not executable same-turnover orders; seam and terminal convention matter"
+  }
+}

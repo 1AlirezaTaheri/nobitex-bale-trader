@@ -1,0 +1,35 @@
+{
+  "recorded_utc": "2026-11-25T04:55:48.449150+00:00",
+  "is_later_access_supplement": true,
+  "initial_failures_preserved": true,
+  "sources": [
+    {
+      "url": "https://www.nber.org/papers/w22208",
+      "method": "functions.webfetch markdown",
+      "review": "Primary abstract read; equity-factor and currency-carry inverse-volatility results claimed by authors; no full-text/endpoint/replication review",
+      "status": "ABSTRACT_REVIEWED",
+      "raw_bytes_hash": "UNAVAILABLE_TOOL_RENDERED_TEXT_ONLY"
+    },
+    {
+      "url": "https://www.nber.org/papers/w24877",
+      "method": "functions.webfetch markdown",
+      "review": "Primary abstract read; Bitcoin/Ripple/Ethereum momentum/attention hypotheses; sample endpoints and full methods not verified",
+      "status": "ABSTRACT_REVIEWED",
+      "raw_bytes_hash": "UNAVAILABLE_TOOL_RENDERED_TEXT_ONLY"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.finmar.2016.05.003",
+      "method": "functions.webfetch markdown",
+      "review": "Citation-only response; not a substantive abstract or full-text review",
+      "status": "METADATA_ONLY",
+      "raw_bytes_hash": "UNAVAILABLE_TOOL_RENDERED_TEXT_ONLY"
+    },
+    {
+      "url": "https://www.wellsfargoadvisors.com/research-analysis/reports/digital-assets/digital-asset-volatility.htm",
+      "method": "functions.webfetch markdown",
+      "review": "Body gives roughly 83%/77% declines and guide dates; footnotes 2/3 contradict body, including an erroneous future Dec 2026 date; footnote 7 agrees with body. Downgraded approximate illustration, not independent reconstruction",
+      "status": "BODY_READ_INTERNAL_DATE_CONFLICT",
+      "raw_bytes_hash": "SEE_EARLIER_PRIMARY_FALLBACK_HASH"
+    }
+  ]
+}

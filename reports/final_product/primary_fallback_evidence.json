@@ -1,0 +1,101 @@
+[
+  {
+    "source": "R1-author",
+    "url": "https://pages.stern.nyu.edu/~lpederse/papers/TimeSeriesMomentum.pdf",
+    "accessed_utc": "2026-11-25T04:27:42.883004+00:00",
+    "status": 200,
+    "sha256": "7682f8e97eb4b77591dc85e36731ff51ed031970cdde81678108734db9478379",
+    "extraction": "Partial literal-text only; missing fonts/math/layout; not full PDF review",
+    "readable_characters": 86507
+  },
+  {
+    "source": "R3-author",
+    "url": "https://davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+    "accessed_utc": "2026-11-25T04:27:42.937109+00:00",
+    "status": 200,
+    "sha256": "ca4a1e834a2954b84eb560776e903329cd9cef318d458aadf6d67bc8166d10b5",
+    "extraction": "Partial literal-text only; missing fonts/math/layout; not full PDF review",
+    "readable_characters": 40946
+  },
+  {
+    "source": "R4-author",
+    "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+    "accessed_utc": "2026-11-25T04:27:45.622253+00:00",
+    "status": 200,
+    "sha256": "d8bfbadaaedb430d9dec929646d92f3580fdf18238f34121ae7738fa1c69a63d",
+    "extraction": "Partial literal-text only; missing fonts/math/layout; not full PDF review",
+    "readable_characters": 54018
+  },
+  {
+    "source": "R5-nber",
+    "url": "https://www.nber.org/system/files/working_papers/w22208/w22208.pdf",
+    "accessed_utc": "2026-11-25T04:27:48.247617+00:00",
+    "status": 403,
+    "sha256": "589cbf23a17ae9c91b0262a1754dc17511f1d36ae9fe1fcdcdb48b6f7824c90f"
+  },
+  {
+    "source": "R6-original-mirror",
+    "url": "https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf",
+    "accessed_utc": "2026-11-25T04:27:48.592875+00:00",
+    "status": 200,
+    "sha256": "d422b93805694672f64a1daacbc7396504d4718f55d115c45cd29afbc5a477bb",
+    "extraction": "Partial literal-text only; missing fonts/math/layout; not full PDF review",
+    "readable_characters": 14076
+  },
+  {
+    "source": "R8-author",
+    "url": "https://web.stanford.edu/~wfsharpe/art/dyn/dyn.htm",
+    "accessed_utc": "2026-11-25T04:27:48.906619+00:00",
+    "status": 404,
+    "sha256": "08397e8a629009973dad5dfae3e851d4f3f3b312d19f76dad0e3a386bc0afb92"
+  },
+  {
+    "source": "R9-issuer",
+    "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/cost_averaging_invest_now_or_temporarily_hold_your_cash.pdf",
+    "accessed_utc": "2026-11-25T04:27:50.254145+00:00",
+    "status": 200,
+    "sha256": "4af2ba290b24d1908a512a8b1b58d6e985cf006b61d8be4d5a3dececcb283925",
+    "extraction": "Partial literal-text only; missing fonts/math/layout; not full PDF review",
+    "readable_characters": 0
+  },
+  {
+    "source": "R11-author",
+    "url": "https://thierry-roncalli.com/download/erc.pdf",
+    "accessed_utc": "2026-11-25T04:27:50.386284+00:00",
+    "retrieval": "UNVERIFIED"
+  },
+  {
+    "source": "R12-nber",
+    "url": "https://www.nber.org/system/files/working_papers/w24877/w24877.pdf",
+    "accessed_utc": "2026-11-25T04:27:50.952383+00:00",
+    "status": 403,
+    "sha256": "589cbf23a17ae9c91b0262a1754dc17511f1d36ae9fe1fcdcdb48b6f7824c90f"
+  },
+  {
+    "source": "R13-author",
+    "url": "https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/individual_investor_performance_final.pdf",
+    "accessed_utc": "2026-11-25T04:27:51.483261+00:00",
+    "status": 200,
+    "sha256": "39e47b24fb88e76ea1781a1d14b3793fb35999cedc1aff55bb17431fa75e9a7c",
+    "extraction": "Partial literal-text only; missing fonts/math/layout; not full PDF review",
+    "readable_characters": 0
+  },
+  {
+    "source": "R16-issuer",
+    "url": "https://www.wellsfargoadvisors.com/research-analysis/reports/digital-assets/digital-asset-volatility.htm",
+    "accessed_utc": "2026-11-25T04:27:53.194415+00:00",
+    "status": 200,
+    "sha256": "3adbb215edfc66e84042ab1b5e9b9c379b157da72e9e2003ecd68b4a2bbe056a",
+    "extraction": "HTML text",
+    "readable_characters": 22213
+  },
+  {
+    "source": "nobitex-market",
+    "url": "https://apidocs.nobitex.ir/market_data/",
+    "accessed_utc": "2026-11-25T04:27:54.956928+00:00",
+    "status": 200,
+    "sha256": "1da4329c3db888f745dd8f279ccf9a7682639af5747ba8009ed70f4ae2035826",
+    "extraction": "HTML text",
+    "readable_characters": 866
+  }
+]

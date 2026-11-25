@@ -1,0 +1,16 @@
+label,path,params,status,error_type,seconds,attempt,retry
+options,/v2/options,,200,,1.2119699000031687,1,False
+metadata_USDTIRT,/market/udf/symbols,"{""symbol"": ""USDTIRT""}",200,,0.3711658999964129,1,False
+history_USDTIRT_0_0,/market/udf/history,"{""from"": 1689712200, ""resolution"": ""D"", ""symbol"": ""USDTIRT"", ""to"": 1732048199}",403,,0.21591880000778474,1,False
+history_USDTIRT_0_1,/market/udf/history,"{""from"": 1732048200, ""resolution"": ""D"", ""symbol"": ""USDTIRT"", ""to"": 1750192199}",403,,0.2248808000003919,1,False
+history_USDTIRT_1_0,/market/udf/history,"{""from"": 1777408200, ""resolution"": ""D"", ""symbol"": ""USDTIRT"", ""to"": 1795120199}",403,,0.2572480000089854,1,False
+metadata_BTCIRT,/market/udf/symbols,"{""symbol"": ""BTCIRT""}",200,,0.2926180999929784,1,False
+history_BTCIRT_0_0,/market/udf/history,"{""from"": 1689712200, ""resolution"": ""D"", ""symbol"": ""BTCIRT"", ""to"": 1732048199}",200,,0.5257970999955432,1,False
+history_BTCIRT_0_1,/market/udf/history,"{""from"": 1732048200, ""resolution"": ""D"", ""symbol"": ""BTCIRT"", ""to"": 1750192199}",200,,0.4239621000015177,1,False
+history_BTCIRT_1_0,/market/udf/history,"{""from"": 1777408200, ""resolution"": ""D"", ""symbol"": ""BTCIRT"", ""to"": 1795120199}",200,,0.7396809000056237,1,False
+book_0,/v3/orderbook/BTCUSDT,,200,,0.31462950000423007,1,False
+book_1,/v3/orderbook/BTCUSDT,,200,,0.24102610000409186,1,False
+book_2,/v3/orderbook/BTCUSDT,,200,,0.749530600005528,1,False
+book_3,/v3/orderbook/BTCUSDT,,200,,0.6149752000055742,1,False
+book_4,/v3/orderbook/BTCUSDT,,200,,0.9367598999961047,1,False
+book_5,/v3/orderbook/BTCUSDT,,200,,0.7376293999986956,1,False

@@ -1,0 +1,30 @@
+[
+  {
+    "check": "doctor",
+    "exit_code": 2,
+    "seconds": 2.5482710000001134,
+    "bale_requested": false,
+    "log": "doctor_001.log"
+  },
+  {
+    "check": "setup_check",
+    "exit_code": 1,
+    "seconds": 3.1228335000000698,
+    "bale_requested": false,
+    "log": "setup_check_001.log"
+  },
+  {
+    "check": "smoke",
+    "exit_code": 0,
+    "seconds": 22.655056699999932,
+    "bale_requested": false,
+    "log": "smoke_001.log"
+  },
+  {
+    "check": "weekly",
+    "exit_code": 0,
+    "seconds": 2.78498959999979,
+    "bale_requested": false,
+    "log": "weekly_001.log"
+  }
+]

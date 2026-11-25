@@ -1,0 +1,91 @@
+{
+  "all_owned_children_reaped": true,
+  "live_refusals": [
+    {
+      "exit_code": 2,
+      "no_credentials_loaded": true,
+      "pass": true,
+      "path": "legacy",
+      "seconds": 1.8915339999948628,
+      "storage_isolated": true
+    },
+    {
+      "exit_code": 2,
+      "no_credentials_loaded": true,
+      "pass": true,
+      "path": "portfolio",
+      "seconds": 1.6192272000043886,
+      "storage_isolated": true
+    },
+    {
+      "exit_code": 2,
+      "no_credentials_loaded": true,
+      "pass": true,
+      "path": "timing_A",
+      "seconds": 1.7127949999994598,
+      "storage_isolated": true
+    },
+    {
+      "exit_code": 2,
+      "no_credentials_loaded": true,
+      "pass": true,
+      "path": "timing_D",
+      "seconds": 1.6841978000011295,
+      "storage_isolated": true
+    },
+    {
+      "exit_code": 2,
+      "pass": true,
+      "path": "forward_shadow"
+    }
+  ],
+  "prior_log_measurements": {
+    "bytes": 6016,
+    "content_not_exposed": true,
+    "file": "logs/bot.jsonl",
+    "json_records": 39,
+    "parseable_timestamps": 0,
+    "per_day_growth": "UNAVAILABLE_NO_CONTINUOUS_ACTIVITY_DENOMINATOR",
+    "startup_to_ready": "UNAVAILABLE_NOT_INFERRED_FROM_UNSTRUCTURED_MESSAGES"
+  },
+  "process_drills": [
+    {
+      "active": 0,
+      "drill": "actual_child_kill_mid_cycle",
+      "orders": 0,
+      "pass": true,
+      "quantity": "0",
+      "ready_seconds": 2.0515624999970896,
+      "reconciled": true,
+      "recovery_seconds": 0.00026729999808594584,
+      "restart_wall_seconds": 2.4834250999992946,
+      "termination_seconds": 0.0023493000044254586,
+      "uncommitted_marker": null
+    },
+    {
+      "active": 0,
+      "drill": "actual_child_kill_mid_order",
+      "orders": 1,
+      "pass": true,
+      "quantity": "0.1",
+      "ready_seconds": 2.121464999989257,
+      "reconciled": true,
+      "recovery_seconds": 0.004159800009801984,
+      "restart_wall_seconds": 2.840047299992875,
+      "termination_seconds": 0.0018287999992026016,
+      "uncommitted_marker": null
+    },
+    {
+      "drill": "actual_own_child_suspend_resume",
+      "elapsed_seconds": 0.25221409999358,
+      "limitation": "Process pause only, not native laptop suspend or full engine polling loop",
+      "pass": true,
+      "ready_seconds": 2.074353499992867,
+      "resumed": true
+    }
+  ],
+  "warnings": [
+    "Local/mock drills only; no real orders, real laptop sleep, Task Scheduler, real Bale delivery, or all hypothetical LIVE bypasses are certified.",
+    "Storage corruption/lock, stale/skew, duplicate process, KILL, network/timeout and command-whitelist contracts are covered by separately recorded offline tests. Test elapsed durations are not real venue recovery times."
+  ]
+}

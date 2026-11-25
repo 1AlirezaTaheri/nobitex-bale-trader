@@ -1,0 +1,12 @@
+{
+  "developer_context_date": "2026-11-25",
+  "execution_utc_start": "2026-11-24T23:06:11.096013+00:00",
+  "forward_not_before_utc": "2026-11-25T00:00:00+00:00",
+  "shadow_exit_code": 2,
+  "shadow_wall_seconds": 2.741662600004929,
+  "weekly_exit_code": 0,
+  "genuine_snapshots": 0,
+  "credential_loader_used": false,
+  "mode": "SHADOW_PUBLIC_ONLY",
+  "result": "CLOCK_REFUSAL_NOT_FORWARD_SUCCESS"
+}

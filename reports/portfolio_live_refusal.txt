@@ -1,0 +1,9 @@
+﻿PAPER-TO-LIVE CHECKLIST:
+  [ ] Review backtest and benchmark, including trade count and weaknesses.
+  [ ] Complete 2û4 weeks of paper trading and compare results with the backtest.
+  [ ] Run verify_exchange and resolve every UNVERIFIED live contract.
+  [ ] Confirm exchange-side protection or consciously set ALLOW_UNPROTECTED_POSITIONS=true.
+  [ ] Set MAX_CAPITAL_QUOTE to an amount you can afford to lose.
+  [ ] Test data/KILL, cancellation, and all Bale commands in PAPER mode.
+WARNING: No confirmed exchange-side protection; any acquired BTC would be unprotected offline.
+Startup/operation refused: LIVE blocked: UNVERIFIED authenticated_read_contract; UNVERIFIED executable_symbol_precision; UNVERIFIED fee_currency_and_fill_accounting; UNVERIFIED live_limit_and_cancel_semantics; UNVERIFIED native_protection_lifecycle; UNVERIFIED terminal_client_order_id_recovery; ALLOW_UNPROTECTED_POSITIONS=true required without verified native protection; Nobitex API key pair missing

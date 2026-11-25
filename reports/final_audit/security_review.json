@@ -1,0 +1,30 @@
+{
+  "values_exposed": false,
+  "method": "Exact equality against existing example file; this is placeholder evidence, not a proof that examples themselves contain no secrets",
+  "files": [
+    {
+      "file": ".env",
+      "flagged_assignments": 2,
+      "exact_example_matches": 2,
+      "non_example_values": 0
+    },
+    {
+      "file": ".env.example",
+      "flagged_assignments": 2,
+      "exact_example_matches": 2,
+      "non_example_values": 0
+    },
+    {
+      "file": "README.md",
+      "flagged_assignments": 2,
+      "exact_example_matches": 2,
+      "non_example_values": 0
+    },
+    {
+      "file": "README.fa.md",
+      "flagged_assignments": 2,
+      "exact_example_matches": 2,
+      "non_example_values": 0
+    }
+  ]
+}

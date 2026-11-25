@@ -1,0 +1,60 @@
+{
+  "execution_utc": "2026-11-24T23:19:28.096395+00:00",
+  "checks": [
+    {
+      "name": "ruff_check_final_002",
+      "exit_code": 0,
+      "command": [
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "log": "ruff_check_final_002.log"
+    },
+    {
+      "name": "ruff_format_final_002",
+      "exit_code": 0,
+      "command": [
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "log": "ruff_format_final_002.log"
+    },
+    {
+      "name": "compileall_final_002",
+      "exit_code": 0,
+      "command": [
+        "-m",
+        "compileall",
+        "-q",
+        "app",
+        "backtest",
+        "data",
+        "exchange",
+        "execution",
+        "indicators",
+        "notify",
+        "risk",
+        "strategy",
+        "tests",
+        "reports/final_audit/run_verification_002.py"
+      ],
+      "log": "compileall_final_002.log"
+    },
+    {
+      "name": "pip_check_final_002",
+      "exit_code": 0,
+      "command": [
+        "-m",
+        "pip",
+        "check"
+      ],
+      "log": "pip_check_final_002.log"
+    }
+  ],
+  "pass": true
+}

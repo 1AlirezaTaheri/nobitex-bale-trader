@@ -1,0 +1,24 @@
+{
+  "correction": "Horizontal whitespace only around credential assignments; original operations/security.json remains unchanged. Counts and file paths only, never matched values.",
+  "env_example_present": true,
+  "env_ignored": true,
+  "files_scanned": 226,
+  "findings": [
+    {
+      "classification": "synthetic_fixture_review",
+      "counts": {
+        "bot_token_shape": 1
+      },
+      "file": "tests/test_final_audit_ops.py"
+    }
+  ],
+  "git_present": false,
+  "offline_scanner_installed": false,
+  "redaction_and_messenger_contract": "See full offline JUnit: test_notify_config.py; unknown IDs/forwarded/stale commands and redaction, not real Bale delivery",
+  "scan_execution_utc": "2026-11-24T23:14:22.008836+00:00",
+  "vulnerability_scan": "NOT_RUN_NO_OFFLINE_ADVISORY_DATABASE",
+  "warnings": [
+    "Heuristic scan is NOT proof of secret absence or compromise freedom. Values are never printed. No Git repository is present, so historical exposure/remote commits cannot be audited.",
+    "No offline vulnerability advisory database was supplied; dependency vulnerability scan NOT RUN. pip check is compatibility only."
+  ]
+}

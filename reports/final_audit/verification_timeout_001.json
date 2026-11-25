@@ -1,0 +1,27 @@
+{
+  "attempts": {
+    "replay_verified": {
+      "files": {
+        "coverage.json": "c6bf896c05d76af70adc99f4d44aa5fc636cda7286f8ab8293662058ffc4c58a",
+        "input_manifest.json": "2d459d40a7ebeed3c16a79927955a535467f956fa520f1b1bc72086c9f93e764",
+        "matches.json": "6369aed40323a87e72eed6fcff7698b5f525905d6f7930ee863a135992c14d77",
+        "native_coverage.json": "383b3c662927cc2b983441fd014ab5cb21ea37cb5fe0169c6c65a8cf77847684"
+      },
+      "log_sha256": "e51e64372d398b382938c5134221fe68e6b9908b674a3a80c5959b218c0eda19",
+      "status": "INCOMPLETE_TIMEOUT_300_SECONDS"
+    },
+    "results_verified": {
+      "files": {
+        "coverage.json": "c6bf896c05d76af70adc99f4d44aa5fc636cda7286f8ab8293662058ffc4c58a",
+        "input_manifest.json": "2d459d40a7ebeed3c16a79927955a535467f956fa520f1b1bc72086c9f93e764",
+        "matches.json": "6369aed40323a87e72eed6fcff7698b5f525905d6f7930ee863a135992c14d77",
+        "native_coverage.json": "383b3c662927cc2b983441fd014ab5cb21ea37cb5fe0169c6c65a8cf77847684"
+      },
+      "log_sha256": "e51e64372d398b382938c5134221fe68e6b9908b674a3a80c5959b218c0eda19",
+      "status": "INCOMPLETE_TIMEOUT_300_SECONDS"
+    }
+  },
+  "recorded_execution_utc": "2026-11-24T23:17:25.495934+00:00",
+  "recovery_script": "run_verification_002.py",
+  "warning": "The first color-corrected reruns timed out. Preserve partial files; they are not successful replays. Process inspection before recovery found no remaining Python/pytest/ruff process."
+}

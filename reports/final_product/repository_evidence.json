@@ -1,0 +1,580 @@
+[
+  {
+    "repo": "freqtrade/freqtrade",
+    "accessed_utc": "2026-11-25T04:14:14.352707+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/freqtrade/freqtrade",
+      "description": "Free, open source crypto trading bot",
+      "archived": false,
+      "pushed_at": "2026-11-24T05:23:54Z",
+      "updated_at": "2026-11-25T03:57:19Z",
+      "default_branch": "develop",
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "7fcb509a434cfaa5e0943a7ccc005967cfd0b9d9",
+        "date": "2026-11-24T05:22:55Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/freqtrade/freqtrade/blob/develop/README.md",
+      "git_blob_sha": "3d1a903ce1c76f32e5d3e7fc12f0e5c4845f2308",
+      "headings": [
+        "# ![freqtrade](https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade_poweredby.svg)",
+        "## Disclaimer",
+        "## Supported Exchange marketplaces",
+        "### Supported Spot Exchanges",
+        "### Supported Futures Exchanges",
+        "### Community tested",
+        "## Documentation",
+        "## Features",
+        "## Quick start",
+        "## Basic Usage",
+        "### Bot commands",
+        "### Telegram RPC commands",
+        "## Development branches",
+        "## Support",
+        "### Help / Discord",
+        "### [Bugs / Issues](https://github.com/freqtrade/freqtrade/issues?q=is%3Aissue)",
+        "### [Feature Requests](https://github.com/freqtrade/freqtrade/labels/enhancement)",
+        "### [Pull Requests](https://github.com/freqtrade/freqtrade/pulls)",
+        "## Requirements",
+        "### Up-to-date clock",
+        "### Minimum hardware required",
+        "### Software requirements"
+      ]
+    },
+    "issues_http": 200,
+    "issues": [
+      {
+        "url": "https://github.com/freqtrade/freqtrade/issues/13742",
+        "title": "Bybit: endless \"already subscribed\" error on websocket orderbook",
+        "state": "closed",
+        "created_at": "2026-11-07T03:45:01Z"
+      }
+    ]
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "accessed_utc": "2026-11-25T04:14:14.445881+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/hummingbot/hummingbot",
+      "description": "Open source software that helps you create and deploy high-frequency crypto trading bots",
+      "archived": false,
+      "pushed_at": "2026-11-24T21:44:24Z",
+      "updated_at": "2026-11-25T03:03:50Z",
+      "default_branch": "master",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "3351adad0a09f6a57a202219d3e52fe794672421",
+        "date": "2026-11-18T13:29:45Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/hummingbot/hummingbot/blob/master/README.md",
+      "git_blob_sha": "20dadd44364c91a25448716ebb92e142797794da",
+      "headings": [
+        "## Quick Links",
+        "## Getting Started",
+        "### Condor (AI harness)",
+        "### `hbot` CLI",
+        "# Clone the repository",
+        "# Create the conda environment, build extensions, and expose the `hbot` CLI",
+        "# Activate the environment",
+        "### Docker",
+        "### Interactive Client (TUI)",
+        "## Strategies",
+        "## Exchange Connectors",
+        "### Connector Types",
+        "### Exchange Sponsors",
+        "### Other Exchange Connectors",
+        "## Other Hummingbot Repos",
+        "## Getting Help",
+        "## Contributions",
+        "## Legal"
+      ]
+    },
+    "issues_http": 200,
+    "issues": [
+      {
+        "url": "https://github.com/hummingbot/hummingbot/issues/8586",
+        "title": "MQTT - The bridge connects after `mqtt stop` during startup",
+        "state": "open",
+        "created_at": "2026-11-20T17:03:49Z"
+      },
+      {
+        "url": "https://github.com/hummingbot/hummingbot/issues/8576",
+        "title": "Hyperliquid perpetual: transient HTTP 5xx/429 errors mark live orders as lost, strategies re-place them (duplicates)",
+        "state": "open",
+        "created_at": "2026-11-18T02:27:02Z"
+      }
+    ]
+  },
+  {
+    "repo": "jesse-ai/jesse",
+    "accessed_utc": "2026-11-25T04:14:14.447248+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/jesse-ai/jesse",
+      "description": "An advanced trading bot written in Python",
+      "archived": false,
+      "pushed_at": "2026-11-23T14:19:11Z",
+      "updated_at": "2026-11-25T03:03:58Z",
+      "default_branch": "master",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "5b97b13ae6e40168b7f119b6c75d965e81add92c",
+        "date": "2026-11-23T13:39:51Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/jesse-ai/jesse/blob/master/README.md",
+      "git_blob_sha": "0febd17ca80af10455646cfd2617737a37b02bcf",
+      "headings": [
+        "# Jesse",
+        "## What is Jesse?",
+        "## Why Jesse?",
+        "## Key Features",
+        "## Dive Deeper into Jesse's Capabilities",
+        "### Stupid Simple",
+        "### Backtest",
+        "### Interactive Trading Charts",
+        "### Live/Paper Trading",
+        "### Benchmark",
+        "### Jesse MCP: Your AI Assistant, Connected to Jesse",
+        "### Rule Significance Testing",
+        "### Monte Carlo Analysis",
+        "### Machine Learning",
+        "# Gather phase \u2014 inside your strategy",
+        "# Deploy phase \u2014 gate entries with model confidence",
+        "### Research API and Jupyter Notebooks",
+        "### Rust-Powered Performance",
+        "### Reinforcement Learning \u2014 Coming Soon",
+        "### Optimize Your Strategies",
+        "## Getting Started",
+        "## Resources",
+        "## What's next?",
+        "## Disclaimer"
+      ]
+    },
+    "issues_http": 200,
+    "issues": [
+      {
+        "url": "https://github.com/jesse-ai/jesse/issues/663",
+        "title": "[Bug] Optimization Candidate Info popup gets cut off and has no scrollbar",
+        "state": "open",
+        "created_at": "2026-11-24T00:04:27Z"
+      },
+      {
+        "url": "https://github.com/jesse-ai/jesse/issues/643",
+        "title": "Phantom PnL and trade count in a new live session (persistency on)",
+        "state": "closed",
+        "created_at": "2026-11-05T18:19:25Z"
+      }
+    ]
+  },
+  {
+    "repo": "Drakkar-Software/OctoBot",
+    "accessed_utc": "2026-11-25T04:14:16.729395+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/Drakkar-Software/OctoBot",
+      "description": "Free open source crypto trading bot to automate AI, Grid, DCA and TradingView strategies on Binance, Hyperliquid and 15+ exchanges, with a simple interface.",
+      "archived": false,
+      "pushed_at": "2026-11-24T15:44:06Z",
+      "updated_at": "2026-11-25T04:01:33Z",
+      "default_branch": "master",
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "fe09c9585519a41b420329ebe71bf867c64e8f32",
+        "date": "2026-11-19T15:42:00Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/Drakkar-Software/OctoBot/blob/master/README.md",
+      "git_blob_sha": "406f44d0d6805507a9dd43c073a0d621f7a659d4",
+      "headings": [
+        "# OctoBot - Free Open Source Crypto Trading Bot",
+        "## The new OctoBot beta is live",
+        "## Open source crypto trading bot with a visual user interface",
+        "### Control OctoBot from desktop, mobile, web, or Telegram",
+        "#### OctoBot beta: node mode and the new interface",
+        "#### Web interface and Telegram",
+        "### Live and backtesting trading strategies automation",
+        "### Your trading bot for Binance, Coinbase, Hyperliquid and 15+ other exchanges",
+        "## Automate your trading strategies",
+        "### AI trading bot",
+        "### Grid trading bot",
+        "### DCA trading bot",
+        "### TradingView trading bot",
+        "### Crypto basket trading bot",
+        "### Market Making trading bot",
+        "### Institutional custom strategies",
+        "## Installing OctoBot, open source crypto trading bot",
+        "### Deploying OctoBot with one click on DigitalOcean",
+        "### Using the OctoBot Executable",
+        "### Using the OctoBot Docker image",
+        "### Installing OctoBot using Python",
+        "### Minimum hardware requirements",
+        "## How to contribute to OctoBot",
+        "### Contribute to OctoBot from a local IDE",
+        "### Contribute to OctoBot from Ona (formerly Gitpod)"
+      ]
+    },
+    "issues_http": 200,
+    "issues": [
+      {
+        "url": "https://github.com/Drakkar-Software/OctoBot/issues/3772",
+        "title": "[dev] automation_stop user action completes but the index automation stays RUNNING",
+        "state": "open",
+        "created_at": "2026-11-01T04:24:45Z"
+      },
+      {
+        "url": "https://github.com/Drakkar-Software/OctoBot/issues/3771",
+        "title": "[dev] Copy automation: copy bot ignores a trading_signal sent directly to it",
+        "state": "open",
+        "created_at": "2026-10-30T10:16:01Z"
+      }
+    ]
+  },
+  {
+    "repo": "mementum/backtrader",
+    "accessed_utc": "2026-11-25T04:14:16.880845+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/mementum/backtrader",
+      "description": "Python Backtesting library for trading strategies",
+      "archived": false,
+      "pushed_at": "2024-08-19T17:47:36Z",
+      "updated_at": "2026-11-25T03:15:21Z",
+      "default_branch": "master",
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "b853d7c90b6721476eb5a5ea3135224e33db1f14",
+        "date": "2023-04-19T14:13:08Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/mementum/backtrader/blob/master/README.rst",
+      "git_blob_sha": "56c664e45365dbd7e87b664d38a3c90e4831735d",
+      "headings": []
+    },
+    "issues_http": 200,
+    "issues": []
+  },
+  {
+    "repo": "polakowo/vectorbt",
+    "accessed_utc": "2026-11-25T04:14:16.888075+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/polakowo/vectorbt",
+      "description": "The research engine that gives you an unfair advantage. Run thousands of trading ideas before others finish one.",
+      "archived": false,
+      "pushed_at": "2026-11-11T17:29:25Z",
+      "updated_at": "2026-11-25T04:00:46Z",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "9ac1b697166b00911def494cf95937274218aa54",
+        "date": "2026-11-11T17:29:20Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/polakowo/vectorbt/blob/master/README.md",
+      "git_blob_sha": "c104129f78d91e467a4d64da9b0cd9c8a5960dda",
+      "headings": [
+        "## Features",
+        "## Installation",
+        "## Examples",
+        "### Invest $100 in Bitcoin since 2014",
+        "### Trade a dual-SMA crossover strategy",
+        "### Generate 1,000 random strategies",
+        "### Test 10,000 dual-SMA window combinations",
+        "### Inspect any strategy configuration",
+        "### Plot any strategy configuration",
+        "### Animate Bollinger Bands across multiple symbols",
+        "## Example apps",
+        "### [Candlestick Patterns](https://github.com/polakowo/vectorbt/blob/master/apps/candlestick-patterns/)",
+        "## Links",
+        "## License",
+        "## Contributors",
+        "## Star History",
+        "## Disclaimer"
+      ]
+    },
+    "issues_http": 200,
+    "issues": [
+      {
+        "url": "https://github.com/polakowo/vectorbt/issues/896",
+        "title": "sharpe_ratio returns +inf for all-zero returns and ~3e16 for constant returns",
+        "state": "closed",
+        "created_at": "2026-10-29T21:50:34Z"
+      },
+      {
+        "url": "https://github.com/polakowo/vectorbt/issues/799",
+        "title": "Why Max Gross Exposure higher than 100% in 'shortonly' mode?",
+        "state": "closed",
+        "created_at": "2025-06-25T11:13:10Z"
+      }
+    ]
+  },
+  {
+    "repo": "Pouryazv/nobitex-moving-average-trader",
+    "accessed_utc": "2026-11-25T04:14:18.486894+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/Pouryazv/nobitex-moving-average-trader",
+      "description": "Nobitex SMA Trading Bot \u2013 An automated trading bot that uses the Moving Average strategy to execute buy/sell orders based on market fluctuations. Designed to take advantage of Nobitex's high volatility for efficient trading and risk management.",
+      "archived": false,
+      "pushed_at": "2025-01-01T15:34:04Z",
+      "updated_at": "2026-05-03T05:13:16Z",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "40371401b4ebf5ecc6d7194db9649f7fbccfd5b2",
+        "date": "2025-01-01T15:34:04Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/Pouryazv/nobitex-moving-average-trader/blob/main/README.md",
+      "git_blob_sha": "28fa4eb26e750f21c1c238471b41467d0c7ed580",
+      "headings": [
+        "# \ud83d\udcc8 Nobitex SMA Trading Bot  ",
+        "## \ud83d\udee0\ufe0f Overview  ",
+        "## \ud83d\ude80 Features  ",
+        "## \ud83d\udee0\ufe0f Installation and Setup  ",
+        "### 1. Clone the Repository  ",
+        "### 2. Set Up Environment Variables  ",
+        "### 3. Install Dependencies  ",
+        "### 4. Build the Project  ",
+        "### 5. Run the Bot  ",
+        "## \u2699\ufe0f Configuration  ",
+        "## \ud83d\udcca How It Works  ",
+        "## \u26a0\ufe0f Disclaimer  ",
+        "## \ud83d\udc1b Troubleshooting  ",
+        "## \ud83d\udd27 Future Improvements  ",
+        "## \ud83d\udc68\u200d\ud83d\udcbb Contributing  ",
+        "## \ud83d\udcdd License  "
+      ]
+    },
+    "issues_http": 200,
+    "issues": []
+  },
+  {
+    "repo": "alimogh/BBK-Nobitex-Robot",
+    "accessed_utc": "2026-11-25T04:14:18.514091+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/alimogh/BBK-Nobitex-Robot",
+      "description": "Collection of nobitex exchange api commands in a gui using python tkinter along with a trading strategy to trade on exchange automatically based on six support /resistance levels given to robot",
+      "archived": false,
+      "pushed_at": "2023-01-16T03:58:34Z",
+      "updated_at": "2024-04-20T00:35:17Z",
+      "default_branch": "main",
+      "license": null
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "d317412310e991bc90c1fa8df4ea5cc0f51531de",
+        "date": "2023-01-16T03:58:34Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/alimogh/BBK-Nobitex-Robot/blob/main/README.md",
+      "git_blob_sha": "1a351a49f8c19799b23d830746a885776bbd75b2",
+      "headings": [
+        "# BBK-Nobitex-Robot"
+      ]
+    },
+    "issues_http": 200,
+    "issues": []
+  },
+  {
+    "repo": "dwin-gharibi/ramzinex-mcp",
+    "accessed_utc": "2026-11-25T04:14:18.601588+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/dwin-gharibi/ramzinex-mcp",
+      "description": "Self-hostable Model Context Protocol (MCP) server for the Ramzinex (\u0631\u0645\u0632\u06cc\u0646\u06a9\u0633) cryptocurrency exchange. Provides secure access to market data, balances, orders, withdrawals, and API-key management with configurable safety guardrails, multi-account support, and Docker/Kubernetes deployment assets.",
+      "archived": false,
+      "pushed_at": "2026-06-20T08:55:20Z",
+      "updated_at": "2026-06-20T08:58:57Z",
+      "default_branch": "main",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "4af68477eae2ebcd88b1f57ea22e734693c4e412",
+        "date": "2026-06-20T08:54:01Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/dwin-gharibi/ramzinex-mcp/blob/main/README.md",
+      "git_blob_sha": "c314347171855aee0d70d098bb55cf4ae948908f",
+      "headings": [
+        "## What is this?",
+        "## Public vs. private \u2014 and the trading guardrail",
+        "## Install",
+        "# or, for development:",
+        "## Quick start",
+        "# Option A: pre-issued bearer token",
+        "# Option B: api_key + secret login flow (api_token wins if both are set)",
+        "# x-api-key is sent by default; the token rides in the Authorization2 header.",
+        "# export RAMZINEX_SEND_X_API_KEY=false      # opt out of the x-api-key header",
+        "# export RAMZINEX_AUTH_HEADER_NAME=Authorization  # legacy header-name mode",
+        "# Opt in to the gated tools (all default false):",
+        "## Configuration (multi-account / multi-instance)",
+        "### Shorthand (single default instance)",
+        "### Nested (named instances)",
+        "## Control flags & safety",
+        "### Authentication: `api_token` vs `api_key` + `secret`",
+        "## Use with an MCP client",
+        "## Tools",
+        "### Market data \u2014 public, no auth",
+        "### Auth & access management \u2014 private",
+        "### Orders \u2014 private",
+        "### Funds \u2014 private",
+        "### Wallet (deposits / withdrawals / addresses) \u2014 private",
+        "### Rewards & commissions \u2014 private",
+        "### Meta"
+      ]
+    },
+    "issues_http": 200,
+    "issues": []
+  },
+  {
+    "repo": "moazeniz/wallex-ai-trader",
+    "accessed_utc": "2026-11-25T04:14:20.342685+00:00",
+    "metadata_http": 200,
+    "metadata": {
+      "html_url": "https://github.com/moazeniz/wallex-ai-trader",
+      "description": "Wallex AI Trader: AI-led, risk-bounded algorithmic trading for the Wallex exchange (TMN markets), with paper/shadow arena, live engine with kill switch, MCP market data and a password-protected dashboard on Liara.",
+      "archived": false,
+      "pushed_at": "2026-11-16T04:18:49Z",
+      "updated_at": "2026-10-23T14:13:00Z",
+      "default_branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "commit_http": 200,
+    "commit": [
+      {
+        "sha": "6a3c7b94bc47945cc2b2bf6dc77d3d6a731c2233",
+        "date": "2026-10-23T14:12:55Z"
+      }
+    ],
+    "readme_http": 200,
+    "readme": {
+      "html_url": "https://github.com/moazeniz/wallex-ai-trader/blob/main/README.md",
+      "git_blob_sha": "fb9edaf2eef0bcd3b78854fa51ec7bc5a421e76c",
+      "headings": [
+        "# Wallex AI Trader",
+        "## Tests & benchmarks \u00b7 \u062a\u0633\u062a\u200c\u0647\u0627 \u0648 \u0628\u0646\u0686\u0645\u0627\u0631\u06a9",
+        "## How we use Wallex MCP/API",
+        "## Contents",
+        "## Architecture",
+        "## Features",
+        "## Quick start",
+        "# The production image locally: dashboard only, engine OFF, DISARMED",
+        "# Paper arena in the foreground (Ctrl-C to stop), BoxAPI only: use a config copy whose AI accounts have",
+        "# \"model\": \"openai/gpt-6.1-sol\" (the shipped config's claude-* accounts need an Anthropic key file as ANTHROPIC_ENV)",
+        "## Configuration",
+        "## Tests",
+        "## Deployment",
+        "## Safety (read before going live)",
+        "## Project structure",
+        "## Security notes",
+        "## Team",
+        "## Delivery and operations"
+      ]
+    },
+    "issues_http": 200,
+    "issues": []
+  }
+]

@@ -1,0 +1,609 @@
+{
+  "evaluation_utc": [
+    "2023-07-18T20:30:00+00:00",
+    "2025-06-17T20:30:00+00:00"
+  ],
+  "acceptance": {
+    "At least 100 completed trades": false,
+    "Positive net return at baseline and 2x costs": false,
+    "Positive fixed final-25% holdout return": false,
+    "Profit factor greater than 1.30": false,
+    "Maximum drawdown no worse than 25%": true,
+    "Calmar better than equal-weight buy and hold": false,
+    "Robust to +/-20% perturbations": false,
+    "Combined drawdown no worse than worst pure single trading layer": true
+  },
+  "validated": false,
+  "strategy": {
+    "enabled": false,
+    "trend_enabled": true,
+    "pullback_enabled": true,
+    "btc_filter": true,
+    "breadth_enabled": false,
+    "breadth_min": 0.5,
+    "ema_period": 200,
+    "atr_period": 20,
+    "donchian_entry": 55,
+    "donchian_exit": 20,
+    "trend_atr": 3.0,
+    "pullback_atr": 2.0,
+    "rsi_period": 3,
+    "rsi_entry": 15.0,
+    "rsi_exit": 60.0,
+    "freshness_low": 20,
+    "pullback_high": 5,
+    "max_hold_days": 7
+  },
+  "runtime_strategy": {
+    "enabled": false,
+    "trend_enabled": true,
+    "pullback_enabled": true,
+    "btc_filter": true,
+    "breadth_enabled": false,
+    "breadth_min": 0.5,
+    "ema_period": 200,
+    "atr_period": 20,
+    "donchian_entry": 55,
+    "donchian_exit": 20,
+    "trend_atr": 3.0,
+    "pullback_atr": 2.0,
+    "rsi_period": 3,
+    "rsi_entry": 15.0,
+    "rsi_exit": 60.0,
+    "freshness_low": 20,
+    "pullback_high": 5,
+    "max_hold_days": 7
+  },
+  "risk": {
+    "trend_risk": "0.0075",
+    "pullback_risk": "0.005",
+    "open_risk": "0.03",
+    "asset_cap": "0.25",
+    "max_positions": 4,
+    "trend_budget": "0.5",
+    "pullback_budget": "0.3",
+    "reserve": "0.2",
+    "half_dd": "0.05",
+    "entry_dd": "0.1",
+    "halt_dd": "0.15",
+    "daily_loss": "0.02",
+    "loss_count": 3,
+    "cooldown_days": 3,
+    "correlation_days": 60,
+    "correlation_threshold": 0.85,
+    "correlation_scale": "0.5",
+    "historical_half_spread": "0.001",
+    "historical_volume_fraction": "0.001"
+  },
+  "legacy_strategy": {
+    "name": "trend",
+    "symbol": "BTC/USDT",
+    "timeframe": "4h",
+    "fast": 20,
+    "slow": 50,
+    "trend": 200,
+    "atr_period": 14,
+    "atr_multiplier": 2.5,
+    "min_atr_pct": 0.004,
+    "rsi_period": 14,
+    "rsi_entry": 28.0,
+    "rsi_exit": 55.0
+  },
+  "base_costs": {
+    "fee": "0.0025",
+    "slippage": "0.0015",
+    "capital": "100"
+  },
+  "full": {
+    "total_return": 0.0,
+    "cagr": 0.0,
+    "max_drawdown": 0.0,
+    "win_rate": 0.0,
+    "profit_factor": null,
+    "sharpe": null,
+    "sortino": null,
+    "trades": 0,
+    "average_win": 0.0,
+    "average_loss": 0.0,
+    "calmar": null,
+    "exposure_fraction": 0.0,
+    "longest_flat_days": 700,
+    "worst_month": 0.0,
+    "max_consecutive_losses": 0,
+    "drawdown_duration_days": 0,
+    "by_layer": {
+      "DailyDonchianTrend": {
+        "trades": 0,
+        "win_rate": null
+      },
+      "TrendPullback": {
+        "trades": 0,
+        "win_rate": null
+      }
+    },
+    "by_asset": {
+      "BTC/USDT": 0,
+      "DOGE/USDT": 0,
+      "ETH/USDT": 0,
+      "SOL/USDT": 0,
+      "XRP/USDT": 0
+    },
+    "unliquidated_at_end": [],
+    "halt_latched": false
+  },
+  "holdout": {
+    "total_return": 0.0,
+    "cagr": 0.0,
+    "max_drawdown": 0.0,
+    "win_rate": 0.0,
+    "profit_factor": null,
+    "sharpe": null,
+    "sortino": null,
+    "trades": 0,
+    "average_win": 0.0,
+    "average_loss": 0.0,
+    "calmar": null,
+    "exposure_fraction": 0.0,
+    "longest_flat_days": 175,
+    "worst_month": 0.0,
+    "max_consecutive_losses": 0,
+    "drawdown_duration_days": 0,
+    "by_layer": {
+      "DailyDonchianTrend": {
+        "trades": 0,
+        "win_rate": null
+      },
+      "TrendPullback": {
+        "trades": 0,
+        "win_rate": null
+      }
+    },
+    "by_asset": {
+      "BTC/USDT": 0,
+      "DOGE/USDT": 0,
+      "ETH/USDT": 0,
+      "SOL/USDT": 0,
+      "XRP/USDT": 0
+    },
+    "unliquidated_at_end": [],
+    "halt_latched": false
+  },
+  "holdout_start": "2024-12-24T20:30:00+00:00",
+  "holdout_days": 175,
+  "ablation": {
+    "L3 Cash only": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {},
+      "by_asset": {}
+    },
+    "L1 Trend only": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {
+        "DailyDonchianTrend": {
+          "trades": 0,
+          "win_rate": null
+        },
+        "TrendPullback": {
+          "trades": 0,
+          "win_rate": null
+        }
+      },
+      "by_asset": {
+        "BTC/USDT": 0,
+        "DOGE/USDT": 0,
+        "ETH/USDT": 0,
+        "SOL/USDT": 0,
+        "XRP/USDT": 0
+      },
+      "unliquidated_at_end": [],
+      "halt_latched": false
+    },
+    "L2 Pullback only": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {
+        "DailyDonchianTrend": {
+          "trades": 0,
+          "win_rate": null
+        },
+        "TrendPullback": {
+          "trades": 0,
+          "win_rate": null
+        }
+      },
+      "by_asset": {
+        "BTC/USDT": 0,
+        "DOGE/USDT": 0,
+        "ETH/USDT": 0,
+        "SOL/USDT": 0,
+        "XRP/USDT": 0
+      },
+      "unliquidated_at_end": [],
+      "halt_latched": false
+    },
+    "L1+L2 (no BTC gate)": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {
+        "DailyDonchianTrend": {
+          "trades": 0,
+          "win_rate": null
+        },
+        "TrendPullback": {
+          "trades": 0,
+          "win_rate": null
+        }
+      },
+      "by_asset": {
+        "BTC/USDT": 0,
+        "DOGE/USDT": 0,
+        "ETH/USDT": 0,
+        "SOL/USDT": 0,
+        "XRP/USDT": 0
+      },
+      "unliquidated_at_end": [],
+      "halt_latched": false
+    },
+    "Full (L1+L2+BTC)": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {
+        "DailyDonchianTrend": {
+          "trades": 0,
+          "win_rate": null
+        },
+        "TrendPullback": {
+          "trades": 0,
+          "win_rate": null
+        }
+      },
+      "by_asset": {
+        "BTC/USDT": 0,
+        "DOGE/USDT": 0,
+        "ETH/USDT": 0,
+        "SOL/USDT": 0,
+        "XRP/USDT": 0
+      },
+      "unliquidated_at_end": [],
+      "halt_latched": false
+    },
+    "Full + breadth": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {
+        "DailyDonchianTrend": {
+          "trades": 0,
+          "win_rate": null
+        },
+        "TrendPullback": {
+          "trades": 0,
+          "win_rate": null
+        }
+      },
+      "by_asset": {
+        "BTC/USDT": 0,
+        "DOGE/USDT": 0,
+        "ETH/USDT": 0,
+        "SOL/USDT": 0,
+        "XRP/USDT": 0
+      },
+      "unliquidated_at_end": [],
+      "halt_latched": false
+    }
+  },
+  "benchmarks": {
+    "Equal weight B&H": {
+      "total_return": 2.180342694084473,
+      "cagr": 0.8288736929596836,
+      "max_drawdown": -0.544769718307578,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": 1.2131393142953404,
+      "sortino": 1.8272800907493973,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": 1.5215120538173892,
+      "exposure_fraction": 1.0,
+      "longest_flat_days": 0,
+      "worst_month": -0.3286582968582754,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 223,
+      "by_layer": {},
+      "by_asset": {}
+    },
+    "BTC B&H": {
+      "total_return": 2.460099342787027,
+      "cagr": 0.9111233271075994,
+      "max_drawdown": -0.27982064090480685,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": 1.6384404691474326,
+      "sortino": 2.564753124105497,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": 3.25609763511891,
+      "exposure_fraction": 1.0,
+      "longest_flat_days": 0,
+      "worst_month": -0.178848736273999,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 237,
+      "by_layer": {},
+      "by_asset": {}
+    },
+    "Legacy 4h BTC trend": {
+      "total_return": 0.038833129915577747,
+      "cagr": 0.02007794450372495,
+      "max_drawdown": -0.0409044428288442,
+      "win_rate": 0.47619047619047616,
+      "profit_factor": 1.6180777368380939,
+      "sharpe": 0.5916334335346572,
+      "sortino": 1.0958499589024835,
+      "trades": 21,
+      "average_win": 1.0166200661033904,
+      "average_loss": -0.5711716063160118,
+      "calmar": 0.4908499692255135,
+      "exposure_fraction": 0.12857142857142856,
+      "longest_flat_days": 128,
+      "worst_month": -0.011141548019495406,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 389,
+      "by_layer": {},
+      "by_asset": {}
+    }
+  },
+  "layer_return_correlation": null,
+  "combined_contribution_correlation": null,
+  "stress": {
+    "2": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {
+        "DailyDonchianTrend": {
+          "trades": 0,
+          "win_rate": null
+        },
+        "TrendPullback": {
+          "trades": 0,
+          "win_rate": null
+        }
+      },
+      "by_asset": {
+        "BTC/USDT": 0,
+        "DOGE/USDT": 0,
+        "ETH/USDT": 0,
+        "SOL/USDT": 0,
+        "XRP/USDT": 0
+      },
+      "unliquidated_at_end": [],
+      "halt_latched": false
+    },
+    "3": {
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "trades": 0,
+      "average_win": 0.0,
+      "average_loss": 0.0,
+      "calmar": null,
+      "exposure_fraction": 0.0,
+      "longest_flat_days": 700,
+      "worst_month": 0.0,
+      "max_consecutive_losses": 0,
+      "drawdown_duration_days": 0,
+      "by_layer": {
+        "DailyDonchianTrend": {
+          "trades": 0,
+          "win_rate": null
+        },
+        "TrendPullback": {
+          "trades": 0,
+          "win_rate": null
+        }
+      },
+      "by_asset": {
+        "BTC/USDT": 0,
+        "DOGE/USDT": 0,
+        "ETH/USDT": 0,
+        "SOL/USDT": 0,
+        "XRP/USDT": 0
+      },
+      "unliquidated_at_end": [],
+      "halt_latched": false
+    }
+  },
+  "walk_forward": [
+    {
+      "test_start": "2024-04-05T20:30:00+00:00",
+      "test_end": "2024-07-01T20:30:00+00:00",
+      "entry_window": 55,
+      "atr": 3.0,
+      "return": 0.0,
+      "drawdown": 0.0,
+      "trades": 0
+    },
+    {
+      "test_start": "2024-07-01T20:30:00+00:00",
+      "test_end": "2024-09-27T20:30:00+00:00",
+      "entry_window": 55,
+      "atr": 3.0,
+      "return": 0.0,
+      "drawdown": 0.0,
+      "trades": 0
+    },
+    {
+      "test_start": "2024-09-27T20:30:00+00:00",
+      "test_end": "2024-12-24T20:30:00+00:00",
+      "entry_window": 55,
+      "atr": 3.0,
+      "return": 0.0,
+      "drawdown": 0.0,
+      "trades": 0
+    }
+  ],
+  "input_files": {
+    "BTC/USDT": {
+      "file": "BTC-USDT.csv",
+      "sha256": "c1976761b09fc7235bbd862baf2982b95785019d041c030d474e981f032abd13",
+      "rows": 1000
+    },
+    "DOGE/USDT": {
+      "file": "DOGE-USDT.csv",
+      "sha256": "be767b67aadb36f8a17caeed5c1b557378e3001b93d3412bb94466e4c4da68bb",
+      "rows": 1000
+    },
+    "ETH/USDT": {
+      "file": "ETH-USDT.csv",
+      "sha256": "c9d4b7c3a5f265013c374089e09804283a095ac6e030cd7d27c6046e7891bc0d",
+      "rows": 1000
+    },
+    "SOL/USDT": {
+      "file": "SOL-USDT.csv",
+      "sha256": "1ef3ebc622d992f3e04955fb1569fa02e4456cbaae8afa2ed0fbb677ce01cfc1",
+      "rows": 1000
+    },
+    "XRP/USDT": {
+      "file": "XRP-USDT.csv",
+      "sha256": "21dc54df22c9b1c0b072182fd7f05bc89cb34aae198f3ca4803291a438a9d8ec",
+      "rows": 1000
+    },
+    "BTC/USDT_4h": {
+      "file": "BTC-USDT_4h.csv",
+      "sha256": "9a3303ded14011555fb5c1ffb499a9c4be9cb56da91a4240b8386f48346e50b8",
+      "rows": 5879
+    }
+  },
+  "coverage": {
+    "policy": "longest",
+    "first": "2022-09-21T20:30:00+00:00",
+    "last": "2025-06-16T20:30:00+00:00",
+    "used_per_asset": 1000,
+    "excluded_by_asset": {
+      "BTC/USDT": 1951,
+      "DOGE/USDT": 1141,
+      "ETH/USDT": 1750,
+      "SOL/USDT": 557,
+      "XRP/USDT": 1751
+    },
+    "common_segment_lengths": [
+      1000,
+      503
+    ]
+  },
+  "zero_volume_inputs": {
+    "BTC/USDT": 1000,
+    "DOGE/USDT": 1000,
+    "ETH/USDT": 1000,
+    "SOL/USDT": 1000,
+    "XRP/USDT": 1000
+  },
+  "rejected": {
+    "entry modeled depth": 232
+  },
+  "blocked_days": {}
+}

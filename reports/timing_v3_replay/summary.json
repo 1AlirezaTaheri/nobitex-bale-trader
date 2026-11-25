@@ -1,0 +1,3960 @@
+{
+  "protocol_sha256": "6f26ccabb14fa92b477a94b873f3309a0eb9b30a3d873118def5fa81ec3489af",
+  "input_manifest_sha256": "72a437a5eba358c2e4069c31c2248405bca15e91422f397e36158b5be1e684ad",
+  "fee_observation": {
+    "endpoint": "https://apiv2.nobitex.ir/v2/options",
+    "observed_date_utc": "2026-11-20",
+    "method": "public GET response; no credentials",
+    "taker_fees_tether_percent": [
+      "0.13",
+      "0.12",
+      "0.11",
+      "0.1",
+      "0.1",
+      "0.095",
+      "0.09"
+    ],
+    "maximum_fee": "0.0013"
+  },
+  "input_source": "local cached public Nobitex candles",
+  "costs_per_side": {
+    "fee": "0.0025",
+    "slippage": "0.0015",
+    "stress_multipliers": [
+      2,
+      3
+    ]
+  },
+  "initial_equity_usdt": 100.0,
+  "coverage": {
+    "assets": {
+      "BTC/USDT": {
+        "count": 2951,
+        "first": "2018-10-08T20:30:00+00:00",
+        "last": "2026-11-18T20:30:00+00:00",
+        "zero_volume_rows": 2444,
+        "unmatched_timestamps": 201
+      },
+      "ETH/USDT": {
+        "count": 2750,
+        "first": "2019-04-25T19:30:00+00:00",
+        "last": "2026-11-18T20:30:00+00:00",
+        "zero_volume_rows": 2245,
+        "unmatched_timestamps": 0
+      }
+    },
+    "raw_asset_segments": {
+      "BTC/USDT": [
+        {
+          "segment": 0,
+          "start": "2018-10-08T20:30:00+00:00",
+          "end": "2019-03-21T20:30:00+00:00",
+          "count": 165,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 0,
+          "contiguous_common_pairs": 0,
+          "interpretation": "Partial single-asset coverage; unmatched timestamps are excluded from the common calendar."
+        },
+        {
+          "segment": 1,
+          "start": "2019-03-22T19:30:00+00:00",
+          "end": "2019-09-20T19:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 149,
+          "contiguous_common_pairs": 148,
+          "interpretation": "Partial single-asset coverage; unmatched timestamps are excluded from the common calendar."
+        },
+        {
+          "segment": 2,
+          "start": "2019-09-21T20:30:00+00:00",
+          "end": "2020-03-20T20:30:00+00:00",
+          "count": 182,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 182,
+          "contiguous_common_pairs": 181,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 3,
+          "start": "2020-03-21T19:30:00+00:00",
+          "end": "2020-09-19T19:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 4,
+          "start": "2020-09-20T20:30:00+00:00",
+          "end": "2021-03-21T20:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 5,
+          "start": "2021-03-22T19:30:00+00:00",
+          "end": "2021-09-20T19:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 6,
+          "start": "2021-09-21T20:30:00+00:00",
+          "end": "2022-03-21T20:30:00+00:00",
+          "count": 182,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 182,
+          "contiguous_common_pairs": 181,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 7,
+          "start": "2022-03-22T19:30:00+00:00",
+          "end": "2022-09-20T19:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 8,
+          "start": "2022-09-21T20:30:00+00:00",
+          "end": "2025-06-16T20:30:00+00:00",
+          "count": 1000,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 1000,
+          "contiguous_common_pairs": 999,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 9,
+          "start": "2025-06-30T20:30:00+00:00",
+          "end": "2026-11-18T20:30:00+00:00",
+          "count": 507,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 505,
+          "contiguous_common_pairs": 504,
+          "interpretation": "Partial single-asset coverage; unmatched timestamps are excluded from the common calendar."
+        }
+      ],
+      "ETH/USDT": [
+        {
+          "segment": 0,
+          "start": "2019-04-25T19:30:00+00:00",
+          "end": "2019-09-20T19:30:00+00:00",
+          "count": 149,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 149,
+          "contiguous_common_pairs": 148,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 1,
+          "start": "2019-09-21T20:30:00+00:00",
+          "end": "2020-03-20T20:30:00+00:00",
+          "count": 182,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 182,
+          "contiguous_common_pairs": 181,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 2,
+          "start": "2020-03-21T19:30:00+00:00",
+          "end": "2020-09-19T19:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 3,
+          "start": "2020-09-20T20:30:00+00:00",
+          "end": "2021-03-21T20:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 4,
+          "start": "2021-03-22T19:30:00+00:00",
+          "end": "2021-09-20T19:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 5,
+          "start": "2021-09-21T20:30:00+00:00",
+          "end": "2022-03-21T20:30:00+00:00",
+          "count": 182,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 182,
+          "contiguous_common_pairs": 181,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 6,
+          "start": "2022-03-22T19:30:00+00:00",
+          "end": "2022-09-20T19:30:00+00:00",
+          "count": 183,
+          "grid_offset_seconds_mod_86400": 70200,
+          "timestamps_on_other_asset_grid": 183,
+          "contiguous_common_pairs": 182,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 7,
+          "start": "2022-09-21T20:30:00+00:00",
+          "end": "2025-06-16T20:30:00+00:00",
+          "count": 1000,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 1000,
+          "contiguous_common_pairs": 999,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        },
+        {
+          "segment": 8,
+          "start": "2025-07-02T20:30:00+00:00",
+          "end": "2026-11-18T20:30:00+00:00",
+          "count": 505,
+          "grid_offset_seconds_mod_86400": 73800,
+          "timestamps_on_other_asset_grid": 505,
+          "contiguous_common_pairs": 504,
+          "interpretation": "Fully aligned with counterpart; see common_segments."
+        }
+      ]
+    },
+    "common_timestamp_count": 2750,
+    "common_segments": [
+      {
+        "segment": 0,
+        "start": "2019-04-25T19:30:00+00:00",
+        "end": "2019-09-20T19:30:00+00:00",
+        "count": 149,
+        "eligible_after_300_warmup": false,
+        "eligible_observations": 0,
+        "grid_offset_seconds_mod_86400": 70200
+      },
+      {
+        "segment": 1,
+        "start": "2019-09-21T20:30:00+00:00",
+        "end": "2020-03-20T20:30:00+00:00",
+        "count": 182,
+        "eligible_after_300_warmup": false,
+        "eligible_observations": 0,
+        "grid_offset_seconds_mod_86400": 73800
+      },
+      {
+        "segment": 2,
+        "start": "2020-03-21T19:30:00+00:00",
+        "end": "2020-09-19T19:30:00+00:00",
+        "count": 183,
+        "eligible_after_300_warmup": false,
+        "eligible_observations": 0,
+        "grid_offset_seconds_mod_86400": 70200
+      },
+      {
+        "segment": 3,
+        "start": "2020-09-20T20:30:00+00:00",
+        "end": "2021-03-21T20:30:00+00:00",
+        "count": 183,
+        "eligible_after_300_warmup": false,
+        "eligible_observations": 0,
+        "grid_offset_seconds_mod_86400": 73800
+      },
+      {
+        "segment": 4,
+        "start": "2021-03-22T19:30:00+00:00",
+        "end": "2021-09-20T19:30:00+00:00",
+        "count": 183,
+        "eligible_after_300_warmup": false,
+        "eligible_observations": 0,
+        "grid_offset_seconds_mod_86400": 70200
+      },
+      {
+        "segment": 5,
+        "start": "2021-09-21T20:30:00+00:00",
+        "end": "2022-03-21T20:30:00+00:00",
+        "count": 182,
+        "eligible_after_300_warmup": false,
+        "eligible_observations": 0,
+        "grid_offset_seconds_mod_86400": 73800
+      },
+      {
+        "segment": 6,
+        "start": "2022-03-22T19:30:00+00:00",
+        "end": "2022-09-20T19:30:00+00:00",
+        "count": 183,
+        "eligible_after_300_warmup": false,
+        "eligible_observations": 0,
+        "grid_offset_seconds_mod_86400": 70200
+      },
+      {
+        "segment": 7,
+        "start": "2022-09-21T20:30:00+00:00",
+        "end": "2025-06-16T20:30:00+00:00",
+        "count": 1000,
+        "eligible_after_300_warmup": true,
+        "eligible_observations": 700,
+        "grid_offset_seconds_mod_86400": 73800
+      },
+      {
+        "segment": 8,
+        "start": "2025-07-02T20:30:00+00:00",
+        "end": "2026-11-18T20:30:00+00:00",
+        "count": 505,
+        "eligible_after_300_warmup": true,
+        "eligible_observations": 205,
+        "grid_offset_seconds_mod_86400": 73800
+      }
+    ],
+    "eligible_segment_count": 2,
+    "excluded_segment_count": 7,
+    "excluded_reason": "common segments of 300 candles or fewer cannot supply 300 warmup candles plus an execution candle; no gap is bridged",
+    "zero_volume_interpretation": "Raw UDF v=0 matched cache on sampled older BTC/ETH rows; parser regression added; strategy is price-only."
+  },
+  "evaluation": {
+    "first_trade_open_utc": "2023-07-18T20:30:00+00:00",
+    "last_close_utc": "2026-11-19T20:30:00+00:00",
+    "full_observations": 905,
+    "holdout_observations": 227,
+    "holdout_first_open_utc": "2025-05-26T20:30:00+00:00",
+    "rule": "last ceil(25% of evaluable observations), no parameter selection"
+  },
+  "candidates": {
+    "A": {
+      "candidate": "A",
+      "matched_weight": 0.7232207322958857,
+      "matched_residual": -2.1464102717416722e-10,
+      "matched_holdout_weight": 0.4491177147720009,
+      "matched_holdout_residual": -8.408007623472713e-11,
+      "matched_by_segment": [
+        {
+          "segment": 7,
+          "candidate": {
+            "total_return": 0.6807266325959145,
+            "cagr": 0.3109333779844181,
+            "max_drawdown": -0.4231901730342379,
+            "calmar": 0.7347367632737121,
+            "sharpe": 0.8549327959863742,
+            "sortino": 1.280351153435558,
+            "worst_12m_return": -0.3223140285569196,
+            "longest_drawdown_days": 277,
+            "time_invested": 0.8271428571428572,
+            "average_exposure": 0.8271428571428572,
+            "round_trips": 10,
+            "trade_legs": 20,
+            "turnover": 17.677989343832397,
+            "total_costs": 10.757394448208618,
+            "gross_profit": 78.83005770780007,
+            "fees_paid": 6.723260675361762,
+            "slippage_paid": 4.0341337728468565,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 73.59936698176135
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 0,
+                "pnl": -5.5267037221698985
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.8225163880269974,
+          "matched_exposure": {
+            "total_return": 1.8784022998597516,
+            "cagr": 0.7354603949821477,
+            "max_drawdown": -0.23497051305830952,
+            "calmar": 3.1300114444557483,
+            "sharpe": 1.642544353583826,
+            "sortino": 2.5733929353533185,
+            "worst_12m_return": 0.07788129953403766,
+            "longest_drawdown_days": 237,
+            "time_invested": 1.0,
+            "average_exposure": 0.8271428572464719,
+            "round_trips": 1,
+            "trade_legs": 25,
+            "turnover": 2.051747219042754,
+            "total_costs": 1.56605510047076,
+            "gross_profit": 189.4062850864459,
+            "fees_paid": 0.9785180852058306,
+            "slippage_paid": 0.5875370152649293,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 89.16551664268306
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 121,
+                "pnl": 98.6747133432921
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": 1.0361467239761168e-10
+        },
+        {
+          "segment": 8,
+          "candidate": {
+            "total_return": -0.04312213570165313,
+            "cagr": -0.07548226625712562,
+            "max_drawdown": -0.1491666644517502,
+            "calmar": -0.5060263734833415,
+            "sharpe": -0.24228855778903347,
+            "sortino": -0.37454744123367345,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 59,
+            "time_invested": 0.3902439024390244,
+            "average_exposure": 0.3902439024390244,
+            "round_trips": 1,
+            "trade_legs": 2,
+            "turnover": 1.9337305586397373,
+            "total_costs": 0.7827049741450223,
+            "gross_profit": -3.52950859602029,
+            "fees_paid": 0.4891955722120995,
+            "slippage_paid": 0.29350940193292274,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -3.912873386051359
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 0,
+                "pnl": -0.399340184113953
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.38991172541864216,
+          "matched_exposure": {
+            "total_return": -0.06377806475834968,
+            "cagr": -0.11071631605389431,
+            "max_drawdown": -0.11973192826323675,
+            "calmar": -0.9247016870093234,
+            "sharpe": -0.7476074330937942,
+            "sortino": -1.0952807640303215,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 107,
+            "time_invested": 1.0,
+            "average_exposure": 0.3902439022243834,
+            "round_trips": 1,
+            "trade_legs": 9,
+            "turnover": 0.8888429381852506,
+            "total_costs": 0.34993948661632124,
+            "gross_profit": -6.027866989218651,
+            "fees_paid": 0.21872065582315536,
+            "slippage_paid": 0.13121883079316587,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -1.1801277344378605
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 125,
+                "pnl": -5.197678741397112
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": -2.1464102717416722e-10
+        }
+      ],
+      "acceptance": {
+        "1_positive_net_return_after_2x_costs": true,
+        "2_drawdown_le_60pct_buy_hold": false,
+        "3_calmar_and_sharpe_better_than_matched": false,
+        "4_holdout_return_and_drawdown_vs_matched": false,
+        "5_single_parameter_20pct_robustness": false,
+        "6_total_costs_le_25pct_gross_profit": true,
+        "7_worst_12m_better_than_buy_hold": false
+      },
+      "status": "NOT VALIDATED",
+      "enabled": false,
+      "plateau": {
+        "pass_fraction": 0.0,
+        "cases": 8,
+        "passes": 0,
+        "assessment": "fragile / no demonstrated plateau",
+        "return_range": [
+          0.6082501106677305,
+          1.2542781007152128
+        ],
+        "drawdown_range": [
+          -0.4316492049658768,
+          -0.32904904648713373
+        ]
+      },
+      "random_timing_null": {
+        "trials": 999,
+        "seed": 20261120,
+        "share_net_return_ge_actual": 0.8468468468468469,
+        "share_calmar_ge_actual": 0.8678678678678678,
+        "unshifted_reconstruction": {
+          "total_return": 0.6082501106677349,
+          "cagr": 0.21122682629581546,
+          "max_drawdown": -0.4234275433334004,
+          "calmar": 0.4988499912711127,
+          "sharpe": 0.6897815143196917,
+          "sortino": 1.0362427592864334,
+          "worst_12m_return": -0.3223140285569188,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.7281767955801105,
+          "average_exposure": 0.7281767955801106,
+          "round_trips": 0,
+          "trade_legs": 0,
+          "turnover": 0.0,
+          "total_costs": 0,
+          "gross_profit": 60.8250110667735,
+          "fees_paid": 0,
+          "slippage_paid": 0,
+          "daily_observations": 905,
+          "regimes": {}
+        },
+        "reconstruction_return_error": 4.440892098500626e-15,
+        "close_to_close_backtest_reference": {
+          "total_return": 0.6082501106677305,
+          "cagr": 0.2112268262958139,
+          "max_drawdown": -0.4231901730342379,
+          "calmar": 0.49912979968635696,
+          "sharpe": 0.6907080434344268,
+          "sortino": 1.0368298260402429,
+          "worst_12m_return": -0.3223140285569196,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.7281767955801105,
+          "average_exposure": 0.7281767955801105,
+          "round_trips": 11,
+          "trade_legs": 22,
+          "turnover": 19.32362062341686,
+          "total_costs": 12.07290754371945,
+          "gross_profit": 72.8979186104925,
+          "fees_paid": 7.545464702126635,
+          "slippage_paid": 4.527442841592816,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 67.02289647184905
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 0,
+              "pnl": -6.197885405076008
+            }
+          },
+          "segments": 2
+        },
+        "interpretation": "Joint cyclic shifts of observed post-open weights and opening cost drag; terminal liquidation drag fixed. Shifted open-return net returns and Calmar are compared to the actual strategy's reported net return and Calmar. The unshifted reconstruction error is separately disclosed; this is not an executable strategy or significance test."
+      },
+      "phases": {
+        "by_vote": {
+          "up": {
+            "days": 659,
+            "net_pnl": 67.02289647184905,
+            "pnl_on_initial_capital": 0.6702289647184905,
+            "mean_daily_return": 0.0010641660728049267,
+            "average_exposure": 1.0,
+            "time_invested": 1.0
+          },
+          "down": {
+            "days": 246,
+            "net_pnl": -6.197885405076008,
+            "pnl_on_initial_capital": -0.06197885405076008,
+            "mean_daily_return": -0.0001788576777058275,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          }
+        },
+        "all_phases": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1689712200,
+            "end": 1692304200,
+            "days": 31,
+            "return": -0.1229123756683056,
+            "max_drawdown": -0.1276015692532747,
+            "average_exposure": 1.0000000000000002,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1692390600,
+            "end": 1693254600,
+            "days": 11,
+            "return": -0.003616675400152425,
+            "max_drawdown": -0.003616675400152425,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1693341000,
+            "end": 1693427400,
+            "days": 2,
+            "return": -0.06296030576930123,
+            "max_drawdown": -0.06296030576930123,
+            "average_exposure": 1.0,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1693513800,
+            "end": 1696192200,
+            "days": 32,
+            "return": -0.0039962500000000345,
+            "max_drawdown": -0.0039962500000000345,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 1.02339660502781,
+            "max_drawdown": -0.22615658021133467,
+            "average_exposure": 1.0,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1720211400,
+            "end": 1720902600,
+            "days": 9,
+            "return": -0.004260661847310776,
+            "max_drawdown": -0.004260661847310776,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1720989000,
+            "end": 1722803400,
+            "days": 22,
+            "return": -0.10178222861869979,
+            "max_drawdown": -0.2056452662721897,
+            "average_exposure": 1.0000000000000002,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1722889800,
+            "end": 1723235400,
+            "days": 5,
+            "return": -0.0039962500000000345,
+            "max_drawdown": -0.0039962500000000345,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1723321800,
+            "end": 1723667400,
+            "days": 5,
+            "return": -0.06303221940319848,
+            "max_drawdown": -0.06303221940319848,
+            "average_exposure": 0.9999999999999998,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1723753800,
+            "end": 1724185800,
+            "days": 6,
+            "return": -0.004870704565407946,
+            "max_drawdown": -0.004870704565407946,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1724272200,
+            "end": 1725309000,
+            "days": 13,
+            "return": -0.04897257618490636,
+            "max_drawdown": -0.09072410230723482,
+            "average_exposure": 1.0,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1725395400,
+            "end": 1726691400,
+            "days": 16,
+            "return": -0.0039962499999999235,
+            "max_drawdown": -0.0039962499999999235,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.3257553055745328,
+            "max_drawdown": -0.21300688030160242,
+            "average_exposure": 1.0000000000000002,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1740601800,
+            "end": 1740861000,
+            "days": 4,
+            "return": -0.007101874305613709,
+            "max_drawdown": -0.007101874305613709,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1740947400,
+            "end": 1741465800,
+            "days": 7,
+            "return": -0.11194089777448735,
+            "max_drawdown": -0.11194089777448735,
+            "average_exposure": 1.0,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1741552200,
+            "end": 1742761800,
+            "days": 15,
+            "return": -0.003996010224369906,
+            "max_drawdown": -0.003996010224369906,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1742848200,
+            "end": 1743193800,
+            "days": 5,
+            "return": -0.06214990876550075,
+            "max_drawdown": -0.06214990876550075,
+            "average_exposure": 1.0,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1743280200,
+            "end": 1745181000,
+            "days": 23,
+            "return": -0.004008290664289094,
+            "max_drawdown": -0.004008290664289094,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1745267400,
+            "end": 1750105800,
+            "days": 57,
+            "return": 0.19020300761798503,
+            "max_drawdown": -0.081175483977183,
+            "average_exposure": 1.0000000000000002,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.0,
+            "max_drawdown": 0.0,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 8,
+            "direction": "up",
+            "start": 1787344200,
+            "end": 1794169800,
+            "days": 80,
+            "return": -0.03912873386051319,
+            "max_drawdown": -0.14561582527419947,
+            "average_exposure": 1.0000000000000002,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1794256200,
+            "end": 1795033800,
+            "days": 10,
+            "return": -0.004156021708489721,
+            "max_drawdown": -0.004156021708489721,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          }
+        ],
+        "major_phases_90d_plus": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 1.02339660502781,
+            "max_drawdown": -0.22615658021133467,
+            "average_exposure": 1.0,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.3257553055745328,
+            "max_drawdown": -0.21300688030160242,
+            "average_exposure": 1.0000000000000002,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.0,
+            "max_drawdown": 0.0,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          }
+        ],
+        "major_phase_count": 3,
+        "candidate_invested_episodes": 11,
+        "last_12_calendar_months": {
+          "days": 205,
+          "start": 1777408200,
+          "end": 1795120200,
+          "return": -0.04312213570165291,
+          "average_exposure": 0.39024390243902446,
+          "time_invested": 0.3902439024390244
+        }
+      },
+      "metrics": {
+        "full": {
+          "total_return": 0.6082501106677305,
+          "cagr": 0.2112268262958139,
+          "max_drawdown": -0.4231901730342379,
+          "calmar": 0.49912979968635696,
+          "sharpe": 0.6907080434344268,
+          "sortino": 1.0368298260402429,
+          "worst_12m_return": -0.3223140285569196,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.7281767955801105,
+          "average_exposure": 0.7281767955801105,
+          "round_trips": 11,
+          "trade_legs": 22,
+          "turnover": 19.32362062341686,
+          "total_costs": 12.07290754371945,
+          "gross_profit": 72.8979186104925,
+          "fees_paid": 7.545464702126635,
+          "slippage_paid": 4.527442841592816,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 67.02289647184905
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 0,
+              "pnl": -6.197885405076008
+            }
+          },
+          "segments": 2
+        },
+        "holdout": {
+          "total_return": -0.09224779996016197,
+          "cagr": -0.14411700571871633,
+          "max_drawdown": -0.1491666644517501,
+          "calmar": -0.9661475387172237,
+          "sharpe": -0.5529123845452403,
+          "sortino": -0.8215707994559528,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 166,
+          "time_invested": 0.44933920704845814,
+          "average_exposure": 0.44933920704845814,
+          "round_trips": 2,
+          "trade_legs": 4,
+          "turnover": 3.961123668875443,
+          "total_costs": 1.5219291852569672,
+          "gross_profit": -7.702850810759228,
+          "fees_paid": 0.9512165729195504,
+          "slippage_paid": 0.5707126123374168,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -8.84594175111691
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 0,
+              "pnl": -0.37883824489928486
+            }
+          },
+          "segments": 2
+        },
+        "matched_exposure": {
+          "total_return": 1.2427070482609972,
+          "cagr": 0.3850702498855483,
+          "max_drawdown": -0.21498905171838534,
+          "calmar": 1.791115625692199,
+          "sharpe": 1.176655658200656,
+          "sortino": 1.8228945320425154,
+          "worst_12m_return": 0.07723380361681631,
+          "longest_drawdown_days": 237,
+          "time_invested": 1.0,
+          "average_exposure": 0.7281767954738967,
+          "round_trips": 2,
+          "trade_legs": 34,
+          "turnover": 3.7505282835958673,
+          "total_costs": 2.9058362707594183,
+          "gross_profit": 127.17654109685914,
+          "fees_paid": 1.8159688272137569,
+          "slippage_paid": 1.0898674435456615,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 70.89584706714993
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 246,
+              "pnl": 53.37485775894979
+            }
+          },
+          "segments": 2
+        },
+        "matched_holdout": {
+          "total_return": -0.09638347260854574,
+          "cagr": -0.15037821243376148,
+          "max_drawdown": -0.13711403257728083,
+          "calmar": -1.0967383104935275,
+          "sharpe": -0.9211013651769608,
+          "sortino": -1.330955529456742,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 107,
+          "time_invested": 1.0,
+          "average_exposure": 0.44933920696437807,
+          "round_trips": 2,
+          "trade_legs": 12,
+          "turnover": 1.9364514189644677,
+          "total_costs": 0.7443844496291117,
+          "gross_profit": -8.893962811225462,
+          "fees_paid": 0.4652527881534068,
+          "slippage_paid": 0.27913166147570484,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -3.6726658385949094
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 125,
+              "pnl": -5.965681422259664
+            }
+          },
+          "segments": 2
+        },
+        "stress_2x": {
+          "total_return": 0.4727710948708832,
+          "cagr": 0.16899177425910428,
+          "max_drawdown": -0.4413560841110231,
+          "calmar": 0.38289213708130143,
+          "sharpe": 0.5977155741696305,
+          "sortino": 0.8927425423420526,
+          "worst_12m_return": -0.35666171816404646,
+          "longest_drawdown_days": 666,
+          "time_invested": 0.7281767955801105,
+          "average_exposure": 0.7281767955801105,
+          "round_trips": 11,
+          "trade_legs": 22,
+          "turnover": 19.343115979285024,
+          "total_costs": 23.024578061277,
+          "gross_profit": 70.30168754836532,
+          "fees_paid": 14.389965841305784,
+          "slippage_paid": 8.634612219971217,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 58.4614229096384
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 0,
+              "pnl": -11.184313422550076
+            }
+          },
+          "segments": 2
+        },
+        "stress_3x": {
+          "total_return": 0.3487025784499189,
+          "cagr": 0.12822868273297172,
+          "max_drawdown": -0.45895021129310143,
+          "calmar": 0.27939562849679234,
+          "sharpe": 0.505087046806344,
+          "sortino": 0.7500111570014388,
+          "worst_12m_return": -0.38927433183913485,
+          "longest_drawdown_days": 666,
+          "time_invested": 0.7281767955801105,
+          "average_exposure": 0.7281767955801105,
+          "round_trips": 11,
+          "trade_legs": 22,
+          "turnover": 19.36082664471533,
+          "total_costs": 32.95284688656448,
+          "gross_profit": 67.82310473155638,
+          "fees_paid": 20.59467091793358,
+          "slippage_paid": 12.3581759686309,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 50.601275495112404
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 0,
+              "pnl": -15.731017650120506
+            }
+          },
+          "segments": 2
+        }
+      },
+      "segments": [
+        {
+          "segment": 7,
+          "first": 1689712200,
+          "last": 1750105800,
+          "observations": 700,
+          "return": 0.6807266325959145,
+          "trades": 20,
+          "round_trips": 10,
+          "metrics": {
+            "total_return": 0.6807266325959145,
+            "cagr": 0.3109333779844181,
+            "max_drawdown": -0.4231901730342379,
+            "calmar": 0.7347367632737121,
+            "sharpe": 0.8549327959863742,
+            "sortino": 1.280351153435558,
+            "worst_12m_return": -0.3223140285569196,
+            "longest_drawdown_days": 277,
+            "time_invested": 0.8271428571428572,
+            "average_exposure": 0.8271428571428573,
+            "round_trips": 10,
+            "trade_legs": 20,
+            "turnover": 17.677989343832397,
+            "total_costs": 10.757394448208618,
+            "gross_profit": 78.83005770780007,
+            "fees_paid": 6.723260675361762,
+            "slippage_paid": 4.0341337728468565,
+            "daily_observations": 700,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.04312213570165346,
+          "trades": 2,
+          "round_trips": 1,
+          "metrics": {
+            "total_return": -0.04312213570165346,
+            "cagr": -0.07548226625712617,
+            "max_drawdown": -0.1491666644517503,
+            "calmar": -0.5060263734833448,
+            "sharpe": -0.2422885577890362,
+            "sortino": -0.3745474412336774,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 59,
+            "time_invested": 0.3902439024390244,
+            "average_exposure": 0.39024390243902446,
+            "round_trips": 1,
+            "trade_legs": 2,
+            "turnover": 1.9337305586397373,
+            "total_costs": 1.3155130955108318,
+            "gross_profit": -5.932139097307575,
+            "fees_paid": 0.8222040267648736,
+            "slippage_paid": 0.49330906874595826,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ],
+      "holdout_segments": [
+        {
+          "segment": 7,
+          "first": 1748291400,
+          "last": 1750105800,
+          "observations": 22,
+          "return": -0.05133953463802954,
+          "trades": 2,
+          "round_trips": 1,
+          "metrics": {
+            "total_return": -0.05133953463802954,
+            "cagr": -0.5828930767853444,
+            "max_drawdown": -0.07092926078125361,
+            "calmar": -8.217949409947908,
+            "sharpe": -2.616443417528168,
+            "sortino": -3.376999817743791,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 21,
+            "time_invested": 1.0,
+            "average_exposure": 1.0,
+            "round_trips": 1,
+            "trade_legs": 2,
+            "turnover": 2.0172149557516694,
+            "total_costs": 0.7794079202434152,
+            "gross_profit": -4.354545543559539,
+            "fees_paid": 0.4871360737318047,
+            "slippage_paid": 0.29227184651161053,
+            "daily_observations": 22,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.04312213570165324,
+          "trades": 2,
+          "round_trips": 1,
+          "metrics": {
+            "total_return": -0.04312213570165324,
+            "cagr": -0.07548226625712584,
+            "max_drawdown": -0.1491666644517501,
+            "calmar": -0.5060263734833433,
+            "sharpe": -0.2422885577890396,
+            "sortino": -0.3745474412336828,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 59,
+            "time_invested": 0.3902439024390244,
+            "average_exposure": 0.3902439024390244,
+            "round_trips": 1,
+            "trade_legs": 2,
+            "turnover": 1.9337305586397373,
+            "total_costs": 0.7425212650135519,
+            "gross_profit": -3.3483052671996902,
+            "fees_paid": 0.46408049918774574,
+            "slippage_paid": 0.2784407658258061,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ]
+    },
+    "B": {
+      "candidate": "B",
+      "matched_weight": 0.7305905960965902,
+      "matched_residual": -1.9438117782044628e-11,
+      "matched_holdout_weight": 0.49311327771283686,
+      "matched_holdout_residual": -5.2110649129133435e-11,
+      "matched_by_segment": [
+        {
+          "segment": 7,
+          "candidate": {
+            "total_return": 1.0923779545592094,
+            "cagr": 0.46957220021607715,
+            "max_drawdown": -0.37194263515618964,
+            "calmar": 1.2624855443605973,
+            "sharpe": 1.167219892774137,
+            "sortino": 1.791616658084806,
+            "worst_12m_return": -0.18653883494843515,
+            "longest_drawdown_days": 252,
+            "time_invested": 0.9442857142857143,
+            "average_exposure": 0.8223059671378894,
+            "round_trips": 6,
+            "trade_legs": 49,
+            "turnover": 14.806742157962496,
+            "total_costs": 9.942585878773874,
+            "gross_profit": 119.18038133469481,
+            "fees_paid": 6.213948576822434,
+            "slippage_paid": 3.7286373019514407,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 99.24863759890155
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 82,
+                "pnl": 9.989157857019393
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.81757533387281,
+          "matched_exposure": {
+            "total_return": 1.8629798879260755,
+            "cagr": 0.7306056294750687,
+            "max_drawdown": -0.23369430106143207,
+            "calmar": 3.126330535903876,
+            "sharpe": 1.642614278261924,
+            "sortino": 2.573561848143671,
+            "worst_12m_return": 0.07790511987516657,
+            "longest_drawdown_days": 237,
+            "time_invested": 1.0,
+            "average_exposure": 0.82230596726244,
+            "round_trips": 1,
+            "trade_legs": 25,
+            "turnover": 2.049371814342621,
+            "total_costs": 1.5586581085898774,
+            "gross_profit": 187.85664690119742,
+            "fees_paid": 0.9738971444589759,
+            "slippage_paid": 0.5847609641309015,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 88.5509621924694
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 121,
+                "pnl": 97.74702660013817
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": 1.245505920621781e-10
+        },
+        {
+          "segment": 8,
+          "candidate": {
+            "total_return": -0.010621131587712163,
+            "cagr": -0.018832352086327164,
+            "max_drawdown": -0.14207713642602215,
+            "calmar": -0.13255019463411652,
+            "sharpe": 0.029621693870547545,
+            "sortino": 0.04663032189515333,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 101,
+            "time_invested": 0.5414634146341464,
+            "average_exposure": 0.43888551996382485,
+            "round_trips": 2,
+            "trade_legs": 10,
+            "turnover": 2.8897777085765153,
+            "total_costs": 1.17315257142479,
+            "gross_profit": 0.11103941265357853,
+            "fees_paid": 0.7332202009913295,
+            "slippage_paid": 0.43993237043346045,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -3.102616431070544
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 31,
+                "pnl": 2.0405032722993326
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.43863198929466307,
+          "matched_exposure": {
+            "total_return": -0.07286468401534707,
+            "cagr": -0.12602555601160403,
+            "max_drawdown": -0.1340503923218378,
+            "calmar": -0.9401356745680598,
+            "sharpe": -0.7560544619717015,
+            "sortino": -1.1062385279202047,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 107,
+            "time_invested": 1.0,
+            "average_exposure": 0.43888551994438674,
+            "round_trips": 1,
+            "trade_legs": 9,
+            "turnover": 0.9869012546327015,
+            "total_costs": 0.3876016787111036,
+            "gross_profit": -6.898866722823602,
+            "fees_paid": 0.2422607507257664,
+            "slippage_paid": 0.14534092798533724,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -1.341946576442254
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 125,
+                "pnl": -5.944521825092451
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": -1.9438117782044628e-11
+        }
+      ],
+      "acceptance": {
+        "1_positive_net_return_after_2x_costs": true,
+        "2_drawdown_le_60pct_buy_hold": false,
+        "3_calmar_and_sharpe_better_than_matched": false,
+        "4_holdout_return_and_drawdown_vs_matched": false,
+        "5_single_parameter_20pct_robustness": false,
+        "6_total_costs_le_25pct_gross_profit": true,
+        "7_worst_12m_better_than_buy_hold": false
+      },
+      "status": "NOT VALIDATED",
+      "enabled": false,
+      "plateau": {
+        "pass_fraction": 0.0,
+        "cases": 22,
+        "passes": 0,
+        "assessment": "fragile / no demonstrated plateau",
+        "return_range": [
+          0.8206381099422564,
+          1.2385002059565497
+        ],
+        "drawdown_range": [
+          -0.3819972567847132,
+          -0.32468705822167354
+        ]
+      },
+      "random_timing_null": {
+        "trials": 999,
+        "seed": 20261120,
+        "share_net_return_ge_actual": 0.6426426426426426,
+        "share_calmar_ge_actual": 0.7027027027027027,
+        "unshifted_reconstruction": {
+          "total_return": 1.0701545329726128,
+          "cagr": 0.3410612981637795,
+          "max_drawdown": -0.37220109497711296,
+          "calmar": 0.9163360956387077,
+          "sharpe": 0.9816951341211062,
+          "sortino": 1.5106307464998487,
+          "worst_12m_return": -0.1865388349484337,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.8530386740331491,
+          "average_exposure": 0.7354538216454217,
+          "round_trips": 0,
+          "trade_legs": 0,
+          "turnover": 0.0,
+          "total_costs": 0,
+          "gross_profit": 107.01545329726127,
+          "fees_paid": 0,
+          "slippage_paid": 0,
+          "daily_observations": 905,
+          "regimes": {}
+        },
+        "reconstruction_return_error": 4.440892098500626e-15,
+        "close_to_close_backtest_reference": {
+          "total_return": 1.0701545329726083,
+          "cagr": 0.3410612981637784,
+          "max_drawdown": -0.37194263515618964,
+          "calmar": 0.916972849914226,
+          "sharpe": 0.9841031386183259,
+          "sortino": 1.5139424152611527,
+          "worst_12m_return": -0.18653883494843515,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.8530386740331491,
+          "average_exposure": 0.7354538216454218,
+          "round_trips": 8,
+          "trade_legs": 59,
+          "turnover": 17.4168772489433,
+          "total_costs": 12.397264456557581,
+          "gross_profit": 119.4127177538184,
+          "fees_paid": 7.748122361214164,
+          "slippage_paid": 4.649142095343417,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 92.75679137707641
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 113,
+              "pnl": 14.258661920184409
+            }
+          },
+          "segments": 2
+        },
+        "interpretation": "Joint cyclic shifts of observed post-open weights and opening cost drag; terminal liquidation drag fixed. Shifted open-return net returns and Calmar are compared to the actual strategy's reported net return and Calmar. The unshifted reconstruction error is separately disclosed; this is not an executable strategy or significance test."
+      },
+      "phases": {
+        "by_vote": {
+          "up": {
+            "days": 659,
+            "net_pnl": 92.75679137707641,
+            "pnl_on_initial_capital": 0.9275679137707641,
+            "mean_daily_return": 0.001224743762263091,
+            "average_exposure": 0.961767111752937,
+            "time_invested": 1.0
+          },
+          "down": {
+            "days": 246,
+            "net_pnl": 14.258661920184409,
+            "pnl_on_initial_capital": 0.1425866192018441,
+            "mean_daily_return": 0.00034955657584185,
+            "average_exposure": 0.12919179652000426,
+            "time_invested": 0.45934959349593496
+          }
+        },
+        "all_phases": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1689712200,
+            "end": 1692304200,
+            "days": 31,
+            "return": -0.11038860361550207,
+            "max_drawdown": -0.11514475332884477,
+            "average_exposure": 0.9919596789102598,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1692390600,
+            "end": 1693254600,
+            "days": 11,
+            "return": 0.013091088270008155,
+            "max_drawdown": -0.006169518416940467,
+            "average_exposure": 0.2495290381369699,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1693341000,
+            "end": 1693427400,
+            "days": 2,
+            "return": -0.03055955397660992,
+            "max_drawdown": -0.03055955397660992,
+            "average_exposure": 0.4980261839530209,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1693513800,
+            "end": 1696192200,
+            "days": 32,
+            "return": 0.0013832003391351932,
+            "max_drawdown": -0.013126544298657783,
+            "average_exposure": 0.11689485450802434,
+            "time_invested": 0.46875
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 0.9420681196243865,
+            "max_drawdown": -0.24343746520566945,
+            "average_exposure": 0.973151994769875,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1720211400,
+            "end": 1720902600,
+            "days": 9,
+            "return": 0.01320241370464914,
+            "max_drawdown": -0.0077547732870753006,
+            "average_exposure": 0.2529285638751256,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1720989000,
+            "end": 1722803400,
+            "days": 22,
+            "return": -0.07263455709553512,
+            "max_drawdown": -0.15237264918297422,
+            "average_exposure": 0.9090332680190705,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1722889800,
+            "end": 1723235400,
+            "days": 5,
+            "return": 0.002541450475101348,
+            "max_drawdown": -0.001884532813525408,
+            "average_exposure": 0.10091970373489598,
+            "time_invested": 0.4
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1723321800,
+            "end": 1723667400,
+            "days": 5,
+            "return": -0.030404282201206945,
+            "max_drawdown": -0.030404282201206945,
+            "average_exposure": 0.49579488033008934,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1723753800,
+            "end": 1724185800,
+            "days": 6,
+            "return": 0.015929008312819404,
+            "max_drawdown": -0.0025252436514908716,
+            "average_exposure": 0.256223861275711,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1724272200,
+            "end": 1725309000,
+            "days": 13,
+            "return": -0.059590409486566576,
+            "max_drawdown": -0.08483815747532708,
+            "average_exposure": 0.6919017825693443,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1725395400,
+            "end": 1726691400,
+            "days": 16,
+            "return": 0.0031622298076434685,
+            "max_drawdown": -0.017379452751350888,
+            "average_exposure": 0.12489706904163245,
+            "time_invested": 0.5
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.3289705450693907,
+            "max_drawdown": -0.2013213803644559,
+            "average_exposure": 0.9968843755777257,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1740601800,
+            "end": 1740861000,
+            "days": 4,
+            "return": 0.02552524738217521,
+            "max_drawdown": -0.004948720419646224,
+            "average_exposure": 0.2515472860918627,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1740947400,
+            "end": 1741465800,
+            "days": 7,
+            "return": -0.07680526138340071,
+            "max_drawdown": -0.07680526138340071,
+            "average_exposure": 0.5406420426153983,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1741552200,
+            "end": 1742761800,
+            "days": 15,
+            "return": -0.004818875954510693,
+            "max_drawdown": -0.022264184622340033,
+            "average_exposure": 0.16646405607303047,
+            "time_invested": 0.6666666666666666
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1742848200,
+            "end": 1743193800,
+            "days": 5,
+            "return": -0.030164160945043483,
+            "max_drawdown": -0.030164160945043483,
+            "average_exposure": 0.49684732748655475,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1743280200,
+            "end": 1745181000,
+            "days": 23,
+            "return": -0.005702678205613765,
+            "max_drawdown": -0.021483139636702897,
+            "average_exposure": 0.1850375732285001,
+            "time_invested": 0.7391304347826086
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1745267400,
+            "end": 1750105800,
+            "days": 57,
+            "return": 0.16504315519633916,
+            "max_drawdown": -0.08117548397718288,
+            "average_exposure": 0.9912366795112638,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.022451245557180144,
+            "max_drawdown": -0.03641577480347136,
+            "average_exposure": 0.0975657490832017,
+            "time_invested": 0.26956521739130435
+          },
+          {
+            "segment": 8,
+            "direction": "up",
+            "start": 1787344200,
+            "end": 1794169800,
+            "days": 80,
+            "return": -0.030344883871501582,
+            "max_drawdown": -0.14030279817175484,
+            "average_exposure": 0.9843933806001989,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1794256200,
+            "end": 1795033800,
+            "days": 10,
+            "return": -0.0020639107007602853,
+            "max_drawdown": -0.0020639107007602853,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          }
+        ],
+        "major_phases_90d_plus": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 0.9420681196243865,
+            "max_drawdown": -0.24343746520566945,
+            "average_exposure": 0.973151994769875,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.3289705450693907,
+            "max_drawdown": -0.2013213803644559,
+            "average_exposure": 0.9968843755777257,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.022451245557180144,
+            "max_drawdown": -0.03641577480347136,
+            "average_exposure": 0.0975657490832017,
+            "time_invested": 0.26956521739130435
+          }
+        ],
+        "major_phase_count": 3,
+        "candidate_invested_episodes": 8,
+        "last_12_calendar_months": {
+          "days": 205,
+          "start": 1777408200,
+          "end": 1795120200,
+          "return": -0.010621131587711052,
+          "average_exposure": 0.43888551996382497,
+          "time_invested": 0.5414634146341464
+        }
+      },
+      "metrics": {
+        "full": {
+          "total_return": 1.0701545329726083,
+          "cagr": 0.3410612981637784,
+          "max_drawdown": -0.37194263515618964,
+          "calmar": 0.916972849914226,
+          "sharpe": 0.9841031386183259,
+          "sortino": 1.5139424152611527,
+          "worst_12m_return": -0.18653883494843515,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.8530386740331491,
+          "average_exposure": 0.7354538216454218,
+          "round_trips": 8,
+          "trade_legs": 59,
+          "turnover": 17.4168772489433,
+          "total_costs": 12.397264456557581,
+          "gross_profit": 119.4127177538184,
+          "fees_paid": 7.748122361214164,
+          "slippage_paid": 4.649142095343417,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 92.75679137707641
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 113,
+              "pnl": 14.258661920184409
+            }
+          },
+          "segments": 2
+        },
+        "holdout": {
+          "total_return": -0.06141538227269938,
+          "cagr": -0.09689297726086588,
+          "max_drawdown": -0.14207713642602215,
+          "calmar": -0.6819744520351934,
+          "sharpe": -0.31016173950482767,
+          "sortino": -0.4682286571270846,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 148,
+          "time_invested": 0.5859030837004405,
+          "average_exposure": 0.4932666589981679,
+          "round_trips": 3,
+          "trade_legs": 12,
+          "turnover": 4.9119777779018525,
+          "total_costs": 1.892331384591857,
+          "gross_profit": -4.249206842678076,
+          "fees_paid": 1.1827130908170367,
+          "slippage_paid": 0.7096182937748203,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -8.077283011142043
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 31,
+              "pnl": 1.93574478387211
+            }
+          },
+          "segments": 2
+        },
+        "matched_exposure": {
+          "total_return": 1.2573490101419602,
+          "cagr": 0.38871022994098925,
+          "max_drawdown": -0.21702533165896665,
+          "calmar": 1.791082298871028,
+          "sharpe": 1.1762728079909748,
+          "sortino": 1.82217804943476,
+          "worst_12m_return": 0.07736359680458915,
+          "longest_drawdown_days": 237,
+          "time_invested": 1.0,
+          "average_exposure": 0.7354538218069485,
+          "round_trips": 2,
+          "trade_legs": 34,
+          "turnover": 3.774165491643943,
+          "total_costs": 2.9422005037858816,
+          "gross_profit": 128.6771015179819,
+          "fees_paid": 1.8386943626921757,
+          "slippage_paid": 1.103506141093706,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 71.6735262201286
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 246,
+              "pnl": 54.06137479406743
+            }
+          },
+          "segments": 2
+        },
+        "matched_holdout": {
+          "total_return": -0.1067069983274993,
+          "cagr": -0.16593154502711782,
+          "max_drawdown": -0.14989926738624748,
+          "calmar": -1.1069536757612013,
+          "sharpe": -0.927779947974538,
+          "sortino": -1.339224272811578,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 114,
+          "time_invested": 1.0,
+          "average_exposure": 0.49326665894605726,
+          "round_trips": 2,
+          "trade_legs": 12,
+          "turnover": 2.115282905229587,
+          "total_costs": 0.8096250893108242,
+          "gross_profit": -9.861074743439108,
+          "fees_paid": 0.5060295479556223,
+          "slippage_paid": 0.30359554135520195,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -4.041583636960027
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 125,
+              "pnl": -6.629116195789905
+            }
+          },
+          "segments": 2
+        },
+        "stress_2x": {
+          "total_return": 0.918062532318614,
+          "cagr": 0.3004173984833709,
+          "max_drawdown": -0.38880214721430695,
+          "calmar": 0.7726742268164004,
+          "sharpe": 0.8993246240241158,
+          "sortino": 1.3789198300706427,
+          "worst_12m_return": -0.21917343692779312,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.8530386740331491,
+          "average_exposure": 0.7355423622487373,
+          "round_trips": 8,
+          "trade_legs": 59,
+          "turnover": 17.41775119867588,
+          "total_costs": 23.761173670228057,
+          "gross_profit": 115.56742690208947,
+          "fees_paid": 14.850083477116303,
+          "slippage_paid": 8.911090193111754,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 82.63038471464716
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 113,
+              "pnl": 9.17586851721424
+            }
+          },
+          "segments": 2
+        },
+        "stress_3x": {
+          "total_return": 0.7771597584634395,
+          "cagr": 0.2610096521483136,
+          "max_drawdown": -0.4051996013724053,
+          "calmar": 0.6441508117586435,
+          "sharpe": 0.8146140857671457,
+          "sortino": 1.2445338592380624,
+          "worst_12m_return": -0.25050196788821144,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.8530386740331491,
+          "average_exposure": 0.7356311764674809,
+          "round_trips": 8,
+          "trade_legs": 59,
+          "turnover": 17.41744578366661,
+          "total_costs": 34.17193466272548,
+          "gross_profit": 111.88791050906943,
+          "fees_paid": 21.35604308283609,
+          "slippage_paid": 12.815891579889385,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 73.17963211544792
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 113,
+              "pnl": 4.536343730896036
+            }
+          },
+          "segments": 2
+        }
+      },
+      "segments": [
+        {
+          "segment": 7,
+          "first": 1689712200,
+          "last": 1750105800,
+          "observations": 700,
+          "return": 1.0923779545592094,
+          "trades": 49,
+          "round_trips": 6,
+          "metrics": {
+            "total_return": 1.0923779545592094,
+            "cagr": 0.46957220021607715,
+            "max_drawdown": -0.37194263515618964,
+            "calmar": 1.2624855443605973,
+            "sharpe": 1.167219892774137,
+            "sortino": 1.791616658084806,
+            "worst_12m_return": -0.18653883494843515,
+            "longest_drawdown_days": 252,
+            "time_invested": 0.9442857142857143,
+            "average_exposure": 0.8223059671378893,
+            "round_trips": 6,
+            "trade_legs": 49,
+            "turnover": 14.806742157962496,
+            "total_costs": 9.942585878773874,
+            "gross_profit": 119.18038133469481,
+            "fees_paid": 6.213948576822434,
+            "slippage_paid": 3.7286373019514407,
+            "daily_observations": 700,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.010621131587712052,
+          "trades": 10,
+          "round_trips": 2,
+          "metrics": {
+            "total_return": -0.010621131587712052,
+            "cagr": -0.018832352086326942,
+            "max_drawdown": -0.14207713642602227,
+            "calmar": -0.13255019463411485,
+            "sharpe": 0.029621693870550126,
+            "sortino": 0.04663032189515736,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 101,
+            "time_invested": 0.5414634146341464,
+            "average_exposure": 0.43888551996382485,
+            "round_trips": 2,
+            "trade_legs": 10,
+            "turnover": 2.889777708576515,
+            "total_costs": 2.4546785777837075,
+            "gross_profit": 0.23233641912358127,
+            "fees_paid": 1.5341737843917302,
+            "slippage_paid": 0.9205047933919772,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ],
+      "holdout_segments": [
+        {
+          "segment": 7,
+          "first": 1748291400,
+          "last": 1750105800,
+          "observations": 22,
+          "return": -0.05133953463802954,
+          "trades": 2,
+          "round_trips": 1,
+          "metrics": {
+            "total_return": -0.05133953463802954,
+            "cagr": -0.5828930767853444,
+            "max_drawdown": -0.07092926078125361,
+            "calmar": -8.217949409947908,
+            "sharpe": -2.616443417528168,
+            "sortino": -3.376999817743791,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 21,
+            "time_invested": 1.0,
+            "average_exposure": 1.0,
+            "round_trips": 1,
+            "trade_legs": 2,
+            "turnover": 2.0172149557516694,
+            "total_costs": 0.7794079202434152,
+            "gross_profit": -4.354545543559539,
+            "fees_paid": 0.4871360737318047,
+            "slippage_paid": 0.29227184651161053,
+            "daily_observations": 22,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.010621131587712274,
+          "trades": 10,
+          "round_trips": 2,
+          "metrics": {
+            "total_return": -0.010621131587712274,
+            "cagr": -0.018832352086327386,
+            "max_drawdown": -0.14207713642602215,
+            "calmar": -0.1325501946341181,
+            "sharpe": 0.029621693870546667,
+            "sortino": 0.046630321895151934,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 101,
+            "time_invested": 0.5414634146341464,
+            "average_exposure": 0.43888551996382497,
+            "round_trips": 2,
+            "trade_legs": 10,
+            "turnover": 2.8897777085765153,
+            "total_costs": 1.1129234643484418,
+            "gross_profit": 0.10533870088146191,
+            "fees_paid": 0.695577017085232,
+            "slippage_paid": 0.4173464472632098,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ]
+    },
+    "C": {
+      "candidate": "C",
+      "matched_weight": 0.6678618409205228,
+      "matched_residual": -3.2087721368867506e-11,
+      "matched_holdout_weight": 0.4824443662073463,
+      "matched_holdout_residual": -1.3295253786793637e-11,
+      "matched_by_segment": [
+        {
+          "segment": 7,
+          "candidate": {
+            "total_return": 1.1737502986121156,
+            "cagr": 0.4991004982494369,
+            "max_drawdown": -0.32297290149781543,
+            "calmar": 1.5453324286180485,
+            "sharpe": 1.3086398296670225,
+            "sortino": 2.0169128066647986,
+            "worst_12m_return": -0.1301027340451486,
+            "longest_drawdown_days": 251,
+            "time_invested": 0.9785714285714285,
+            "average_exposure": 0.7455876931386723,
+            "round_trips": 3,
+            "trade_legs": 31,
+            "turnover": 10.527997816550803,
+            "total_costs": 7.163089895328942,
+            "gross_profit": 124.53811975654048,
+            "fees_paid": 4.476756052849688,
+            "slippage_paid": 2.6863338424792538,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 100.66768069715778
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 106,
+                "pnl": 16.707349164053753
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.7393821233417839,
+          "matched_exposure": {
+            "total_return": 1.6258457519050662,
+            "cagr": 0.6543178118548703,
+            "max_drawdown": -0.21329443234121837,
+            "calmar": 3.067674128540418,
+            "sharpe": 1.6437440435477821,
+            "sortino": 2.5763122224522954,
+            "worst_12m_return": 0.07750122928870895,
+            "longest_drawdown_days": 237,
+            "time_invested": 1.0,
+            "average_exposure": 0.7455876931649353,
+            "round_trips": 1,
+            "trade_legs": 25,
+            "turnover": 1.9975511531126255,
+            "total_costs": 1.4348392670001435,
+            "gross_profit": 164.01941445750674,
+            "fees_paid": 0.8965438895735225,
+            "slippage_paid": 0.538295377426621,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 78.90718075978457
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 121,
+                "pnl": 83.67739443072203
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": 2.6262991781322853e-11
+        },
+        {
+          "segment": 8,
+          "candidate": {
+            "total_return": -0.010008136026015135,
+            "cagr": -0.017749717463545478,
+            "max_drawdown": -0.13816322198278974,
+            "calmar": -0.12846919179227353,
+            "sharpe": 0.02823094578312011,
+            "sortino": 0.04444667410475255,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 101,
+            "time_invested": 0.5414634146341464,
+            "average_exposure": 0.42709023460032136,
+            "round_trips": 2,
+            "trade_legs": 9,
+            "turnover": 2.8201617538951558,
+            "total_costs": 1.1443476046878824,
+            "gross_profit": 0.14353400208637157,
+            "fees_paid": 0.7152170510852426,
+            "slippage_paid": 0.42913055360263985,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -3.041013525353108
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 31,
+                "pnl": 2.0401999227515972
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.4268166304100305,
+          "matched_exposure": {
+            "total_return": -0.07064009512730263,
+            "cagr": -0.12228831788709094,
+            "max_drawdown": -0.13059064097508344,
+            "calmar": -0.9364248232032449,
+            "sharpe": -0.7540036292355105,
+            "sortino": -1.1035807648329166,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 107,
+            "time_invested": 1.0,
+            "average_exposure": 0.42709023456823364,
+            "round_trips": 1,
+            "trade_legs": 9,
+            "turnover": 0.9633817622987836,
+            "total_costs": 0.37859113719888576,
+            "gross_profit": -6.68541837553138,
+            "fees_paid": 0.23662886211889272,
+            "slippage_paid": 0.14196227507999304,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -1.3024324036095152
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 125,
+                "pnl": -5.761577109120751
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": -3.2087721368867506e-11
+        }
+      ],
+      "acceptance": {
+        "1_positive_net_return_after_2x_costs": true,
+        "2_drawdown_le_60pct_buy_hold": false,
+        "3_calmar_and_sharpe_better_than_matched": false,
+        "4_holdout_return_and_drawdown_vs_matched": false,
+        "5_single_parameter_20pct_robustness": false,
+        "6_total_costs_le_25pct_gross_profit": true,
+        "7_worst_12m_better_than_buy_hold": false
+      },
+      "status": "NOT VALIDATED",
+      "enabled": false,
+      "plateau": {
+        "pass_fraction": 0.0,
+        "cases": 26,
+        "passes": 0,
+        "assessment": "fragile / no demonstrated plateau",
+        "return_range": [
+          0.8111876540941461,
+          1.2035468008957322
+        ],
+        "drawdown_range": [
+          -0.3499912419898863,
+          -0.2835034946273476
+        ]
+      },
+      "random_timing_null": {
+        "trials": 999,
+        "seed": 20261120,
+        "share_net_return_ge_actual": 0.5635635635635635,
+        "share_calmar_ge_actual": 0.5905905905905906,
+        "unshifted_reconstruction": {
+          "total_return": 1.151995109937022,
+          "cagr": 0.362196792428795,
+          "max_drawdown": -0.32318143859980364,
+          "calmar": 1.1207227556075836,
+          "sharpe": 1.0924225967765568,
+          "sortino": 1.6881833044862535,
+          "worst_12m_return": -0.13069376003022493,
+          "longest_drawdown_days": 292,
+          "time_invested": 0.8795580110497238,
+          "average_exposure": 0.6734418599891011,
+          "round_trips": 0,
+          "trade_legs": 0,
+          "turnover": 0.0,
+          "total_costs": 0,
+          "gross_profit": 115.1995109937022,
+          "fees_paid": 0,
+          "slippage_paid": 0,
+          "daily_observations": 905,
+          "regimes": {}
+        },
+        "reconstruction_return_error": 8.43769498715119e-15,
+        "close_to_close_backtest_reference": {
+          "total_return": 1.1519951099370136,
+          "cagr": 0.36219679242879277,
+          "max_drawdown": -0.32297290149781543,
+          "calmar": 1.1214463837339699,
+          "sharpe": 1.0955561487826602,
+          "sortino": 1.6922773470145318,
+          "worst_12m_return": -0.1301027340451486,
+          "longest_drawdown_days": 292,
+          "time_invested": 0.8795580110497238,
+          "average_exposure": 0.6734418599891018,
+          "round_trips": 5,
+          "trade_legs": 40,
+          "turnover": 13.29166475494862,
+          "total_costs": 9.650615842735293,
+          "gross_profit": 124.85012683643667,
+          "fees_paid": 6.031459331218711,
+          "slippage_paid": 3.6191565115165822,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 94.05727663833801
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 137,
+              "pnl": 21.142234355363357
+            }
+          },
+          "segments": 2
+        },
+        "interpretation": "Joint cyclic shifts of observed post-open weights and opening cost drag; terminal liquidation drag fixed. Shifted open-return net returns and Calmar are compared to the actual strategy's reported net return and Calmar. The unshifted reconstruction error is separately disclosed; this is not an executable strategy or significance test."
+      },
+      "phases": {
+        "by_vote": {
+          "up": {
+            "days": 659,
+            "net_pnl": 94.05727663833802,
+            "pnl_on_initial_capital": 0.9405727663833803,
+            "mean_daily_return": 0.0011751244308642495,
+            "average_exposure": 0.8718183077213338,
+            "time_invested": 1.0
+          },
+          "down": {
+            "days": 246,
+            "net_pnl": 21.142234355363357,
+            "pnl_on_initial_capital": 0.21142234355363357,
+            "mean_daily_return": 0.000522862960088809,
+            "average_exposure": 0.14201877439746952,
+            "time_invested": 0.556910569105691
+          }
+        },
+        "all_phases": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1689712200,
+            "end": 1692304200,
+            "days": 31,
+            "return": -0.11038860361550207,
+            "max_drawdown": -0.11514475332884477,
+            "average_exposure": 0.9919596789102598,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1692390600,
+            "end": 1693254600,
+            "days": 11,
+            "return": 0.013091088270008155,
+            "max_drawdown": -0.006169518416940467,
+            "average_exposure": 0.2495290381369699,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1693341000,
+            "end": 1693427400,
+            "days": 2,
+            "return": -0.03055955397660992,
+            "max_drawdown": -0.03055955397660992,
+            "average_exposure": 0.4980261839530209,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1693513800,
+            "end": 1696192200,
+            "days": 32,
+            "return": 0.01370053591759035,
+            "max_drawdown": -0.010631613890834557,
+            "average_exposure": 0.240690063305944,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 0.9312244841662904,
+            "max_drawdown": -0.2106456299607603,
+            "average_exposure": 0.8878976632242173,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1720211400,
+            "end": 1720902600,
+            "days": 9,
+            "return": 0.019311957179788397,
+            "max_drawdown": -0.008366606427464562,
+            "average_exposure": 0.2595554367478908,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1720989000,
+            "end": 1722803400,
+            "days": 22,
+            "return": -0.08484664860628566,
+            "max_drawdown": -0.13929602295402832,
+            "average_exposure": 0.6950667780418165,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1722889800,
+            "end": 1723235400,
+            "days": 5,
+            "return": -0.0016686203598405003,
+            "max_drawdown": -0.0016686203598405003,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1723321800,
+            "end": 1723667400,
+            "days": 5,
+            "return": -0.020111882645294843,
+            "max_drawdown": -0.020111882645294843,
+            "average_exposure": 0.31415142576343674,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1723753800,
+            "end": 1724185800,
+            "days": 6,
+            "return": 0.020827668677164457,
+            "max_drawdown": -0.0030701788555409504,
+            "average_exposure": 0.3116619135740067,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1724272200,
+            "end": 1725309000,
+            "days": 13,
+            "return": -0.03707824990564479,
+            "max_drawdown": -0.054271215809929885,
+            "average_exposure": 0.4402631150319538,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1725395400,
+            "end": 1726691400,
+            "days": 16,
+            "return": 0.0015246702986886351,
+            "max_drawdown": -0.018971734997121237,
+            "average_exposure": 0.10173241397064338,
+            "time_invested": 0.375
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.2875244281953324,
+            "max_drawdown": -0.19687850558413955,
+            "average_exposure": 0.9064172724171484,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1740601800,
+            "end": 1740861000,
+            "days": 4,
+            "return": 0.02317033649477418,
+            "max_drawdown": -0.006143968008526346,
+            "average_exposure": 0.2422849223496975,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1740947400,
+            "end": 1741465800,
+            "days": 7,
+            "return": -0.06291482159598005,
+            "max_drawdown": -0.06291482159598005,
+            "average_exposure": 0.5569407250879956,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1741552200,
+            "end": 1742761800,
+            "days": 15,
+            "return": 0.008302498316488549,
+            "max_drawdown": -0.010306420118437964,
+            "average_exposure": 0.17048565002851682,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1742848200,
+            "end": 1743193800,
+            "days": 5,
+            "return": -0.010433148226124844,
+            "max_drawdown": -0.010433148226124844,
+            "average_exposure": 0.17655256682095893,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1743280200,
+            "end": 1745181000,
+            "days": 23,
+            "return": 0.008795861399270244,
+            "max_drawdown": -0.017990176691679682,
+            "average_exposure": 0.16998010592958857,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1745267400,
+            "end": 1750105800,
+            "days": 57,
+            "return": 0.13846111930819704,
+            "max_drawdown": -0.0699175482975315,
+            "average_exposure": 0.8439756925440698,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.022451245557179922,
+            "max_drawdown": -0.036415774803471246,
+            "average_exposure": 0.0975657490832017,
+            "time_invested": 0.26956521739130435
+          },
+          {
+            "segment": 8,
+            "direction": "up",
+            "start": 1787344200,
+            "end": 1794169800,
+            "days": 80,
+            "return": -0.029742381737682733,
+            "max_drawdown": -0.13637925191354905,
+            "average_exposure": 0.9541679618562213,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1794256200,
+            "end": 1795033800,
+            "days": 10,
+            "return": -0.0020656869038794268,
+            "max_drawdown": -0.0020656869038794268,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          }
+        ],
+        "major_phases_90d_plus": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 0.9312244841662904,
+            "max_drawdown": -0.2106456299607603,
+            "average_exposure": 0.8878976632242173,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.2875244281953324,
+            "max_drawdown": -0.19687850558413955,
+            "average_exposure": 0.9064172724171484,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.022451245557179922,
+            "max_drawdown": -0.036415774803471246,
+            "average_exposure": 0.0975657490832017,
+            "time_invested": 0.26956521739130435
+          }
+        ],
+        "major_phase_count": 3,
+        "candidate_invested_episodes": 5,
+        "last_12_calendar_months": {
+          "days": 205,
+          "start": 1777408200,
+          "end": 1795120200,
+          "return": -0.010008136026015357,
+          "average_exposure": 0.42709023460032136,
+          "time_invested": 0.5414634146341464
+        }
+      },
+      "metrics": {
+        "full": {
+          "total_return": 1.1519951099370136,
+          "cagr": 0.36219679242879277,
+          "max_drawdown": -0.32297290149781543,
+          "calmar": 1.1214463837339699,
+          "sharpe": 1.0955561487826602,
+          "sortino": 1.6922773470145318,
+          "worst_12m_return": -0.1301027340451486,
+          "longest_drawdown_days": 292,
+          "time_invested": 0.8795580110497238,
+          "average_exposure": 0.6734418599891018,
+          "round_trips": 5,
+          "trade_legs": 40,
+          "turnover": 13.29166475494862,
+          "total_costs": 9.650615842735293,
+          "gross_profit": 124.85012683643667,
+          "fees_paid": 6.031459331218711,
+          "slippage_paid": 3.6191565115165822,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 94.05727663833801
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 137,
+              "pnl": 21.142234355363357
+            }
+          },
+          "segments": 2
+        },
+        "holdout": {
+          "total_return": -0.060833857617875076,
+          "cagr": -0.09599310119166282,
+          "max_drawdown": -0.13816322198278974,
+          "calmar": -0.6947804185083363,
+          "sharpe": -0.32077757779879484,
+          "sortino": -0.4832208576290417,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 148,
+          "time_invested": 0.5859030837004405,
+          "average_exposure": 0.482614529044343,
+          "round_trips": 3,
+          "trade_legs": 11,
+          "turnover": 4.843120376581284,
+          "total_costs": 1.8650052514424773,
+          "gross_profit": -4.218380510345034,
+          "fees_paid": 1.165634214249147,
+          "slippage_paid": 0.6993710371933304,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -8.018842769936484
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 31,
+              "pnl": 1.9354570081489726
+            }
+          },
+          "segments": 2
+        },
+        "matched_exposure": {
+          "total_return": 1.133479033816391,
+          "cagr": 0.357457534618562,
+          "max_drawdown": -0.19959861889299513,
+          "calmar": 1.7908818036972243,
+          "sharpe": 1.1795376873015522,
+          "sortino": 1.8283005195753992,
+          "worst_12m_return": 0.07583749565623821,
+          "longest_drawdown_days": 230,
+          "time_invested": 1.0,
+          "average_exposure": 0.6734418598122556,
+          "round_trips": 2,
+          "trade_legs": 34,
+          "turnover": 3.564224280576164,
+          "total_costs": 2.6356402639444845,
+          "gross_profit": 115.98354364558355,
+          "fees_paid": 1.6471120631070644,
+          "slippage_paid": 0.9885282008374201,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 65.05902172847442
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 246,
+              "pnl": 48.28888165316465
+            }
+          },
+          "segments": 2
+        },
+        "matched_holdout": {
+          "total_return": -0.104191198726996,
+          "cagr": -0.16215127952389208,
+          "max_drawdown": -0.14680906237499425,
+          "calmar": -1.104504564641311,
+          "sharpe": -0.9261593367026929,
+          "sortino": -1.3372194323921196,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 114,
+          "time_invested": 1.0,
+          "average_exposure": 0.48261452903104773,
+          "round_trips": 2,
+          "trade_legs": 12,
+          "turnover": 2.072083396919679,
+          "total_costs": 0.7939268509932539,
+          "gross_profit": -9.625193021706343,
+          "fees_paid": 0.4962178172984743,
+          "slippage_paid": 0.2977090336947796,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -3.951997616715431
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 125,
+              "pnl": -6.467122255984165
+            }
+          },
+          "segments": 2
+        },
+        "stress_2x": {
+          "total_return": 1.0320423594780128,
+          "cagr": 0.3310484815818431,
+          "max_drawdown": -0.3367033703749982,
+          "calmar": 0.9832051316063244,
+          "sharpe": 1.0245812817632753,
+          "sortino": 1.5779158229295895,
+          "worst_12m_return": -0.15177649131334248,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.8795580110497238,
+          "average_exposure": 0.6741517029016664,
+          "round_trips": 5,
+          "trade_legs": 40,
+          "turnover": 13.305985302903284,
+          "total_costs": 18.69820288527752,
+          "gross_profit": 121.90243883307882,
+          "fees_paid": 11.685691102080131,
+          "slippage_paid": 7.0125117831973895,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 86.14592710317035
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 137,
+              "pnl": 17.05830884463093
+            }
+          },
+          "segments": 2
+        },
+        "stress_3x": {
+          "total_return": 0.9186426244257324,
+          "cagr": 0.30057600538066254,
+          "max_drawdown": -0.35017272502865426,
+          "calmar": 0.8583649836122066,
+          "sharpe": 0.9535811291957065,
+          "sortino": 1.4637106226548118,
+          "worst_12m_return": -0.17294493260474408,
+          "longest_drawdown_days": 352,
+          "time_invested": 0.8795580110497238,
+          "average_exposure": 0.6748640221762721,
+          "round_trips": 5,
+          "trade_legs": 40,
+          "turnover": 13.320161544105408,
+          "total_costs": 27.176840236657156,
+          "gross_profit": 119.0411026792304,
+          "fees_paid": 16.98401853395495,
+          "slippage_paid": 10.192821702702208,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 78.61501553965098
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 137,
+              "pnl": 13.249246902922266
+            }
+          },
+          "segments": 2
+        }
+      },
+      "segments": [
+        {
+          "segment": 7,
+          "first": 1689712200,
+          "last": 1750105800,
+          "observations": 700,
+          "return": 1.1737502986121156,
+          "trades": 31,
+          "round_trips": 3,
+          "metrics": {
+            "total_return": 1.1737502986121156,
+            "cagr": 0.4991004982494369,
+            "max_drawdown": -0.32297290149781543,
+            "calmar": 1.5453324286180485,
+            "sharpe": 1.3086398296670225,
+            "sortino": 2.0169128066647986,
+            "worst_12m_return": -0.1301027340451486,
+            "longest_drawdown_days": 251,
+            "time_invested": 0.9785714285714285,
+            "average_exposure": 0.7455876931386722,
+            "round_trips": 3,
+            "trade_legs": 31,
+            "turnover": 10.527997816550803,
+            "total_costs": 7.163089895328942,
+            "gross_profit": 124.53811975654048,
+            "fees_paid": 4.476756052849688,
+            "slippage_paid": 2.6863338424792538,
+            "daily_observations": 700,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.010008136026015357,
+          "trades": 9,
+          "round_trips": 2,
+          "metrics": {
+            "total_return": -0.010008136026015357,
+            "cagr": -0.017749717463545922,
+            "max_drawdown": -0.13816322198278985,
+            "calmar": -0.12846919179227664,
+            "sharpe": 0.028230945783115663,
+            "sortino": 0.04444667410474555,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 101,
+            "time_invested": 0.5414634146341464,
+            "average_exposure": 0.42709023460032147,
+            "round_trips": 2,
+            "trade_legs": 9,
+            "turnover": 2.8201617538951558,
+            "total_costs": 2.487525947406351,
+            "gross_profit": 0.31200707989618737,
+            "fees_paid": 1.5547032783690224,
+            "slippage_paid": 0.9328226690373285,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ],
+      "holdout_segments": [
+        {
+          "segment": 7,
+          "first": 1748291400,
+          "last": 1750105800,
+          "observations": 22,
+          "return": -0.05133953463802954,
+          "trades": 2,
+          "round_trips": 1,
+          "metrics": {
+            "total_return": -0.05133953463802954,
+            "cagr": -0.5828930767853444,
+            "max_drawdown": -0.07092926078125361,
+            "calmar": -8.217949409947908,
+            "sharpe": -2.616443417528168,
+            "sortino": -3.376999817743791,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 21,
+            "time_invested": 1.0,
+            "average_exposure": 1.0,
+            "round_trips": 1,
+            "trade_legs": 2,
+            "turnover": 2.0172149557516694,
+            "total_costs": 0.7794079202434152,
+            "gross_profit": -4.354545543559539,
+            "fees_paid": 0.4871360737318047,
+            "slippage_paid": 0.29227184651161053,
+            "daily_observations": 22,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.010008136026015246,
+          "trades": 9,
+          "round_trips": 2,
+          "metrics": {
+            "total_return": -0.010008136026015246,
+            "cagr": -0.0177497174635457,
+            "max_drawdown": -0.13816322198278974,
+            "calmar": -0.12846919179227514,
+            "sharpe": 0.028230945783121922,
+            "sortino": 0.04444667410475541,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 101,
+            "time_invested": 0.5414634146341464,
+            "average_exposure": 0.42709023460032147,
+            "round_trips": 2,
+            "trade_legs": 9,
+            "turnover": 2.8201617538951553,
+            "total_costs": 1.085597331199062,
+            "gross_profit": 0.13616503321450435,
+            "fees_paid": 0.6784981405173424,
+            "slippage_paid": 0.40709919068171974,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ]
+    },
+    "D": {
+      "candidate": "D",
+      "matched_weight": 0.5433811086695641,
+      "matched_residual": 1.2486334188821502e-10,
+      "matched_holdout_weight": 0.37638772116042674,
+      "matched_holdout_residual": -7.574135763022127e-11,
+      "matched_by_segment": [
+        {
+          "segment": 7,
+          "candidate": {
+            "total_return": 0.8369218323949799,
+            "cagr": 0.37310713505009896,
+            "max_drawdown": -0.251522191914185,
+            "calmar": 1.4833964836685132,
+            "sharpe": 1.1410656743529908,
+            "sortino": 1.6836527907756598,
+            "worst_12m_return": -0.10220502452489977,
+            "longest_drawdown_days": 258,
+            "time_invested": 1.0,
+            "average_exposure": 0.6080789489872743,
+            "round_trips": 5,
+            "trade_legs": 44,
+            "turnover": 7.798782366863216,
+            "total_costs": 4.718419376165333,
+            "gross_profit": 88.41060261566331,
+            "fees_paid": 2.948887782693414,
+            "slippage_paid": 1.7695315934719185,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 67.32951773264462
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 121,
+                "pnl": 16.36266550685336
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.6033806770574301,
+          "matched_exposure": {
+            "total_return": 0.7243530413155426,
+            "cagr": 0.32856759331279384,
+            "max_drawdown": -0.3198206726920224,
+            "calmar": 1.0273494535145151,
+            "sharpe": 1.0629852282510517,
+            "sortino": 1.601140777789269,
+            "worst_12m_return": -0.18418717497214043,
+            "longest_drawdown_days": 242,
+            "time_invested": 1.0,
+            "average_exposure": 0.6080789489404391,
+            "round_trips": 2,
+            "trade_legs": 50,
+            "turnover": 2.078539520328609,
+            "total_costs": 1.1832173238776882,
+            "gross_profit": 73.61852145543195,
+            "fees_paid": 0.7394073013777575,
+            "slippage_paid": 0.44381002249993073,
+            "daily_observations": 700,
+            "regimes": {
+              "up": {
+                "days": 579,
+                "invested_days": 579,
+                "pnl": 37.74065337998732
+              },
+              "down": {
+                "days": 121,
+                "invested_days": 121,
+                "pnl": 34.69465075156694
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": -4.683520238302208e-11
+        },
+        {
+          "segment": 8,
+          "candidate": {
+            "total_return": -0.0508690562354297,
+            "cagr": -0.08876696559936215,
+            "max_drawdown": -0.176749790176021,
+            "calmar": -0.5022182233481647,
+            "sharpe": -0.33650411221059956,
+            "sortino": -0.4830382303266783,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 106,
+            "time_invested": 0.5073170731707317,
+            "average_exposure": 0.33888489698999025,
+            "round_trips": 4,
+            "trade_legs": 16,
+            "turnover": 3.031320344470706,
+            "total_costs": 1.2241598455535403,
+            "gross_profit": -3.862745777989435,
+            "fees_paid": 0.7651053354572096,
+            "slippage_paid": 0.4590545100963307,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -8.615045098793004
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 24,
+                "pnl": 3.528139475250029
+              }
+            },
+            "segments": 1
+          },
+          "matched_weight": 0.3389810773078352,
+          "matched_exposure": {
+            "total_return": -0.05839110658050539,
+            "cagr": -0.10158532750575788,
+            "max_drawdown": -0.1219940781883907,
+            "calmar": -0.8327070380324824,
+            "sharpe": -0.680379609466571,
+            "sortino": -1.0002929600787063,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 107,
+            "time_invested": 1.0,
+            "average_exposure": 0.3388848971148536,
+            "round_trips": 2,
+            "trade_legs": 18,
+            "turnover": 0.8180427484365997,
+            "total_costs": 0.32249094023255925,
+            "gross_profit": -5.516619717817984,
+            "fees_paid": 0.20156459539182822,
+            "slippage_paid": 0.12092634484073103,
+            "daily_observations": 205,
+            "regimes": {
+              "up": {
+                "days": 80,
+                "invested_days": 80,
+                "pnl": -2.5687604381428315
+              },
+              "down": {
+                "days": 125,
+                "invested_days": 125,
+                "pnl": -3.270350219907712
+              }
+            },
+            "segments": 1
+          },
+          "matched_residual": 1.2486334188821502e-10
+        }
+      ],
+      "acceptance": {
+        "1_positive_net_return_after_2x_costs": true,
+        "2_drawdown_le_60pct_buy_hold": false,
+        "3_calmar_and_sharpe_better_than_matched": true,
+        "4_holdout_return_and_drawdown_vs_matched": false,
+        "5_single_parameter_20pct_robustness": false,
+        "6_total_costs_le_25pct_gross_profit": true,
+        "7_worst_12m_better_than_buy_hold": true
+      },
+      "status": "NOT VALIDATED",
+      "enabled": false,
+      "plateau": {
+        "pass_fraction": 0.8846153846153846,
+        "cases": 26,
+        "passes": 23,
+        "assessment": "fragile / no demonstrated plateau",
+        "return_range": [
+          0.34425486534626093,
+          0.8405939314096946
+        ],
+        "drawdown_range": [
+          -0.31751998579901863,
+          -0.2312353415301338
+        ]
+      },
+      "random_timing_null": {
+        "trials": 999,
+        "seed": 20261120,
+        "share_net_return_ge_actual": 0.3963963963963964,
+        "share_calmar_ge_actual": 0.26126126126126126,
+        "unshifted_reconstruction": {
+          "total_return": 0.7434793524027967,
+          "cagr": 0.25131600688363265,
+          "max_drawdown": -0.25057051348304427,
+          "calmar": 1.0029751840718435,
+          "sharpe": 0.8984381510719276,
+          "sortino": 1.323280186107019,
+          "worst_12m_return": -0.10170588134101266,
+          "longest_drawdown_days": 328,
+          "time_invested": 0.8883977900552487,
+          "average_exposure": 0.5471012908000438,
+          "round_trips": 0,
+          "trade_legs": 0,
+          "turnover": 0.0,
+          "total_costs": 0,
+          "gross_profit": 74.34793524027967,
+          "fees_paid": 0,
+          "slippage_paid": 0,
+          "daily_observations": 905,
+          "regimes": {}
+        },
+        "reconstruction_return_error": 5.551115123125783e-15,
+        "close_to_close_backtest_reference": {
+          "total_return": 0.7434793524027912,
+          "cagr": 0.2513160068836311,
+          "max_drawdown": -0.251522191914185,
+          "calmar": 0.999180251138141,
+          "sharpe": 0.8932779587580296,
+          "sortino": 1.3141563870286834,
+          "worst_12m_return": -0.10220502452489977,
+          "longest_drawdown_days": 328,
+          "time_invested": 0.8883977900552487,
+          "average_exposure": 0.5471012908000443,
+          "round_trips": 9,
+          "trade_legs": 60,
+          "turnover": 10.954390656795049,
+          "total_costs": 6.967105322803883,
+          "gross_profit": 81.31504056308302,
+          "fees_paid": 4.354326477476647,
+          "slippage_paid": 2.6127788453272363,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 51.50435330360445
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 145,
+              "pnl": 22.84358193667468
+            }
+          },
+          "segments": 2
+        },
+        "interpretation": "Joint cyclic shifts of observed post-open weights and opening cost drag; terminal liquidation drag fixed. Shifted open-return net returns and Calmar are compared to the actual strategy's reported net return and Calmar. The unshifted reconstruction error is separately disclosed; this is not an executable strategy or significance test."
+      },
+      "phases": {
+        "by_vote": {
+          "up": {
+            "days": 659,
+            "net_pnl": 51.50435330360445,
+            "pnl_on_initial_capital": 0.5150435330360444,
+            "mean_daily_return": 0.0007893219794119497,
+            "average_exposure": 0.7126750174097153,
+            "time_invested": 1.0
+          },
+          "down": {
+            "days": 246,
+            "net_pnl": 22.84358193667468,
+            "pnl_on_initial_capital": 0.2284358193667468,
+            "mean_daily_return": 0.0006052587147509563,
+            "average_exposure": 0.10355216138633065,
+            "time_invested": 0.5894308943089431
+          }
+        },
+        "all_phases": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1689712200,
+            "end": 1692304200,
+            "days": 31,
+            "return": -0.10482333282337797,
+            "max_drawdown": -0.10821569812392007,
+            "average_exposure": 0.9609639213447949,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1692390600,
+            "end": 1693254600,
+            "days": 11,
+            "return": 0.006165890700556842,
+            "max_drawdown": -0.0032314747732653526,
+            "average_exposure": 0.12468499449290806,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1693341000,
+            "end": 1693427400,
+            "days": 2,
+            "return": -0.007795777710399077,
+            "max_drawdown": -0.007795777710399077,
+            "average_exposure": 0.13055298474338559,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1693513800,
+            "end": 1696192200,
+            "days": 32,
+            "return": 0.007655543818322785,
+            "max_drawdown": -0.005031171901877296,
+            "average_exposure": 0.1254565487396571,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 0.6936339134461202,
+            "max_drawdown": -0.19812828150617,
+            "average_exposure": 0.805493723956081,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1720211400,
+            "end": 1720902600,
+            "days": 9,
+            "return": 0.01649398263527102,
+            "max_drawdown": -0.01160737688844593,
+            "average_exposure": 0.32510121750672094,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1720989000,
+            "end": 1722803400,
+            "days": 22,
+            "return": -0.08071363645073992,
+            "max_drawdown": -0.12070815520990874,
+            "average_exposure": 0.605658495863125,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1722889800,
+            "end": 1723235400,
+            "days": 5,
+            "return": 0.025725682547831807,
+            "max_drawdown": -0.005052032915318638,
+            "average_exposure": 0.21308688531587255,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1723321800,
+            "end": 1723667400,
+            "days": 5,
+            "return": -0.013063896748001458,
+            "max_drawdown": -0.013063896748001458,
+            "average_exposure": 0.22044475299061211,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1723753800,
+            "end": 1724185800,
+            "days": 6,
+            "return": 0.01455753770467516,
+            "max_drawdown": -0.0021537589053804984,
+            "average_exposure": 0.21846146588104362,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1724272200,
+            "end": 1725309000,
+            "days": 13,
+            "return": -0.010141196581692213,
+            "max_drawdown": -0.021153625406331922,
+            "average_exposure": 0.22401254392219652,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1725395400,
+            "end": 1726691400,
+            "days": 16,
+            "return": 0.017356067026760735,
+            "max_drawdown": -0.01746460559827334,
+            "average_exposure": 0.21450913975275537,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.165230662651223,
+            "max_drawdown": -0.17954001418852483,
+            "average_exposure": 0.6269571833838018,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1740601800,
+            "end": 1740861000,
+            "days": 4,
+            "return": 0.012140430182245865,
+            "max_drawdown": -0.0025409031981653563,
+            "average_exposure": 0.12102877674139376,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1740947400,
+            "end": 1741465800,
+            "days": 7,
+            "return": -0.014403996487423965,
+            "max_drawdown": -0.014403996487423965,
+            "average_exposure": 0.1269977350073282,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1741552200,
+            "end": 1742761800,
+            "days": 15,
+            "return": 0.006905690272511311,
+            "max_drawdown": -0.006226498510427336,
+            "average_exposure": 0.12012866648364935,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1742848200,
+            "end": 1743193800,
+            "days": 5,
+            "return": -0.007372816256443704,
+            "max_drawdown": -0.007372816256443704,
+            "average_exposure": 0.12467219074012884,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "down",
+            "start": 1743280200,
+            "end": 1745181000,
+            "days": 23,
+            "return": 0.006196627427921708,
+            "max_drawdown": -0.01269305508304197,
+            "average_exposure": 0.11975275504757901,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1745267400,
+            "end": 1750105800,
+            "days": 57,
+            "return": 0.06603480773431891,
+            "max_drawdown": -0.05262339345140321,
+            "average_exposure": 0.5992523448090413,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.03625805213351563,
+            "max_drawdown": -0.02177244116281618,
+            "average_exposure": 0.05489624622749126,
+            "time_invested": 0.20869565217391303
+          },
+          {
+            "segment": 8,
+            "direction": "up",
+            "start": 1787344200,
+            "end": 1794169800,
+            "days": 80,
+            "return": -0.08313609801203214,
+            "max_drawdown": -0.1759026642877236,
+            "average_exposure": 0.7894791945848312,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1794256200,
+            "end": 1795033800,
+            "days": 10,
+            "return": -0.001027943971648182,
+            "max_drawdown": -0.001027943971648182,
+            "average_exposure": 0.0,
+            "time_invested": 0.0
+          }
+        ],
+        "major_phases_90d_plus": [
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1696278600,
+            "end": 1720125000,
+            "days": 277,
+            "return": 0.6936339134461202,
+            "max_drawdown": -0.19812828150617,
+            "average_exposure": 0.805493723956081,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 7,
+            "direction": "up",
+            "start": 1726777800,
+            "end": 1740515400,
+            "days": 160,
+            "return": 0.165230662651223,
+            "max_drawdown": -0.17954001418852483,
+            "average_exposure": 0.6269571833838018,
+            "time_invested": 1.0
+          },
+          {
+            "segment": 8,
+            "direction": "down",
+            "start": 1777408200,
+            "end": 1787257800,
+            "days": 115,
+            "return": 0.03625805213351563,
+            "max_drawdown": -0.02177244116281618,
+            "average_exposure": 0.05489624622749126,
+            "time_invested": 0.20869565217391303
+          }
+        ],
+        "major_phase_count": 3,
+        "candidate_invested_episodes": 3,
+        "last_12_calendar_months": {
+          "days": 205,
+          "start": 1777408200,
+          "end": 1795120200,
+          "return": -0.05086905623542892,
+          "average_exposure": 0.33888489698999025,
+          "time_invested": 0.5073170731707317
+        }
+      },
+      "metrics": {
+        "full": {
+          "total_return": 0.7434793524027912,
+          "cagr": 0.2513160068836311,
+          "max_drawdown": -0.251522191914185,
+          "calmar": 0.999180251138141,
+          "sharpe": 0.8932779587580296,
+          "sortino": 1.3141563870286834,
+          "worst_12m_return": -0.10220502452489977,
+          "longest_drawdown_days": 328,
+          "time_invested": 0.8883977900552487,
+          "average_exposure": 0.5471012908000443,
+          "round_trips": 9,
+          "trade_legs": 60,
+          "turnover": 10.954390656795049,
+          "total_costs": 6.967105322803883,
+          "gross_profit": 81.31504056308302,
+          "fees_paid": 4.354326477476647,
+          "slippage_paid": 2.6127788453272363,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 51.50435330360445
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 145,
+              "pnl": 22.84358193667468
+            }
+          },
+          "segments": 2
+        },
+        "holdout": {
+          "total_return": -0.07925081430359737,
+          "cagr": -0.12432730525369573,
+          "max_drawdown": -0.176749790176021,
+          "calmar": -0.7034085026628947,
+          "sharpe": -0.49660340565594396,
+          "sortino": -0.6983727373551226,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 126,
+          "time_invested": 0.5550660792951542,
+          "average_exposure": 0.3764809487895901,
+          "round_trips": 6,
+          "trade_legs": 20,
+          "turnover": 4.488963336022779,
+          "total_costs": 1.7597663953246752,
+          "gross_profit": -6.165315035035064,
+          "fees_paid": 1.0998626670521914,
+          "slippage_paid": 0.6599037282724838,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -11.347719339492741
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 24,
+              "pnl": 3.4226379091330017
+            }
+          },
+          "segments": 2
+        },
+        "matched_exposure": {
+          "total_return": 0.48190654908558916,
+          "cagr": 0.17191087333906085,
+          "max_drawdown": -0.2922050300099559,
+          "calmar": 0.5883227723123163,
+          "sharpe": 0.7201239403964175,
+          "sortino": 1.0798657560575924,
+          "worst_12m_return": -0.16284521070419067,
+          "longest_drawdown_days": 388,
+          "time_invested": 1.0,
+          "average_exposure": 0.5471012905867859,
+          "round_trips": 4,
+          "trade_legs": 68,
+          "turnover": 3.2538271560758707,
+          "total_costs": 1.8616218180053568,
+          "gross_profit": 50.052276726564266,
+          "fees_paid": 1.163443250239214,
+          "slippage_paid": 0.6981785677661427,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 27.626230465724745
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 246,
+              "pnl": 20.564424442834166
+            }
+          },
+          "segments": 2
+        },
+        "matched_holdout": {
+          "total_return": -0.07820415305378758,
+          "cagr": -0.12272618617830766,
+          "max_drawdown": -0.13591014553353786,
+          "calmar": -0.9029950317286882,
+          "sharpe": -0.7398693415123057,
+          "sortino": -1.0700611504802546,
+          "worst_12m_return": null,
+          "longest_drawdown_days": 123,
+          "time_invested": 1.0,
+          "average_exposure": 0.37648094871384874,
+          "round_trips": 4,
+          "trade_legs": 24,
+          "turnover": 1.6688107203689557,
+          "total_costs": 0.6495341209324926,
+          "gross_profit": -7.170881184446267,
+          "fees_paid": 0.40596890963447513,
+          "slippage_paid": 0.2435652112980175,
+          "daily_observations": 227,
+          "regimes": {
+            "up": {
+              "days": 102,
+              "invested_days": 102,
+              "pnl": -4.150875490531789
+            },
+            "down": {
+              "days": 125,
+              "invested_days": 125,
+              "pnl": -3.6695398148469707
+            }
+          },
+          "segments": 2
+        },
+        "stress_2x": {
+          "total_return": 0.6656651374904488,
+          "cagr": 0.2284843358580082,
+          "max_drawdown": -0.25896263351896653,
+          "calmar": 0.8823061951185861,
+          "sharpe": 0.831670776134334,
+          "sortino": 1.2193465152858374,
+          "worst_12m_return": -0.11543507789690177,
+          "longest_drawdown_days": 388,
+          "time_invested": 0.8883977900552487,
+          "average_exposure": 0.5478247915792375,
+          "round_trips": 9,
+          "trade_legs": 60,
+          "turnover": 10.959850516480591,
+          "total_costs": 13.607285167002226,
+          "gross_profit": 80.1737989160471,
+          "fees_paid": 8.504102251757548,
+          "slippage_paid": 5.103182915244679,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 45.71944941677515
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 145,
+              "pnl": 20.847064332269724
+            }
+          },
+          "segments": 2
+        },
+        "stress_3x": {
+          "total_return": 0.591071323469013,
+          "cagr": 0.20599204694079898,
+          "max_drawdown": -0.26633816927506915,
+          "calmar": 0.773422928833209,
+          "sharpe": 0.7698521430380884,
+          "sortino": 1.1247726359441448,
+          "worst_12m_return": -0.12849773620245053,
+          "longest_drawdown_days": 388,
+          "time_invested": 0.8883977900552487,
+          "average_exposure": 0.5485518271360652,
+          "round_trips": 9,
+          "trade_legs": 60,
+          "turnover": 10.96594041994454,
+          "total_costs": 19.933451053340267,
+          "gross_profit": 79.04058340024156,
+          "fees_paid": 12.45740655095405,
+          "slippage_paid": 7.476044502386218,
+          "daily_observations": 905,
+          "regimes": {
+            "up": {
+              "days": 659,
+              "invested_days": 659,
+              "pnl": 40.16093858542027
+            },
+            "down": {
+              "days": 246,
+              "invested_days": 145,
+              "pnl": 18.946193761481027
+            }
+          },
+          "segments": 2
+        }
+      },
+      "segments": [
+        {
+          "segment": 7,
+          "first": 1689712200,
+          "last": 1750105800,
+          "observations": 700,
+          "return": 0.8369218323949799,
+          "trades": 44,
+          "round_trips": 5,
+          "metrics": {
+            "total_return": 0.8369218323949799,
+            "cagr": 0.37310713505009896,
+            "max_drawdown": -0.251522191914185,
+            "calmar": 1.4833964836685132,
+            "sharpe": 1.1410656743529908,
+            "sortino": 1.6836527907756598,
+            "worst_12m_return": -0.10220502452489977,
+            "longest_drawdown_days": 258,
+            "time_invested": 1.0,
+            "average_exposure": 0.6080789489872738,
+            "round_trips": 5,
+            "trade_legs": 44,
+            "turnover": 7.798782366863216,
+            "total_costs": 4.718419376165333,
+            "gross_profit": 88.41060261566331,
+            "fees_paid": 2.948887782693414,
+            "slippage_paid": 1.7695315934719185,
+            "daily_observations": 700,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.05086905623542959,
+          "trades": 16,
+          "round_trips": 4,
+          "metrics": {
+            "total_return": -0.05086905623542959,
+            "cagr": -0.08876696559936192,
+            "max_drawdown": -0.17674979017602077,
+            "calmar": -0.502218223348164,
+            "sharpe": -0.33650411221057847,
+            "sortino": -0.483038230326648,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 106,
+            "time_invested": 0.5073170731707317,
+            "average_exposure": 0.33888489698999025,
+            "round_trips": 4,
+            "trade_legs": 16,
+            "turnover": 3.0313203444707058,
+            "total_costs": 2.24868594663855,
+            "gross_profit": -7.095562052580301,
+            "fees_paid": 1.4054386947832331,
+            "slippage_paid": 0.8432472518553167,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ],
+      "holdout_segments": [
+        {
+          "segment": 7,
+          "first": 1748291400,
+          "last": 1750105800,
+          "observations": 22,
+          "return": -0.029902889853739456,
+          "trades": 4,
+          "round_trips": 2,
+          "metrics": {
+            "total_return": -0.029902889853739456,
+            "cagr": -0.39570032331780314,
+            "max_drawdown": -0.0517518617503,
+            "calmar": -7.646107984038069,
+            "sharpe": -1.5829093728419303,
+            "sortino": -2.070506749574861,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 13,
+            "time_invested": 1.0,
+            "average_exposure": 0.7268077951040448,
+            "round_trips": 2,
+            "trade_legs": 4,
+            "turnover": 1.4507178977119253,
+            "total_costs": 0.5722124667960984,
+            "gross_profit": -2.4180765185778528,
+            "fees_paid": 0.3576361921676671,
+            "slippage_paid": 0.21457627462843126,
+            "daily_observations": 22,
+            "regimes": {}
+          }
+        },
+        {
+          "segment": 8,
+          "first": 1777408200,
+          "last": 1795033800,
+          "observations": 205,
+          "return": -0.05086905623542959,
+          "trades": 16,
+          "round_trips": 4,
+          "metrics": {
+            "total_return": -0.05086905623542959,
+            "cagr": -0.08876696559936192,
+            "max_drawdown": -0.176749790176021,
+            "calmar": -0.5022182233481634,
+            "sharpe": -0.33650411221059257,
+            "sortino": -0.48303823032666793,
+            "worst_12m_return": null,
+            "longest_drawdown_days": 106,
+            "time_invested": 0.5073170731707317,
+            "average_exposure": 0.33888489698999025,
+            "round_trips": 4,
+            "trade_legs": 16,
+            "turnover": 3.0313203444707058,
+            "total_costs": 1.1875539285285768,
+            "gross_profit": -3.7472385164572115,
+            "fees_paid": 0.7422264748845243,
+            "slippage_paid": 0.44532745364405246,
+            "daily_observations": 205,
+            "regimes": {}
+          }
+        }
+      ]
+    }
+  },
+  "buy_and_hold": {
+    "BTC buy-and-hold": {
+      "total_return": 1.8012009249807317,
+      "cagr": 0.5150278404279485,
+      "max_drawdown": -0.28947097287874113,
+      "calmar": 1.7792037498823507,
+      "sharpe": 1.1624504158704918,
+      "sortino": 1.796562542812895,
+      "worst_12m_return": 0.07318862359550371,
+      "longest_drawdown_days": 237,
+      "time_invested": 1.0,
+      "average_exposure": 1.0,
+      "round_trips": 2,
+      "trade_legs": 4,
+      "turnover": 4.4417423248632355,
+      "total_costs": 4.296344532339342,
+      "gross_profit": 184.4164370304125,
+      "fees_paid": 2.6849559970974846,
+      "slippage_paid": 1.6113885352418573,
+      "daily_observations": 905,
+      "regimes": {
+        "up": {
+          "days": 659,
+          "invested_days": 659,
+          "pnl": 99.80369228368502
+        },
+        "down": {
+          "days": 246,
+          "invested_days": 246,
+          "pnl": 80.31640021438815
+        }
+      },
+      "segments": 2
+    },
+    "BTC+ETH equal-weight buy-and-hold": {
+      "total_return": 0.8759459945571877,
+      "cagr": 0.28882465476535435,
+      "max_drawdown": -0.4137163483177969,
+      "calmar": 0.698122411501837,
+      "sharpe": 0.7699746281708352,
+      "sortino": 1.151645255533065,
+      "worst_12m_return": -0.22963839829835442,
+      "longest_drawdown_days": 388,
+      "time_invested": 1.0,
+      "average_exposure": 1.0,
+      "round_trips": 4,
+      "trade_legs": 8,
+      "turnover": 4.079929863946234,
+      "total_costs": 3.0678627071804754,
+      "gross_profit": 90.66246216289925,
+      "fees_paid": 1.917286697900374,
+      "slippage_paid": 1.1505760092801014,
+      "daily_observations": 905,
+      "regimes": {
+        "up": {
+          "days": 659,
+          "invested_days": 659,
+          "pnl": 37.10224326250275
+        },
+        "down": {
+          "days": 246,
+          "invested_days": 246,
+          "pnl": 50.49235619321601
+        }
+      },
+      "segments": 2
+    }
+  },
+  "legacy_4h_btc": [
+    {
+      "status": "evaluated",
+      "segment": 7,
+      "start": 1689712200,
+      "end": 1750192200,
+      "observations": 701,
+      "metrics": {
+        "total_return": 0.038833129915577747,
+        "cagr": 0.02007794450372495,
+        "max_drawdown": -0.0409044428288442,
+        "win_rate": 0.0,
+        "profit_factor": null,
+        "sharpe": 0.5916334335346572,
+        "sortino": 1.0958499589024835,
+        "trades": 0,
+        "average_win": 0.0,
+        "average_loss": 0.0,
+        "calmar": 0.4908499692255135,
+        "exposure_fraction": 0.12857142857142856,
+        "longest_flat_days": 128,
+        "worst_month": -0.011141548019495406,
+        "max_consecutive_losses": 0,
+        "drawdown_duration_days": 389,
+        "by_layer": {},
+        "by_asset": {},
+        "daily_sampled_max_drawdown": -0.030942188719810804,
+        "max_drawdown_4h": -0.0409044428288442,
+        "trade_legs": 21
+      },
+      "costs_note": "Legacy engine uses configured nominal fees/slippage; explicit aggregate costs not exposed by its result schema."
+    },
+    {
+      "status": "evaluated",
+      "segment": 8,
+      "start": 1777408200,
+      "end": 1795120200,
+      "observations": 206,
+      "metrics": {
+        "total_return": 0.004219534712880613,
+        "cagr": 0.00753037087117633,
+        "max_drawdown": -0.029542360448312266,
+        "win_rate": 0.0,
+        "profit_factor": null,
+        "sharpe": 0.19513124385038116,
+        "sortino": 0.4480959765461769,
+        "trades": 0,
+        "average_win": 0.0,
+        "average_loss": 0.0,
+        "calmar": 0.25490078507272884,
+        "exposure_fraction": 0.11219512195121951,
+        "longest_flat_days": 72,
+        "worst_month": -0.007585335994245934,
+        "max_consecutive_losses": 0,
+        "drawdown_duration_days": 140,
+        "by_layer": {},
+        "by_asset": {},
+        "daily_sampled_max_drawdown": -0.022863125276301077,
+        "max_drawdown_4h": -0.029542360448312266,
+        "trade_legs": 7
+      },
+      "costs_note": "Legacy engine uses configured nominal fees/slippage; explicit aggregate costs not exposed by its result schema."
+    }
+  ],
+  "statistical_caveat": "Trend episodes are few; the random-entry diagnostic is not a significance test. With approximately 10\u201320 independent trends, statistical significance cannot be claimed.",
+  "paper_state": "disabled by default; all candidates remain disabled; LIVE blocked",
+  "reproduction": "python -m backtest.timing_v3 --snapshot reports/timing_v3/inputs --output reports/timing_v3_replay"
+}

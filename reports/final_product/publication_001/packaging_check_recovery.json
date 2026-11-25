@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-11-25T06:52:28.095398+00:00",
+  "existing_artifacts_reformatted": false,
+  "first_attempt_committed_or_pushed": false,
+  "initial_commit_attempt": "STOPPED_BEFORE_COMMIT",
+  "reason": "Global whitespace check treated original CRLF and archived evidence whitespace as errors after byte-preserving staging.",
+  "recovery": "Preserved frozen bytes; checked only publication-edited and new files with cr-at-eol enabled.",
+  "scoped_whitespace_check_exit": 0
+}

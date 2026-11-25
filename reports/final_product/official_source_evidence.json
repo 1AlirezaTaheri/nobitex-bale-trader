@@ -1,0 +1,61 @@
+[
+  {
+    "source": "bale",
+    "url": "https://docs.bale.ai/",
+    "accessed_utc": "2026-11-25T04:15:48.169455+00:00",
+    "status": 200,
+    "term_presence": {
+      "sendPhoto": true,
+      "multipart/form-data": true,
+      "getUpdates": true,
+      "getWebhookInfo": true
+    },
+    "sendPhoto_last_context": "sendPhoto\\n\\n\u0627\u0632 \u0627\u06cc\u0646 \u0645\u062a\u062f \u062c\u0647\u062a \u0627\u0631\u0633\u0627\u0644 \u062a\u0635\u0627\u0648\u06cc\u0631 \u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u06a9\u0646\u06cc\u062f. \u062f\u0631 \u0635\u0648\u0631\u062a \u0627\u062c\u0631\u0627\u06cc \u0645\u0648\u0641\u0642\u06cc\u062a\u200c\u0622\u0645\u06cc\u0632\u060c \u067e\u06cc\u0627\u0645 \u0627\u0631\u0633\u0627\u0644\u200c\u0634\u062f\u0647 \u0628\u0631\u06af\u0631\u062f\u0627\u0646\u062f\u0647 \u0645\u06cc\u200c\u0634\u0648\u062f.\\n\\n\u067e\u0627\u0631\u0627\u0645\u062a\u0631 \u0646\u0648\u0639 \u0627\u0644\u0632\u0627\u0645 \u062a\u0648\u0636\u06cc\u062d\u0627\u062a\\nchat_id String \u06cc\u0627 Integer \u0627\u0644\u0632\u0627\u0645\u06cc \u0634\u0646\u0627\u0633\u0647 \u0645\u0646\u062d\u0635\u0631\u0628\u0647\u200c\u0641\u0631\u062f \u06af\u0641\u062a\u06af\u0648 \u0647\u062f\u0641 \u06cc\u0627 \u0646\u0627\u0645\u200c \u06a9\u0627\u0631\u0628\u0631\u06cc \u06a9\u0627\u0646\u0627\u0644 \u0647\u062f\u0641 (\u0628\u0627 \u0641\u0631\u0645\u062a @channelusername)\\nfrom_chat_id Integer \u06cc\u0627 String \u0627\u0644\u0632\u0627\u0645\u06cc \u0634\u0646\u0627\u0633\u0647 \u0645\u0646\u062d\u0635\u0631\u0628\u0647\u200c\u0641\u0631\u062f \u06af\u0641\u062a\u06af\u0648\u06cc \u06a9\u0647 \u067e\u06cc\u0627\u0645 \u0627\u0635\u0644\u06cc \u062f\u0631 \u0622\u0646\u200c\u062c\u0627 \u0627\u0631\u0633\u0627\u0644 \u0634\u062f\u0647 \u0627\u0633\u062a (\u06cc\u0627 \u0646\u0627\u0645 \u06a9\u0627\u0631\u0628\u0631\u06cc \u06a9\u0627\u0646\u0627\u0644 \u0628\u0627 \u0641\u0631\u0645\u062a @channelusername)\\nphoto InputFile \u06cc\u0627 String \u0627\u0644\u0632\u0627\u0645\u06cc \u062a\u0635\u0648\u06cc\u0631\u06cc \u06a9\u0647 \u0628\u0627\u06cc\u062f \u0627\u0631\u0633\u0627\u0644 \u0634\u0648\u062f. \u06cc\u06a9 file_id \u0631\u0627 \u0628\u0647 \u0635\u0648\u0631\u062a \u0631\u0634\u062a\u0647 \u0648\u0627\u0631\u062f \u06a9\u0646\u06cc\u062f \u062a\u0627 \u06cc\u06a9 \u062a\u0635\u0648\u06cc\u0631 \u06a9\u0647 \u062f\u0631 \u0633\u0631\u0648\u0631\u0647\u0627\u06cc \u0628\u0644\u0647 \u0648\u062c\u0648\u062f \u062f\u0627\u0631\u062f\u060c \u0627\u0631\u0633\u0627\u0644 \u0634\u0648\u062f (\u067e\u06cc\u0634\u0646\u0647\u0627\u062f\u06cc) \u06cc\u0627 \u06cc\u06a9 HTTP URL \u0628\u0647 \u0635\u0648\u0631\u062a \u0631\u0634\u062a\u0647 \u0648\u0627\u0631\u062f \u06a9\u0646\u06cc\u062f \u062a\u0627 \u0628\u0644\u0647 \u06cc\u06a9 \u062a\u0635\u0648\u06cc\u0631 \u0631\u0627 \u0627\u0632 \u0627\u06cc\u0646\u062a\u0631\u0646\u062a \u062f\u0631\u06cc\u0627\u0641\u062a \u0648 \u0627\u0631\u0633\u0627\u0644 \u06a9\u0646\u062f \u0648 \u06cc\u0627 \u06cc\u06a9 \u062a\u0635\u0648\u06cc\u0631 \u062c\u062f\u06cc\u062f \u0631\u0627 \u0628\u0627 \u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0632 multipart/form-data \u0622\u067e\u0644\u0648\u062f \u06a9\u0646\u06cc\u062f.\\ncaption String \u0627\u062e\u062a\u06cc\u0627\u0631\u06cc \u0632\u06cc\u0631\u0646\u0648\u06cc\u0633 \u062a\u0635\u0648\u06cc\u0631 (\u062f\u0631 \u0632\u0645\u0627\u0646 \u0627\u0631\u0633\u0627\u0644 \u0645\u062c\u062f\u062f \u062a\u0635\u0627\u0648\u06cc\u0631 \u0628\u0627 \u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0632 file_id \u0646\u06cc\u0632 \u0642\u0627\u0628\u0644 \u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0633\u062a)\u060c \u0628\u06cc\u0646 \u06f0 \u062a\u0627 \u06f4\u06f0\u06f9\u06f6 \u06a9\u0627\u0631\u0627\u06a9\u062a\u0631\\nreply_to_message_id Integer \u0627\u062e\u062a\u06cc\u0627\u0631\u06cc ID \u067e\u06cc\u0627\u0645 \u0627\u0635\u0644\u06cc\u060c \u062f\u0631 \u0635\u0648\u0631\u062a\u06cc \u06a9\u0647 \u067e\u06cc\u0627\u0645 \u06cc\u06a9 \u067e\u0627\u0633\u062e \u0628\u0627\u0634\u062f.\\nreply_markup InlineKeyboardButton \u06cc\u0627 ReplyKeyboardMarkup \u06cc\u0627 ReplyKeyboardRemove \u0627\u062e\u062a\u06cc\u0627\u0631\u06cc \u0627\u0645\u06a9\u0627\u0646\u0627\u062a \u0627\u0636\u0627\u0641\u0647 \u0631\u0627\u0628\u0637 \u06a9\u0627\u0631\u0628\u0631\u06cc \u0628\u0627\u0632\u0648. \u06cc\u06a9 \u0634\u06cc JSON-serialized \u0627\u0633\u062a \u06a9\u0647 \u0645\u06cc\u062a\u0648\u0627\u0646\u062f \u0628\u0631\u0627\u06cc \u06cc\u06a9 \u0635\u0641\u062d\u0647\u200c\u06a9\u0644\u06cc\u062f inline \u06cc\u0627 ReplyMarkup \u0648 \u06cc\u0627 \u062f\u0633\u062a\u0648\u0631\u0627\u0644\u0639\u0645\u0644\u200c\u0647\u0627\u06cc\u06cc \u0628\u0631\u0627\u06cc \u062d\u0630\u0641 \u0635\u0641\u062d\u0647\u200c\u06a9\u0644\u06cc\u062f \u067e\u0627\u0633\u062e \u0628\u0627\u0634\u062f.\\nmessage_thread_id Integer \u0627\u062e\u062a\u06cc\u0627\u0631\u06cc \u0634\u0646\u0627\u0633\u0647 \u0645\u0648\u0636\u0648\u0639 \u0647\u062f\u0641\u061b \u0627\u0632 \u067e\u0627\u0633\u062e createForumTopic \u06cc\u0627 \u0641\u06cc\u0644\u062f message_thread_id \u067e\u06cc\u0627\u0645 \u062f\u0631\u06cc\u0627\u0641\u062a\u06cc \u062f\u0631 \u0647\u0645\u0627\u0646 \u0645\u0648\u0636\u0648\u0639 \u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u06a9\u0646\u06cc\u062f.\\n\\nsendAudio\\n\\n\u0627\u06af\u0631 \u0645\u06cc\u200c\u062e\u0648\u0627\u0647\u06cc\u062f \u06a9\u0644\u0627\u06cc\u0646\u062a\u200c\u0647\u0627\u06cc \u0628\u0644\u0647 \u0627\u06cc\u0646 \u0641\u0627\u06cc\u0644\u200c\u0647\u0627 \u0631\u0627 \u062f\u0631 \u067e\u062e\u0634 \u06a9\u0646\u0646\u062f\u0647 \u0645\u0648\u0633\u06cc\u0642\u06cc \u0646\u0645\u0627\u06cc\u0634 \u062f\u0647\u0646\u062f\u060c \u0627\u0632 \u0627\u06cc\u0646 \u0645\u062a\u062f \u0628\u0631\u0627\u06cc \u0627\u0631\u0633\u0627\u0644 \u0641\u0627\u06cc\u0644\u200c\u0647\u0627\u06cc \u0635\u0648\u062a\u06cc \u0627\u0633\u062a\u0641\u0627\u062f\u0647\\n\u06a9\u0646\u06cc\u062f. \u0641\u0627\u06cc\u0644 \u0635\u0648\u062a\u06cc \u0628\u0627\u06cc\u062f \u0628\u0627 \u0641\u0631\u0645\u062a .MP3 \u06cc\u0627 .M4A \u0628\u0627\u0634\u062f. \u062f\u0631 \u0635\u0648\u0631\u062a \u0627\u062c\u0631\u0627\u06cc \u0645\u0648\u0641\u0642\u060c \u067e\u06cc\u0627\u0645 \u0627\u0631\u0633\u0627\u0644\u200c\u0634\u062f\u0647 \u0628\u0631\u06af\u0631\u062f\u0627\u0646\u062f\u0647 \u0645\u06cc\u200c\u0634\u0648\u062f. \u0628\u0627\u0632\u0648\u0647\u0627\u06cc \u0641\u0639\u0644\u06cc\\n\u0645\u064a\u200c\u062a\u0648\u0627\u0646\u0646\u062f \u0641\u0627\u06cc\u0644\u200c\u0647\u0627\u06cc \u0635\u0648\u062a\u06cc \u0628\u0627 \u0627\u0646\u062f\u0627\u0632\u0647\u200c\u0647\u0627\u06cc \u062a\u0627 \u06f5\u06f0 \u0645\u06af\u0627\u0628\u0627\u06cc\u062a \u0631\u0627 \u0627\u0631\u0633\u0627\u0644 \u06a9\u0646\u0646\u062f. \u0627\u06cc\u0646 \u0645\u062d\u062f\u0648\u062f\u06cc\u062a \u0627\u062d\u062a\u0645\u0627\u0644\u200c \u062f\u0627\u0631\u062f \u062f\u0631 \u0622\u06cc\u0646\u062f\u0647 \u0639\u0648\u0636 \u0634\u0648\u062f.\\n\\n\u0628\u0631\u0627\u06cc \u0627\u0631\u0633\u0627"
+  },
+  {
+    "source": "nobitex",
+    "url": "https://apidocs.nobitex.ir/",
+    "accessed_utc": "2026-11-25T04:15:48.219898+00:00",
+    "status": 200,
+    "term_presence": {
+      "500": false,
+      "429": false,
+      "IRT": false,
+      "USDT": false,
+      "??????": false
+    }
+  },
+  {
+    "source": "vectorbt_license",
+    "url": "https://api.github.com/repos/polakowo/vectorbt/license",
+    "accessed_utc": "2026-11-25T04:15:48.220583+00:00",
+    "status": 200,
+    "git_blob_sha": "1ecf7675862c3caede8c26bed7150c6c41036d45",
+    "license_opening": "\u201cCommons Clause\u201d License Condition v1.0\n\nThe Software is provided to you by the Licensor under the License, as defined below, subject to the following condition.\n\nWithout limiting other conditions in the License, the grant of rights under the License will not include, and the License does not grant to you, the right to Sell the Software.\n\nFor purposes of the foregoing, \u201cSell\u201d means practicing any or all of the rights granted to you under the License to provide to third parties, for a fee or other consideration (including without limitation fees for hosting or consulting/ support services related to the Software), a product or service whose value derives, entirely or substantially, from the functionality of the Software. Any license notice or attribution required by the License must also include this Commons Clause License Condition notice.\n\nSoftware: vectorbt\n\nLicense: Apache 2.0 with Commons Clause\n\nLicensor: Oleg Polakow\n                                 \n                                 Apache License\n                           Version 2.0, January 2004\n                        http"
+  },
+  {
+    "source": "ramzinex_license",
+    "url": "https://api.github.com/repos/dwin-gharibi/ramzinex-mcp/license",
+    "accessed_utc": "2026-11-25T04:15:48.221273+00:00",
+    "status": 200,
+    "git_blob_sha": "f18eea3f094c2fcf9755fcdf9b3a5e2b579a3eb1",
+    "license_opening": "MIT License\n\nCopyright (c) 2026 ramzinex-mcp Contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n---\n\nNote: ramzin"
+  },
+  {
+    "source": "freqtrade_parity",
+    "url": "https://www.freqtrade.io/en/stable/strategy-customization/",
+    "accessed_utc": "2026-11-25T04:15:48.221925+00:00",
+    "status": 200,
+    "term_presence": {
+      "lookahead": true,
+      "backtesting": true,
+      "callback": true
+    }
+  },
+  {
+    "source": "hummingbot_reconciliation",
+    "url": "https://hummingbot.org/developers/connectors/architecture/order_lifecycle/",
+    "accessed_utc": "2026-11-25T04:15:48.222563+00:00",
+    "status": 404
+  }
+]

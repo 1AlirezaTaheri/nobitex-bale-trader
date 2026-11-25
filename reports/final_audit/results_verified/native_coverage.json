@@ -1,0 +1,56 @@
+[
+  {
+    "blocked_bars": 6,
+    "days": 700,
+    "max_drawdown_4h": -0.0409044428288442,
+    "round_trips": 21,
+    "segment": 7,
+    "status": "evaluated",
+    "strategy": "S0"
+  },
+  {
+    "blocked_bars": 5,
+    "days": 205,
+    "max_drawdown_4h": -0.029542360448312266,
+    "round_trips": 7,
+    "segment": 8,
+    "status": "evaluated",
+    "strategy": "S0"
+  },
+  {
+    "blocked": {},
+    "days": 700,
+    "rejected": {
+      "entry modeled depth": 232
+    },
+    "round_trips": 0,
+    "segment": 7,
+    "status": "evaluated",
+    "strategy": "S1_full",
+    "unliquidated": []
+  },
+  {
+    "reason": "Frozen universe lacks exact common timestamps including warmup",
+    "segment": 8,
+    "status": "unavailable",
+    "strategy": "S1_full"
+  },
+  {
+    "blocked": {},
+    "days": 700,
+    "rejected": {
+      "entry modeled depth": 163
+    },
+    "round_trips": 0,
+    "segment": 7,
+    "status": "evaluated",
+    "strategy": "S1_L1",
+    "unliquidated": []
+  },
+  {
+    "reason": "Frozen universe lacks exact common timestamps including warmup",
+    "segment": 8,
+    "status": "unavailable",
+    "strategy": "S1_L1"
+  }
+]

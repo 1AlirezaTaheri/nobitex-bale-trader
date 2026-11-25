@@ -1,0 +1,43 @@
+{
+  "charts": [
+    {
+      "file": "results_verified_002/charts/equity.png",
+      "observation": "Stable series colors on both sides of the unconnected gap; readable legend/axes; 100-USDT research normalization, not gap performance.",
+      "pass": true,
+      "sha256": "72b018ce1123042d4750988abbb5b734d7a6a941509c1092b735d7ec8623dd50"
+    },
+    {
+      "file": "results_verified_002/charts/drawdowns.png",
+      "observation": "Negative percent axis, stable series identities across segments, no line across the omitted calendar span.",
+      "pass": true,
+      "sha256": "a4b7303910fd7345326eb9d8c2df9ec56d778f724c544150020eb3f5881368c1"
+    },
+    {
+      "file": "results_verified_002/charts/rolling_12m.png",
+      "observation": "Readable percent labels and legend; only the 700-day segment produces 365-day windows.",
+      "pass": true,
+      "sha256": "b794eb712c4a106252f2e42cf6f9eaa42b6fa2be64d27611ecd0bcbab611622b"
+    },
+    {
+      "file": "results_verified_002/charts/bootstrap_differences.png",
+      "observation": "Four readable A/D vs B7 histograms; dashed zero lines; descriptive uncentered draws, not exact null p-values.",
+      "pass": true,
+      "sha256": "bdc6d7fca9da5ba0f50477d5e2fe9d58a43520c783faf92c222088166f472b53"
+    },
+    {
+      "file": "results_verified_002/charts/regime_performance.png",
+      "observation": "Readable grouped bars and zero baseline; conditional compounded returns explicitly labeled not tradable.",
+      "pass": true,
+      "sha256": "055edaa514eaaee856efa9877aba610cc72ce2aee142f3c94b310f0a6d95419b"
+    }
+  ],
+  "inspected_execution_utc": "2026-11-24T23:21:10.495279+00:00",
+  "limitations": "Ten overlaid comparison curves can overlap; numerical CSVs and interval caveats remain authoritative. Original charts/replay were preserved.",
+  "method": "Direct visual inspection of all five rendered corrected PNGs and the initial weekly PNG using image reads; file hashes bind the inspected artifacts. This does not certify investment validity.",
+  "weekly": {
+    "file": "weekly_initial/weekly.png",
+    "observation": "Four blank labeled axes, no fabricated lines; default 0-1 ticks are empty-axis defaults, not measured returns. weekly.json confirms zero snapshots, null clean returns and PENDING checkpoints.",
+    "pass_as_zero_data_placeholder": true,
+    "sha256": "a89f349d0f74187318126501a4de8ee8584ed3ffe06c6cf6becab24c0bf74fc7"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "elapsed_seconds": 59.88,
+      "exit": 0,
+      "name": "pytest",
+      "summary": [
+        "304 passed in 55.88s"
+      ]
+    },
+    {
+      "elapsed_seconds": 2.07,
+      "exit": 0,
+      "name": "ruff_check",
+      "summary": [
+        "All checks passed!"
+      ]
+    },
+    {
+      "elapsed_seconds": 0.28,
+      "exit": 0,
+      "name": "ruff_format",
+      "summary": [
+        "76 files already formatted"
+      ]
+    }
+  ],
+  "context": "Clean export of the staged public file set without operator .env or private runtime artifacts; existing installed dependencies reused.",
+  "created_utc": "2026-11-25T06:51:33.417354+00:00",
+  "exported_bytes_verified": true,
+  "files_exported": 598,
+  "operator_env_present": false,
+  "original_full_validation_not_overwritten": true,
+  "remote_ci": "NOT_YET_RUN"
+}

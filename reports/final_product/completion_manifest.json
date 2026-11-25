@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-25T04:59:51.110047+00:00",
+  "evidence_index_sha256": "b4d9e2fbe3d4d8a571cc72575d32893d5dfc1d07ce115401474783afc64d876a",
+  "independent_anchor": "UNVERIFIED",
+  "integrity_after_sha256": "ec670fe7644afc0fe749399c9573eea229a43fe6b6b9e5de90c5cd9a9ffd2b15",
+  "original_manifest_sha256": "5d05e106082bd9f6333fd457631002b38a9bb6ff18870988bd72dd4d824af5e4",
+  "preregistration_sha256": "7a371dc8ff6215a02d96d81302adcad67d80938247de0c5f481f5cca18123a6c",
+  "status": "ENGINEERING_CHECKS_PASS_OPERATOR_BALE_CONFIGURATION_INVALID",
+  "supplements_not_replaces_original_manifest": true,
+  "validation_sha256": "66985fadfbb013b54fc7edc31077e0a29f5b811e3dd528ab99f50c70cebfae8a"
+}

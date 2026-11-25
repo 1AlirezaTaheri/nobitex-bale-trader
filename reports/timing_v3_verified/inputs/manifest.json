@@ -1,0 +1,27 @@
+{
+  "files": {
+    "BTC/USDT": {
+      "file": "BTC-USDT.csv",
+      "sha256": "3ba47ab212366e9ae6d09d75ce709c1c431a4bf48ed502b990a4d7ab94ab74b2",
+      "rows": 2951,
+      "first_timestamp": 1539030600,
+      "last_timestamp": 1795033800
+    },
+    "ETH/USDT": {
+      "file": "ETH-USDT.csv",
+      "sha256": "5d980d9b29e27eff9a60830b41a2f73baa240d8603a4a533aada889e7ee32d60",
+      "rows": 2750,
+      "first_timestamp": 1556220600,
+      "last_timestamp": 1795033800
+    },
+    "BTC/USDT_4h": {
+      "file": "BTC-USDT-4h.csv",
+      "sha256": "bb42465b4fd480089f90f3e6743ce0cdd200d6edd4cd8a1a53b8683e1d079c5f",
+      "rows": 8923,
+      "first_timestamp": 1665534600,
+      "last_timestamp": 1795149000
+    }
+  },
+  "fee_observation_sha256": "81eca81783c3e1bcba96f46faaa211b39afa829aed78ba8bded2c27f39550faf",
+  "source": "local cached public Nobitex candles"
+}

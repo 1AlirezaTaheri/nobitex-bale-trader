@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "all_numeric_checks_match": true,
+    "all_seven_verdicts_category1": true,
+    "integrity_pass": true,
+    "interval_rows_270": true,
+    "process_inspection_pass": true,
+    "quality_pass": true,
+    "replay_pass": true,
+    "table_coverage_correct": true,
+    "tests_pass": true,
+    "three_native_B7_controls_unavailable": true,
+    "weekly_zero_genuine_snapshots": true
+  },
+  "counts": {
+    "CI_rows": 22,
+    "MC_rows": 6,
+    "metrics_rows": 22,
+    "paired_difference_rows": 16,
+    "stress_rows": 7
+  },
+  "errors": [],
+  "execution_utc": "2026-11-24T23:22:53.184348+00:00",
+  "limits": "Checks displayed numbers against saved evidence, not historical market accuracy, scientific independence or profitable execution.",
+  "pass": true,
+  "report_sha256": "995306165575ac965bd729d12eba5e53cfb20b2c18d938dd006358c5832eda8d",
+  "source": "results_verified_002/"
+}

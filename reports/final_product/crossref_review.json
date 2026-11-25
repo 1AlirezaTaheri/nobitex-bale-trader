@@ -1,0 +1,270 @@
+[
+  {
+    "id": "R1",
+    "accessed_utc": "2026-11-25T04:23:38.381211+00:00",
+    "query": "Time series momentum Moskowitz Ooi Pedersen",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 200,
+    "title": [
+      "Time Series Momentum"
+    ],
+    "DOI": "10.2139/ssrn.2089463",
+    "URL": "https://doi.org/10.2139/ssrn.2089463",
+    "published": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Tobias",
+        "family": "Moskowitz",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yao Hua",
+        "family": "Ooi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lasse Heje",
+        "family": "Pedersen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "R2",
+    "accessed_utc": "2026-11-25T04:23:38.480210+00:00",
+    "query": "Time series momentum and volatility scaling Kim Tse Wald",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 200,
+    "title": [
+      "Time series momentum and volatility scaling"
+    ],
+    "DOI": "10.1016/j.finmar.2016.05.003",
+    "URL": "https://doi.org/10.1016/j.finmar.2016.05.003",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Abby Y.",
+        "family": "Kim",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yiuman",
+        "family": "Tse",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John K.",
+        "family": "Wald",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "R3",
+    "accessed_utc": "2026-11-25T04:23:38.481157+00:00",
+    "query": "The Deflated Sharpe Ratio Correcting for Selection Bias Backtest Overfitting",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 200,
+    "title": [
+      "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting and Non-Normality"
+    ],
+    "DOI": "10.2139/ssrn.2460551",
+    "URL": "https://doi.org/10.2139/ssrn.2460551",
+    "published": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "David H.",
+        "family": "Bailey",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4107-3797",
+        "authenticated-orcid": true,
+        "given": "Marcos",
+        "family": "L\u00f3pez de Prado",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": " With the advent in recent years of large financial data sets, machine learning and high-performance computing, analysts can backtest millions (if not billions) of alternative investment strategies. Backtest optimizers search for combinations of parameters that maximize the simulated historical performance of a strategy, leading to backtest overfitting.\n\nThe problem of performance inflation extends beyond backtesting. More generally, researchers and investors tend to report only positive outcomes, a phenomenon known as selection bias. Not controlling for the number of trials involved in a particular discovery leads to over-optimistic performance expectations.\n\nThe Deflated Sharpe Ratio (DSR) corrects for two leading sources of performance inflation: Selection bias under multiple testing and non-Normally distributed returns. In doing so, DSR helps separate legitimate empirical findings from statistical flukes. "
+  },
+  {
+    "id": "R4",
+    "accessed_utc": "2026-11-25T04:23:39.977389+00:00",
+    "query": "The Probability of Backtest Overfitting Bailey Borwein",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  },
+  {
+    "id": "R5",
+    "accessed_utc": "2026-11-25T04:23:39.978720+00:00",
+    "query": "Volatility Managed Portfolios Moreira Muir",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  },
+  {
+    "id": "R6",
+    "accessed_utc": "2026-11-25T04:23:40.567885+00:00",
+    "query": "A New Interpretation of Information Rate Kelly",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  },
+  {
+    "id": "R7",
+    "accessed_utc": "2026-11-25T04:23:40.568524+00:00",
+    "query": "On the performance of volatility managed portfolios Cederburg",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  },
+  {
+    "id": "R8",
+    "accessed_utc": "2026-11-25T04:23:40.569075+00:00",
+    "query": "Dynamic Strategies for Asset Allocation Perold Sharpe",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  },
+  {
+    "id": "R10",
+    "accessed_utc": "2026-11-25T04:23:41.264889+00:00",
+    "query": "Optimal execution of portfolio transactions Almgren Chriss",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  },
+  {
+    "id": "R11",
+    "accessed_utc": "2026-11-25T04:23:41.266443+00:00",
+    "query": "On the Properties of Equally Weighted Risk Contribution Portfolios",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  },
+  {
+    "id": "R12",
+    "accessed_utc": "2026-11-25T04:23:41.268038+00:00",
+    "query": "Risks and Returns of Cryptocurrency Liu Tsyvinski",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 200,
+    "title": [
+      "Risks and Returns of Cryptocurrency"
+    ],
+    "DOI": "10.3386/w24877",
+    "URL": "https://doi.org/10.3386/w24877",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          8
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Yukun",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aleh",
+        "family": "Tsyvinski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "R13",
+    "accessed_utc": "2026-11-25T04:23:41.753230+00:00",
+    "query": "Trading is Hazardous to Your Wealth Barber Odean",
+    "source": "Crossref publisher-deposited metadata; not full-text review",
+    "status": 429
+  }
+]

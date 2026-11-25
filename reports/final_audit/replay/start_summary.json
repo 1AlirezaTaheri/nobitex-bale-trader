@@ -1,0 +1,451 @@
+{
+  "B1": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2923044091008036,
+        -0.289470972878741,
+        -0.27982064090480674,
+        -0.081175483977183,
+        -0.013551455073527618
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2923044091008036,
+        -0.23220816985643372,
+        0.4907658490387292,
+        2.8124049179442308,
+        3.1114198909797537
+      ]
+    }
+  },
+  "B2": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.47107926825467195,
+        -0.457106805485745,
+        -0.41999763925607636,
+        -0.08118912105486933,
+        -0.010547713147110449
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.3348117202002411,
+        -0.2552564365459839,
+        0.17209297086169606,
+        1.6680431300443201,
+        1.8631397256703206
+      ]
+    }
+  },
+  "B3": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.27828430608866184,
+        -0.27513153131742574,
+        -0.23404071019594097,
+        -0.05937603975736319,
+        -0.013551455073527618
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2551989418784595,
+        -0.22376133963499856,
+        0.20316535106104316,
+        0.8523718284165573,
+        0.9902841220484278
+      ]
+    }
+  },
+  "B4_25": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.08842057613824261,
+        -0.07927580527180474,
+        -0.07541719277256054,
+        -0.022484338029983956,
+        -0.0034014279279445114
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.07336868071968528,
+        -0.05644625557049747,
+        0.1170022424679491,
+        0.4746582774348122,
+        0.5175156326490435
+      ]
+    }
+  },
+  "B4_50": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.1592495061201361,
+        -0.15367911709640053,
+        -0.1470344849795926,
+        -0.04344644336646195,
+        -0.006802855855889023
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.14673736143937044,
+        -0.11244909788062356,
+        0.23962681032487088,
+        1.059109298194501,
+        1.1498102196664384
+      ]
+    }
+  },
+  "B4_75": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2330528800740207,
+        -0.22466371452977701,
+        -0.21509105689417984,
+        -0.06307663063240061,
+        -0.010204283783833534
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.22010604215905583,
+        -0.16867364682093544,
+        0.3631963021784055,
+        1.8611752887820705,
+        2.050153792771762
+      ]
+    }
+  },
+  "B5_25": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.14617984563932296,
+        -0.1375239967343786,
+        -0.13504820327250477,
+        -0.02209599154180666,
+        -0.0026474858884055763
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.08403805565624811,
+        -0.06400231213660665,
+        0.04664294234971411,
+        0.3207959869463905,
+        0.3577849101469246
+      ]
+    }
+  },
+  "B5_50": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2738832955705962,
+        -0.2615719380765812,
+        -0.26155698491053514,
+        -0.04049268932504444,
+        -0.005294971776811486
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.16807611131249645,
+        -0.12800462427321355,
+        0.09256101046052811,
+        0.6769816123338357,
+        0.7259582439941661
+      ]
+    }
+  },
+  "B5_75": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.3833639416823442,
+        -0.3732382492804338,
+        -0.34591420267190853,
+        -0.0597980506099993,
+        -0.007942457665217395
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.25211416696874467,
+        -0.19200693640982056,
+        0.12958649107033748,
+        1.125890358708918,
+        1.2451153375547204
+      ]
+    }
+  },
+  "B6": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "B7_S2_A": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.21665242295459197,
+        -0.2149890517183745,
+        -0.20902991957153927,
+        -0.060489749377523674,
+        -0.00983993278759887
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.21665242295459197,
+        -0.16692739266316658,
+        0.36015351802631024,
+        1.7569640440023329,
+        1.9137259300519758
+      ]
+    }
+  },
+  "B7_S2_B": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.21871981082310166,
+        -0.2170253316589558,
+        -0.21097667017633015,
+        -0.0610564847718702,
+        -0.009940205029826177
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.21871981082310166,
+        -0.168820733347569,
+        0.36373071841945137,
+        1.7820239835113914,
+        1.9418298676370696
+      ]
+    }
+  },
+  "B7_S2_C": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2010341204371371,
+        -0.19959861889298552,
+        -0.19429567183384888,
+        -0.05620360527480195,
+        -0.009086735670862267
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2010341204371371,
+        -0.15302191321134595,
+        0.334318887857064,
+        1.573849416010322,
+        1.7089514865290254
+      ]
+    }
+  },
+  "B7_S2_D": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.292933022238108,
+        -0.292205030009956,
+        -0.29220502794161995,
+        -0.04384668352045815,
+        -0.005754375268915757
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.1916453297529448,
+        -0.13924046234884277,
+        0.10606691544572944,
+        0.7546383446975347,
+        0.82087514511869
+      ]
+    }
+  },
+  "B8": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.3089030829110422,
+        -0.3054821320021309,
+        -0.3054821320021305,
+        -0.08117548397718291,
+        0.0
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.2130363068831279,
+        -0.15410647508909048,
+        0.06497103988070596,
+        1.3739924380520794,
+        1.3983241028122437
+      ]
+    }
+  },
+  "S0": {
+    "reason": "Native fresh-start engine reruns not implemented",
+    "status": "unavailable"
+  },
+  "S1_L1": {
+    "reason": "Native fresh-start engine reruns not implemented",
+    "status": "unavailable"
+  },
+  "S1_full": {
+    "reason": "Native fresh-start engine reruns not implemented",
+    "status": "unavailable"
+  },
+  "S2_A": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.4257267896991429,
+        -0.4231901730342378,
+        -0.3543937547645192,
+        -0.07988942462753856,
+        0.0
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.235382385795458,
+        -0.1791076680648611,
+        -0.030398470765713892,
+        1.040683994496158,
+        1.1384686265729598
+      ]
+    }
+  },
+  "S2_B": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.3747046213493852,
+        -0.37194263515618964,
+        -0.2811660712866554,
+        -0.07485201287704471,
+        0.0
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.15874838780498135,
+        -0.10285669738754899,
+        0.0795482989459908,
+        1.3803436674024325,
+        1.4880528340913228
+      ]
+    }
+  },
+  "S2_C": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.33491223616433696,
+        -0.3229729014978153,
+        -0.24163848733810467,
+        -0.06991747449375163,
+        0.0
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.13067305152307218,
+        -0.08356202138299132,
+        0.10326094173346712,
+        1.4516210798067648,
+        1.5534646750227825
+      ]
+    }
+  },
+  "S2_D": {
+    "drawdown": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.26094481182783424,
+        -0.2515221919141851,
+        -0.18942286606223557,
+        -0.05262334906614807,
+        0.0
+      ]
+    },
+    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+    "return": {
+      "count": 905,
+      "quantiles_min_p05_median_p95_max": [
+        -0.17572256597971758,
+        -0.09927764083679842,
+        0.05982877410679044,
+        1.0388323976425466,
+        1.0792418829942023
+      ]
+    }
+  }
+}

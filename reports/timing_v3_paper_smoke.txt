@@ -1,0 +1,5 @@
+[PAPER Timing A] Daily timing PAPER started; candidate=A; symbols=('BTC/USDT',); protocol=6f26ccabb14fa92b477a94b873f3309a0eb9b30a3d873118def5fa81ec3489af; start=2026-11-20T20:37:08+00:00; LIVE blocked.
+[PAPER Timing A] Skipped daily signal 2026-11-19T20:30:00+00:00: stale after downtime or outside the fresh entry window.
+[PAPER Timing A] Heartbeat: data_ready=True, reconciled=True, fault=none. No new entry is permitted without fresh market data.
+[PAPER Timing A] Smoke completed: 2 healthy data cycles.
+[PAPER Timing A] Daily timing PAPER stopped; reconciliation=True; no liquidation. Software controls are offline.

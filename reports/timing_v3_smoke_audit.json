@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-11-20T20:36:54.054964+00:00",
+  "before": {
+    "data\\candles.db": "de4451c9292d7c6db53b537fac18eb05afc8cbc043be036ab3f5a8398163d5b8",
+    "data\\candles.db-shm": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+    "data\\candles.db-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data\\paper.db": "7d3f9aeab8a2108acf2639b9fa785f5c29d1443d0cd9bb68df638cb427529c12",
+    "data\\portfolio_paper.db": "62f3c50738fc27e7ce4d852f1bf8d20fd3f4e9275755de37a277bc409c0fc435"
+  },
+  "mode": "paper",
+  "candidate": "A",
+  "smoke_seconds": 30,
+  "pid": 11752,
+  "exit_code": 0,
+  "elapsed_seconds": 44.401364500001364,
+  "after": {
+    "data\\candles.db": "de4451c9292d7c6db53b537fac18eb05afc8cbc043be036ab3f5a8398163d5b8",
+    "data\\candles.db-shm": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+    "data\\candles.db-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data\\paper.db": "7d3f9aeab8a2108acf2639b9fa785f5c29d1443d0cd9bb68df638cb427529c12",
+    "data\\portfolio_paper.db": "62f3c50738fc27e7ce4d852f1bf8d20fd3f4e9275755de37a277bc409c0fc435"
+  },
+  "process_terminated": true,
+  "original_databases_byte_unchanged": true,
+  "remaining_bot_or_replay_processes": 0,
+  "healthy_data_cycles": 2,
+  "isolated_state": {
+    "database": "data/timing_v3_A_paper.db",
+    "candle_cache": "data/timing_v3_candles.db",
+    "clean_stop": true,
+    "intents": 0,
+    "simulated_orders": 0,
+    "wallet": {"USDT": "100", "BTC": "0"}
+  }
+}

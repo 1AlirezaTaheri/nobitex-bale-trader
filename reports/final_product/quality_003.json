@@ -1,0 +1,22 @@
+[
+  {
+    "check": "ruff_check",
+    "exit_code": 0,
+    "seconds": 0.38336619999972754
+  },
+  {
+    "check": "ruff_format",
+    "exit_code": 0,
+    "seconds": 0.34398240000064106
+  },
+  {
+    "check": "pip_check",
+    "exit_code": 0,
+    "seconds": 1.2121585000004416
+  },
+  {
+    "check": "compileall",
+    "exit_code": 0,
+    "seconds": 0.3983170000001337
+  }
+]

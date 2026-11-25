@@ -1,0 +1,102 @@
+{
+  "all_pass": true,
+  "candidates": {
+    "A": {
+      "aggregate_absolute_errors": {
+        "average_exposure": 0.0,
+        "cagr": 8.881784197001252e-16,
+        "calmar": 2.1094237467877974e-15,
+        "max_drawdown": 0.0,
+        "round_trips": 0,
+        "sharpe": 3.3306690738754696e-16,
+        "sortino": 6.661338147750939e-16,
+        "total_costs": 7.105427357601002e-14,
+        "total_return": 2.4424906541753444e-15,
+        "trade_legs": 0,
+        "turnover": 1.7763568394002505e-14
+      },
+      "daily_archive_sha256": "b221fd5f8a6db8207ac5536a6f9fae7856ee53825afb8c1f144e65468a1b0ca4",
+      "daily_max_absolute_errors": {
+        "equity": 1.1368683772161603e-13,
+        "exposure": 6.661338147750939e-16,
+        "return": 3.3306690738754696e-16
+      },
+      "exact_timestamp_segment_grid": true,
+      "pass_tolerance_1e_9": true,
+      "rows": 905
+    },
+    "B": {
+      "aggregate_absolute_errors": {
+        "average_exposure": 1.1102230246251565e-16,
+        "cagr": 1.3322676295501878e-15,
+        "calmar": 6.661338147750939e-15,
+        "max_drawdown": 1.2212453270876722e-15,
+        "round_trips": 0,
+        "sharpe": 2.3314683517128287e-15,
+        "sortino": 3.774758283725532e-15,
+        "total_costs": 1.1546319456101628e-13,
+        "total_return": 4.884981308350689e-15,
+        "trade_legs": 0,
+        "turnover": 4.263256414560601e-14
+      },
+      "daily_archive_sha256": "02efd68ff28114ec420b5d9d505fc9d4128a09ff91b9577c50fa471020662938",
+      "daily_max_absolute_errors": {
+        "equity": 2.5579538487363607e-13,
+        "exposure": 3.3306690738754696e-16,
+        "return": 4.440892098500626e-16
+      },
+      "exact_timestamp_segment_grid": true,
+      "pass_tolerance_1e_9": true,
+      "rows": 905
+    },
+    "C": {
+      "aggregate_absolute_errors": {
+        "average_exposure": 6.661338147750939e-16,
+        "cagr": 8.881784197001252e-16,
+        "calmar": 3.1086244689504383e-15,
+        "max_drawdown": 1.1102230246251565e-16,
+        "round_trips": 0,
+        "sharpe": 4.440892098500626e-16,
+        "sortino": 1.3322676295501878e-15,
+        "total_costs": 1.0835776720341528e-13,
+        "total_return": 3.1086244689504383e-15,
+        "trade_legs": 0,
+        "turnover": 3.552713678800501e-15
+      },
+      "daily_archive_sha256": "d85380b4c7d8e1b21bafb10fb52d26f012e3a0acd188e6917f1899936b9b47f7",
+      "daily_max_absolute_errors": {
+        "equity": 3.979039320256561e-13,
+        "exposure": 5.551115123125783e-16,
+        "return": 4.440892098500626e-16
+      },
+      "exact_timestamp_segment_grid": true,
+      "pass_tolerance_1e_9": true,
+      "rows": 905
+    },
+    "D": {
+      "aggregate_absolute_errors": {
+        "average_exposure": 5.551115123125783e-16,
+        "cagr": 1.3322676295501878e-15,
+        "calmar": 8.43769498715119e-15,
+        "max_drawdown": 7.771561172376096e-16,
+        "round_trips": 0,
+        "sharpe": 2.55351295663786e-15,
+        "sortino": 3.3306690738754696e-15,
+        "total_costs": 7.105427357601002e-14,
+        "total_return": 4.440892098500626e-15,
+        "trade_legs": 0,
+        "turnover": 2.1316282072803006e-14
+      },
+      "daily_archive_sha256": "244f4d6e032e86836c3f795f90b99d9b16a69fa1e2d564138c7fd6778b988c7a",
+      "daily_max_absolute_errors": {
+        "equity": 8.526512829121202e-14,
+        "exposure": 3.3306690738754696e-16,
+        "return": 4.440892098500626e-16
+      },
+      "exact_timestamp_segment_grid": true,
+      "pass_tolerance_1e_9": true,
+      "rows": 905
+    }
+  },
+  "warning": "Same repeatedly inspected data; parity establishes implementation agreement, not a clean holdout or execution accuracy. Floating point tolerance is not byte identity across different adapters. Regime labels intentionally differ by the new registered definition."
+}

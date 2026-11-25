@@ -1,0 +1,21 @@
+{
+  "limits": "Offline mocked tests, not venue, investment, security or uptime certification.",
+  "log": "pytest_final_002.log",
+  "log_sha256": "945088bc24a1712d726cf2ff26d4170b06b9002fcec7c752a7244085ddcd6287",
+  "pass": true,
+  "suites": [
+    {
+      "errors": "0",
+      "failures": "0",
+      "hostname": "DESKTOP-KDJJCQQ",
+      "name": "pytest",
+      "skipped": "0",
+      "tests": "239",
+      "time": "44.345",
+      "timestamp": "2026-11-25T02:37:56.980795+03:30"
+    }
+  ],
+  "summary": "239 passed in 44.49s; zero failures/errors/skips",
+  "xml": "pytest_final_002.xml",
+  "xml_sha256": "5319e85bd3ed7255f03e7fbb19d40bd330139f192c96364360a6dab5ff505efe"
+}

@@ -1,0 +1,5 @@
+[PAPER] Downtime gap: 160 seconds; prior clean stop=True. Old signals will not be replayed.
+[PAPER] Bot started; public data only. No real orders can be placed in PAPER mode.
+[PAPER] Heartbeat: data_ready=False, reconciled=True, fault=none. No new entry is permitted without fresh market data.
+[PAPER] Bot stopped; clean reconciliation=True. Remaining BTC=0. No liquidation was requested. Software protection is now offline.
+KILL_SMOKE_PASS=True

@@ -1,0 +1,55 @@
+[
+  {
+    "check": "ruff_check_final_001",
+    "command": [
+      "-m",
+      "ruff",
+      "check",
+      "."
+    ],
+    "exit_code": 0,
+    "log": "reports\\final_audit\\ruff_check_final_001.log"
+  },
+  {
+    "check": "ruff_format_final_001",
+    "command": [
+      "-m",
+      "ruff",
+      "format",
+      "--check",
+      "."
+    ],
+    "exit_code": 0,
+    "log": "reports\\final_audit\\ruff_format_final_001.log"
+  },
+  {
+    "check": "compileall_final_001",
+    "command": [
+      "-m",
+      "compileall",
+      "-q",
+      "app",
+      "backtest",
+      "data",
+      "exchange",
+      "execution",
+      "indicators",
+      "notify",
+      "risk",
+      "strategy",
+      "tests"
+    ],
+    "exit_code": 0,
+    "log": "reports\\final_audit\\compileall_final_001.log"
+  },
+  {
+    "check": "pip_check_final_001",
+    "command": [
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "log": "reports\\final_audit\\pip_check_final_001.log"
+  }
+]

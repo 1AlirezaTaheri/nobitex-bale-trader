@@ -1,0 +1,13 @@
+{
+    "execution_utc":  "2026-11-24T23:21:28.0923802Z",
+    "method":  "Win32_Process inspection after both verification completion notifications; no Python audit process is used for this inspection",
+    "python_pytest_ruff_process_count":  0,
+    "remaining_project_or_bot_or_test_count":  0,
+    "processes":  [
+
+                  ],
+    "unrelated_processes_terminated":  false,
+    "no_project_background_process_observed":  true,
+    "limitation":  "Point-in-time inspection, not proof of future availability or all possible executable names",
+    "pass":  true
+}

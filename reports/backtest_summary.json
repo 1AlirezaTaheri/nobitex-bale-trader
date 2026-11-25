@@ -1,0 +1,96 @@
+{
+  "full": {
+    "total_return": -0.002347761846374974,
+    "cagr": -0.0021097718351372878,
+    "max_drawdown": -0.03016455838894805,
+    "win_rate": 0.375,
+    "profit_factor": 0.9240500315148469,
+    "sharpe": -0.04201511372022108,
+    "sortino": -0.08729317333064651,
+    "trades": 8,
+    "average_win": 0.9521397008243203,
+    "average_loss": -0.6182390574220908
+  },
+  "train": {
+    "total_return": -0.013896275251904955,
+    "cagr": -0.01780517229305644,
+    "max_drawdown": -0.0147281768064228,
+    "win_rate": 0.3333333333333333,
+    "profit_factor": 0.046793398815378945,
+    "sharpe": -1.2169508428229485,
+    "sortino": -1.540692752953891,
+    "trades": 3,
+    "average_win": 0.06821752483696032,
+    "average_loss": -0.7289225250137227
+  },
+  "holdout": {
+    "total_return": 0.011710767176691617,
+    "cagr": 0.03547121815785334,
+    "max_drawdown": -0.015654627288507084,
+    "win_rate": 0.4,
+    "profit_factor": 1.7104661270858157,
+    "sharpe": 0.6046410932155306,
+    "sortino": 1.4364405146515407,
+    "trades": 5,
+    "average_win": 1.4096991970666979,
+    "average_loss": -0.549440558821415
+  },
+  "source": "Public Nobitex candles cached in data/candles.db; no synthetic substitutions; explicitly selected latest continuous segment, 5882 older bars excluded after a gap",
+  "strategy": {
+    "name": "trend",
+    "symbol": "BTC/USDT",
+    "timeframe": "4h",
+    "fast": 20,
+    "slow": 50,
+    "trend": 200,
+    "atr_period": 14,
+    "atr_multiplier": 2.5,
+    "min_atr_pct": 0.004,
+    "rsi_period": 14,
+    "rsi_entry": 28.0,
+    "rsi_exit": 55.0
+  },
+  "risk": {
+    "risk_pct": "0.01",
+    "max_positions": 1,
+    "max_order_quote": "100",
+    "max_daily_loss": "0.03",
+    "max_drawdown": "0.1",
+    "consecutive_losses": 3,
+    "cooldown_bars": 6,
+    "fee": "0.0025",
+    "slippage": "0.0015",
+    "max_spread": "0.012"
+  },
+  "capital": "100",
+  "dataset_sha256": "d0d0c6927691028f99cf7b69cb7bdb900487b12a7a50b84db47cf1563b3df80b",
+  "walk_forward": [
+    {
+      "fold": 1,
+      "train_end": 1777595400,
+      "test_end": 1783441800,
+      "chosen_atr": 3.0,
+      "test_return": -0.009036289229725103,
+      "buy_hold_return": -0.1721067693958891,
+      "trades": 2
+    },
+    {
+      "fold": 2,
+      "train_end": 1783441800,
+      "test_end": 1789302600,
+      "chosen_atr": 2.0,
+      "test_return": 0.012493868761229932,
+      "buy_hold_return": 0.19181650678283457,
+      "trades": 3
+    },
+    {
+      "fold": 3,
+      "train_end": 1789302600,
+      "test_end": 1795163400,
+      "chosen_atr": 3.0,
+      "test_return": 0.0018097726252659374,
+      "buy_hold_return": -0.1999292417470856,
+      "trades": 2
+    }
+  ]
+}

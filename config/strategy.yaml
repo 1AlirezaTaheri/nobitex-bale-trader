@@ -1,0 +1,31 @@
+name: trend
+symbol: BTC/USDT
+timeframe: 4h
+fast: 20
+slow: 50
+trend: 200
+atr_period: 14
+atr_multiplier: 2.5
+min_atr_pct: 0.004
+rsi_period: 14
+rsi_entry: 28
+rsi_exit: 55
+portfolio:
+  enabled: false
+  trend_enabled: true
+  pullback_enabled: true
+  btc_filter: true
+  breadth_enabled: false
+  breadth_min: 0.50
+  ema_period: 200
+  atr_period: 20
+  donchian_entry: 55
+  donchian_exit: 20
+  trend_atr: 3
+  pullback_atr: 2
+  rsi_period: 3
+  rsi_entry: 15
+  rsi_exit: 60
+  freshness_low: 20
+  pullback_high: 5
+  max_hold_days: 7

@@ -1,0 +1,16 @@
+[
+  {
+    "utf8_explicit": false,
+    "exit_code": 1,
+    "unicode_encode_error_in_captured_stderr": true,
+    "correct_refusal_exit": false,
+    "no_bale_or_market_transport_reached": true
+  },
+  {
+    "utf8_explicit": true,
+    "exit_code": 2,
+    "unicode_encode_error_in_captured_stderr": false,
+    "correct_refusal_exit": true,
+    "no_bale_or_market_transport_reached": true
+  }
+]

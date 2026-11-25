@@ -1,0 +1,6 @@
+[PAPER] LayeredPortfolio research PAPER started (NOT VALIDATED). Separate wallet; LIVE writes blocked.
+[PAPER] Portfolio: cash only; last equity=100.0000; peak=100.0000; DD=-0.00%; open risk={<Layer.TREND: 'DailyDonchianTrend'>: Decimal('0'), <Layer.PULLBACK: 'TrendPullback'>: Decimal('0')}; marks fresh=True; breaker=clear; pause=False; fault=none.
+[PAPER] Daily close summary (raw open timestamp 1795033800); regime risk-on=False.
+[PAPER] Heartbeat: data_ready=True, reconciled=True, fault=none. No new entry is permitted without fresh market data.
+[PAPER] Smoke completed: 2 healthy data cycles.
+[PAPER] Portfolio stopped; clean reconciliation=True; held=[]. No liquidation. Software stops now offline.

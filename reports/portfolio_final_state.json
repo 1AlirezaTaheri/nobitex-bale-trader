@@ -1,0 +1,39 @@
+{
+  "mode": "paper",
+  "portfolio_enabled": false,
+  "breadth_enabled": false,
+  "legacy_strategy_values_match": true,
+  "legacy_symbol": "BTC/USDT",
+  "legacy_timeframe": "4h",
+  "legacy_database_exists": true,
+  "portfolio_database_exists": true,
+  "shared_process_lock_available": true,
+  "kill_exists": false,
+  "universe": [
+    "BTC/USDT",
+    "DOGE/USDT",
+    "ETH/USDT",
+    "SOL/USDT",
+    "XRP/USDT"
+  ],
+  "report_acceptance_counts": {
+    "portfolio": {
+      "passed": 2,
+      "total": 8,
+      "validated": false
+    },
+    "portfolio_recent": {
+      "passed": 2,
+      "total": 8,
+      "validated": false
+    }
+  },
+  "live_blockers": [
+    "authenticated_read_contract",
+    "executable_symbol_precision",
+    "fee_currency_and_fill_accounting",
+    "live_limit_and_cancel_semantics",
+    "native_protection_lifecycle",
+    "terminal_client_order_id_recovery"
+  ]
+}

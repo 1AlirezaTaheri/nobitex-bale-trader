@@ -1,0 +1,37 @@
+{
+  "input_files": 4,
+  "acceptance_rows": 28,
+  "candidate_statuses": {
+    "A": "NOT VALIDATED",
+    "B": "NOT VALIDATED",
+    "C": "NOT VALIDATED",
+    "D": "NOT VALIDATED"
+  },
+  "protocol_sha256": "6f26ccabb14fa92b477a94b873f3309a0eb9b30a3d873118def5fa81ec3489af",
+  "byte_identical_replay": true,
+  "byte_identical_file_count": 19,
+  "artifact_audit": "PASS",
+  "source": "reports\\timing_v3",
+  "replay": "reports\\timing_v3_replay",
+  "byte_identical_sha256": {
+    "acceptance.csv": "be4a42afa4d5008e65d4761c22de321ec7de124cd7fc67e9a4d353140beba6cc",
+    "candidate_A_daily.csv": "b221fd5f8a6db8207ac5536a6f9fae7856ee53825afb8c1f144e65468a1b0ca4",
+    "candidate_A_fills.csv": "ae23481131acdb946be07b5acd3cc96e7f2afbb243f9ad3d4ae41109eda55ade",
+    "candidate_B_daily.csv": "02efd68ff28114ec420b5d9d505fc9d4128a09ff91b9577c50fa471020662938",
+    "candidate_B_fills.csv": "1378121e618c5234e2158bc8be76459c34e8628773c50c04b70604d74693d79d",
+    "candidate_C_daily.csv": "d85380b4c7d8e1b21bafb10fb52d26f012e3a0acd188e6917f1899936b9b47f7",
+    "candidate_C_fills.csv": "2217352670607a657c494555ec9a6386cea69333a1b2325bb2ea3ca34dd31d5d",
+    "candidate_D_daily.csv": "244f4d6e032e86836c3f795f90b99d9b16a69fa1e2d564138c7fd6778b988c7a",
+    "candidate_D_fills.csv": "5fca21d648fc6f4a76755851555eb1c50b18591193b85d08f973c3f74a365282",
+    "inputs\\BTC-USDT-4h.csv": "bb42465b4fd480089f90f3e6743ce0cdd200d6edd4cd8a1a53b8683e1d079c5f",
+    "inputs\\BTC-USDT.csv": "3ba47ab212366e9ae6d09d75ce709c1c431a4bf48ed502b990a4d7ab94ab74b2",
+    "inputs\\ETH-USDT.csv": "5d980d9b29e27eff9a60830b41a2f73baa240d8603a4a533aada889e7ee32d60",
+    "inputs\\fee_observation.json": "81eca81783c3e1bcba96f46faaa211b39afa829aed78ba8bded2c27f39550faf",
+    "inputs\\manifest.json": "72a437a5eba358c2e4069c31c2248405bca15e91422f397e36158b5be1e684ad",
+    "metrics.csv": "d1b59cee7e9359fdc22c6cf16086b5932ed59760aff2f6e30c112e44c28ac787",
+    "regime_phases.csv": "6521445b1af3b5380cc8773494eb529016647e1298e19de925af94a5eedd12c8",
+    "report.md": "a44217bf36610dbddf63f95c8e856e1062e303cd7c697c533f1f2cf1d4e70cf8",
+    "robustness.csv": "fe0bdd1fd0e73781aac9604153fbbf48924fde16e5b48ecc2ec71e9609984b72",
+    "summary.json": "39d6ca893428e5972773fd52fc7fa7a4c5234efb3e2e933d90e18389d2bc3b86"
+  }
+}

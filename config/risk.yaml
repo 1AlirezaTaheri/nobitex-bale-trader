@@ -1,0 +1,30 @@
+risk_pct: 0.01
+max_positions: 1
+max_order_quote: 100
+max_daily_loss: 0.03
+max_drawdown: 0.10
+consecutive_losses: 3
+cooldown_bars: 6
+fee: 0.0025
+slippage: 0.0015
+max_spread: 0.012
+portfolio:
+  trend_risk: 0.0075
+  pullback_risk: 0.005
+  open_risk: 0.03
+  asset_cap: 0.25
+  max_positions: 4
+  trend_budget: 0.50
+  pullback_budget: 0.30
+  reserve: 0.20
+  half_dd: 0.05
+  entry_dd: 0.10
+  halt_dd: 0.15
+  daily_loss: 0.02
+  loss_count: 3
+  cooldown_days: 3
+  correlation_days: 60
+  correlation_threshold: 0.85
+  correlation_scale: 0.50
+  historical_half_spread: 0.001
+  historical_volume_fraction: 0.001

@@ -1,0 +1,196 @@
+{
+  "B1": {
+    "vs_zero": {
+      "minimum_days_adjusted": 4170.067814311758,
+      "minimum_days_unadjusted": 882.2591330204756,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B2": {
+    "vs_zero": {
+      "minimum_days_adjusted": 9403.97242311801,
+      "minimum_days_unadjusted": 1989.5936772284545,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B3": {
+    "vs_zero": {
+      "minimum_days_adjusted": 7241.209184326205,
+      "minimum_days_unadjusted": 1532.0189554370452,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B4_25": {
+    "vs_zero": {
+      "minimum_days_adjusted": 4451.059426846938,
+      "minimum_days_unadjusted": 941.7083860063599,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B4_50": {
+    "vs_zero": {
+      "minimum_days_adjusted": 4217.168986908724,
+      "minimum_days_unadjusted": 892.2243042239337,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B4_75": {
+    "vs_zero": {
+      "minimum_days_adjusted": 4273.5417494907215,
+      "minimum_days_unadjusted": 904.1510610193194,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B5_25": {
+    "vs_zero": {
+      "minimum_days_adjusted": 10864.732174615727,
+      "minimum_days_unadjusted": 2298.6458771673865,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B5_50": {
+    "vs_zero": {
+      "minimum_days_adjusted": 11014.908895517907,
+      "minimum_days_unadjusted": 2330.418689860813,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B5_75": {
+    "vs_zero": {
+      "minimum_days_adjusted": 10227.75222523648,
+      "minimum_days_unadjusted": 2163.880352261046,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B6": {
+    "vs_zero": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    }
+  },
+  "B7_S2_A": {
+    "vs_zero": {
+      "minimum_days_adjusted": 4133.910411311727,
+      "minimum_days_unadjusted": 874.6093296015486,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B7_S2_B": {
+    "vs_zero": {
+      "minimum_days_adjusted": 4134.87579595353,
+      "minimum_days_unadjusted": 874.8135755407117,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B7_S2_C": {
+    "vs_zero": {
+      "minimum_days_adjusted": 4126.668965754231,
+      "minimum_days_unadjusted": 873.0772606367598,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B7_S2_D": {
+    "vs_zero": {
+      "minimum_days_adjusted": 11037.63683562659,
+      "minimum_days_unadjusted": 2335.2272286252933,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "B8": {
+    "vs_zero": {
+      "minimum_days_adjusted": 7023.396224958778,
+      "minimum_days_unadjusted": 1485.9363780668145,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "S0": {
+    "vs_zero": {
+      "minimum_days_adjusted": 23699.38711286415,
+      "minimum_days_unadjusted": 5014.0673145774845,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "S1_L1": {
+    "vs_zero": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    }
+  },
+  "S1_full": {
+    "vs_zero": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    }
+  },
+  "S2_A": {
+    "B4": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    },
+    "B7": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    },
+    "vs_zero": {
+      "minimum_days_adjusted": 14580.97607993616,
+      "minimum_days_unadjusted": 3084.88971587622,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "S2_B": {
+    "B4": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    },
+    "B7": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    },
+    "vs_zero": {
+      "minimum_days_adjusted": 6594.088096668772,
+      "minimum_days_unadjusted": 1395.107875047303,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "S2_C": {
+    "B4": {
+      "minimum_days_adjusted": null,
+      "minimum_days_unadjusted": null,
+      "reason": "Nonpositive daily-return edge or insufficient observations"
+    },
+    "B7": {
+      "minimum_days_adjusted": 677532.9234649505,
+      "minimum_days_unadjusted": 143345.29707106738,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    },
+    "vs_zero": {
+      "minimum_days_adjusted": 5484.279512734794,
+      "minimum_days_unadjusted": 1160.3062356783103,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  },
+  "S2_D": {
+    "B4": {
+      "minimum_days_adjusted": 6158672.311227072,
+      "minimum_days_unadjusted": 1302987.1781011254,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    },
+    "B7": {
+      "minimum_days_adjusted": 22845.479990717926,
+      "minimum_days_unadjusted": 4833.406617722828,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    },
+    "vs_zero": {
+      "minimum_days_adjusted": 6513.936623372267,
+      "minimum_days_unadjusted": 1378.1502684831617,
+      "note": "Approximate mean-return test with HAC inflation; not a full Sharpe power calculation"
+    }
+  }
+}

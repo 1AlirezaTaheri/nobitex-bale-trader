@@ -1,0 +1,10 @@
+paper_cash: 100
+poll_seconds: 15
+reconcile_seconds: 180
+heartbeat_seconds: 900
+close_grace_seconds: 12
+entry_delay_seconds: 120
+order_timeout_seconds: 60
+api_error_limit: 3
+book_max_age_seconds: 90
+data_directory: data

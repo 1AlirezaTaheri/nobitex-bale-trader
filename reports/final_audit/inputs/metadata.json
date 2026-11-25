@@ -1,0 +1,241 @@
+{
+  "fees": {
+    "endpoint": "https://apiv2.nobitex.ir/v2/options",
+    "maximum_fee": "0.0013",
+    "method": "public GET response; no credentials",
+    "observed_date_utc": "2026-11-20",
+    "taker_fees_tether_percent": [
+      "0.13",
+      "0.12",
+      "0.11",
+      "0.1",
+      "0.1",
+      "0.095",
+      "0.09"
+    ]
+  },
+  "inventory": {
+    "archived_rows": 262,
+    "archives": [
+      {
+        "file": "reports/sensitivity.csv",
+        "rows": 9,
+        "sha256": "5a9ff5137a7fd4a2469c3a04f3f1a6ba84c4e6f754a9ee40e43ad596da06e059"
+      },
+      {
+        "file": "reports/walk_forward.csv",
+        "rows": 3,
+        "sha256": "2b28d22c7c70942faf543d41a1e691d314c58da6fe2bbf989764f981baae2aaf"
+      },
+      {
+        "file": "reports/portfolio/sensitivity.csv",
+        "rows": 31,
+        "sha256": "dfcec2bb9dbb0386f4da1f0b25a03d19e0c8ecf168353444bfa096e8662c8418"
+      },
+      {
+        "file": "reports/portfolio/perturbation.csv",
+        "rows": 14,
+        "sha256": "dff94265bffb66453bb5d091d8c2df7c8a4d61b7ca8ab7dc18147206a9e6503b"
+      },
+      {
+        "file": "reports/portfolio/walk_forward.csv",
+        "rows": 3,
+        "sha256": "1cb2eccba93a3e85e5640883b5c8840ff3bc33df373145c3645b16730e8d2925"
+      },
+      {
+        "file": "reports/portfolio_recent/sensitivity.csv",
+        "rows": 31,
+        "sha256": "a8a839a363f8575e70b6a441db28bbecf7ea65c2c572ab9c017230c23538fb00"
+      },
+      {
+        "file": "reports/portfolio_recent/perturbation.csv",
+        "rows": 14,
+        "sha256": "a11cc4a5f4170da799727107804fe7e1caa0be0c0ada493cc8778e165ac7071a"
+      },
+      {
+        "file": "reports/portfolio_recent/walk_forward.csv",
+        "rows": 3,
+        "sha256": "036021a30151b854782c04460075648282a5e9538e4fdf92e8a507cdc306f4fa"
+      },
+      {
+        "file": "reports/timing_v3/robustness.csv",
+        "rows": 126,
+        "sha256": "fe0bdd1fd0e73781aac9604153fbbf48924fde16e5b48ecc2ec71e9609984b72"
+      },
+      {
+        "file": "reports/timing_v3/acceptance.csv",
+        "rows": 28,
+        "sha256": "be4a42afa4d5008e65d4761c22de321ec7de124cd7fc67e9a4d353140beba6cc"
+      }
+    ],
+    "caveat": "Conservative configuration-row proxy; correlated reruns and cost cases included, unlogged human trials unknowable. Excludes byte-replay folders."
+  },
+  "legacy": {
+    "atr_multiplier": 2.5,
+    "atr_period": 14,
+    "fast": 20,
+    "min_atr_pct": 0.004,
+    "name": "trend",
+    "rsi_entry": 28.0,
+    "rsi_exit": 55.0,
+    "rsi_period": 14,
+    "slow": 50,
+    "symbol": "BTC/USDT",
+    "timeframe": "4h",
+    "trend": 200
+  },
+  "limits": {
+    "asset_cap": "0.25",
+    "cooldown_days": 3,
+    "correlation_days": 60,
+    "correlation_scale": "0.5",
+    "correlation_threshold": 0.85,
+    "daily_loss": "0.02",
+    "entry_dd": "0.1",
+    "half_dd": "0.05",
+    "halt_dd": "0.15",
+    "historical_half_spread": "0.001",
+    "historical_volume_fraction": "0.001",
+    "loss_count": 3,
+    "max_positions": 4,
+    "open_risk": "0.03",
+    "pullback_budget": "0.3",
+    "pullback_risk": "0.005",
+    "reserve": "0.2",
+    "trend_budget": "0.5",
+    "trend_risk": "0.0075"
+  },
+  "portfolio": {
+    "atr_period": 20,
+    "breadth_enabled": false,
+    "breadth_min": 0.5,
+    "btc_filter": true,
+    "donchian_entry": 55,
+    "donchian_exit": 20,
+    "ema_period": 200,
+    "enabled": false,
+    "freshness_low": 20,
+    "max_hold_days": 7,
+    "pullback_atr": 2.0,
+    "pullback_enabled": true,
+    "pullback_high": 5,
+    "rsi_entry": 15.0,
+    "rsi_exit": 60.0,
+    "rsi_period": 3,
+    "trend_atr": 3.0,
+    "trend_enabled": true
+  },
+  "registration": {
+    "amendment_reason": "An existing preregistration_manifest.json was present before this run, but the preregistration document was absent before Add File. Preserve that manifest; bind this newly written audit protocol explicitly without overwriting prior evidence. No new audit returns have been computed.",
+    "amendments": [
+      "001: replace orphan-manifest authority for this run with this explicit pre-computation registration; prior evidence preserved"
+    ],
+    "clock_date_conflict": true,
+    "developer_context_date": "2026-11-25",
+    "file": "docs/FINAL_AUDIT_PREREGISTRATION.md",
+    "forward_not_before_utc": "2026-11-25T00:00:00+00:00",
+    "prior_claimed_protocol_sha256": "0E319D375D2FA5A3EC36B94FD0249D11EF08442CAA1C608F47C003C2028C65A5",
+    "prior_manifest_sha256": "3a1626bb2bd151c95f6a46b9c44f5d68e0f9eaf4a5282879aef690305413e777",
+    "recorded_execution_utc": "2026-11-24T21:39:58.643365+00:00",
+    "sha256": "ce32f959aeb29a5f914fb0c44d010d1f49243f71170f05b01ab4c9994e644911",
+    "status": "AMENDMENT_001_FROZEN_BEFORE_ANY_NEW_RETURN_COMPUTATION"
+  },
+  "risk": {
+    "consecutive_losses": 3,
+    "cooldown_bars": 6,
+    "fee": "0.0025",
+    "max_daily_loss": "0.03",
+    "max_drawdown": "0.1",
+    "max_order_quote": "100",
+    "max_positions": 1,
+    "max_spread": "0.012",
+    "risk_pct": "0.01",
+    "slippage": "0.0015"
+  },
+  "rules": {
+    "BTC/USDT": {
+      "min_quantity": "0",
+      "min_quote": "0.5",
+      "price_tick": "0.01",
+      "quantity_step": "0.000001"
+    },
+    "DOGE/USDT": {
+      "min_quantity": "0",
+      "min_quote": "0.5",
+      "price_tick": "1E-7",
+      "quantity_step": "0.1"
+    },
+    "ETH/USDT": {
+      "min_quantity": "0",
+      "min_quote": "0.5",
+      "price_tick": "0.01",
+      "quantity_step": "0.00001"
+    },
+    "SOL/USDT": {
+      "min_quantity": "0",
+      "min_quote": "0.5",
+      "price_tick": "0.001",
+      "quantity_step": "0.0001"
+    },
+    "XRP/USDT": {
+      "min_quantity": "0",
+      "min_quote": "0.5",
+      "price_tick": "0.00001",
+      "quantity_step": "0.01"
+    }
+  },
+  "source": "local cached public Nobitex candles; additional frozen-universe assets from read-only local cache",
+  "symbols": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "DOGE/USDT",
+    "SOL/USDT",
+    "XRP/USDT"
+  ],
+  "universe": [
+    "BTC/USDT",
+    "DOGE/USDT",
+    "ETH/USDT",
+    "SOL/USDT",
+    "XRP/USDT"
+  ],
+  "v3_acceptance": {
+    "A": {
+      "1_positive_net_return_after_2x_costs": true,
+      "2_drawdown_le_60pct_buy_hold": false,
+      "3_calmar_and_sharpe_better_than_matched": false,
+      "4_holdout_return_and_drawdown_vs_matched": false,
+      "5_single_parameter_20pct_robustness": false,
+      "6_total_costs_le_25pct_gross_profit": true,
+      "7_worst_12m_better_than_buy_hold": false
+    },
+    "B": {
+      "1_positive_net_return_after_2x_costs": true,
+      "2_drawdown_le_60pct_buy_hold": false,
+      "3_calmar_and_sharpe_better_than_matched": false,
+      "4_holdout_return_and_drawdown_vs_matched": false,
+      "5_single_parameter_20pct_robustness": false,
+      "6_total_costs_le_25pct_gross_profit": true,
+      "7_worst_12m_better_than_buy_hold": false
+    },
+    "C": {
+      "1_positive_net_return_after_2x_costs": true,
+      "2_drawdown_le_60pct_buy_hold": false,
+      "3_calmar_and_sharpe_better_than_matched": false,
+      "4_holdout_return_and_drawdown_vs_matched": false,
+      "5_single_parameter_20pct_robustness": false,
+      "6_total_costs_le_25pct_gross_profit": true,
+      "7_worst_12m_better_than_buy_hold": false
+    },
+    "D": {
+      "1_positive_net_return_after_2x_costs": true,
+      "2_drawdown_le_60pct_buy_hold": false,
+      "3_calmar_and_sharpe_better_than_matched": true,
+      "4_holdout_return_and_drawdown_vs_matched": false,
+      "5_single_parameter_20pct_robustness": false,
+      "6_total_costs_le_25pct_gross_profit": true,
+      "7_worst_12m_better_than_buy_hold": true
+    }
+  },
+  "v3_protocol_sha256": "6f26ccabb14fa92b477a94b873f3309a0eb9b30a3d873118def5fa81ec3489af"
+}

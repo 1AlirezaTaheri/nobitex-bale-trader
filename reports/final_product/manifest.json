@@ -1,0 +1,12 @@
+{
+  "clock_source": "local system; independent time unverified",
+  "created_utc": "2026-11-25T04:12:15.601819+00:00",
+  "frozen_protocols": {
+    "docs/FINAL_AUDIT_PREREGISTRATION.md": "ce32f959aeb29a5f914fb0c44d010d1f49243f71170f05b01ab4c9994e644911",
+    "docs/STRATEGY_V3_PREREGISTRATION.md": "6f26ccabb14fa92b477a94b873f3309a0eb9b30a3d873118def5fa81ec3489af"
+  },
+  "integrity_before_sha256": "f6870bf835697dfe6ac400e18150751c090d9b0feec278d27781b500d28cda61",
+  "preregistration_path": "docs/FINAL_PRODUCT_PREREGISTRATION.md",
+  "preregistration_sha256": "7a371dc8ff6215a02d96d81302adcad67d80938247de0c5f481f5cca18123a6c",
+  "scope": "research and PAPER/SHADOW engineering only"
+}

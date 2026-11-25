@@ -1,0 +1,127 @@
+candidate,variation,net_return,max_drawdown,passes_criterion_5,parameters,plateau_case_pass
+A,EMA200 x 0.8,1.087010692350288,-0.3464983322000881,False,,
+A,EMA200 x 1.2,1.2542781007152128,-0.32904904648713373,False,,
+A,hysteresis x 0.8,0.6123563378361232,-0.42171744676686695,False,,
+A,hysteresis x 1.2,0.7039487211672277,-0.38710295694895713,False,,
+B,EMA100 x 0.8,1.0827861729541919,-0.35551240802486717,False,,
+B,EMA100 x 1.2,1.0340732626312517,-0.3582040221395236,False,,
+B,EMA150 x 0.8,1.1352417549457887,-0.35924595655109814,False,,
+B,EMA150 x 1.2,1.005050877844881,-0.38548279971268995,False,,
+B,EMA200 x 0.8,1.202636474768255,-0.35319951289455687,False,,
+B,EMA200 x 1.2,1.252167913659016,-0.34289847302997356,False,,
+B,EMA250 x 0.8,0.8758477228778587,-0.4007943298095048,False,,
+B,EMA250 x 1.2,1.1610520085112221,-0.35387149691806175,False,,
+B,hysteresis x 0.8,1.0373850914865863,-0.3653754281962629,False,,
+B,hysteresis x 1.2,1.0074852793945408,-0.3794459538815125,False,,
+B,threshold x 0.8,1.0701545329726083,-0.37194263515618964,False,,
+B,threshold x 1.2,0.8206381099422564,-0.36420921532906725,False,,
+C,EMA100 x 0.8,1.0651097343078453,-0.3133981627973338,False,,
+C,EMA100 x 1.2,1.0896602836357552,-0.3142445511760279,False,,
+C,EMA150 x 0.8,1.2337867891219445,-0.31309657330622953,False,,
+C,EMA150 x 1.2,1.0479584986921808,-0.3542696926854785,False,,
+C,EMA200 x 0.8,1.1459362399085142,-0.32200594023652074,False,,
+C,EMA200 x 1.2,1.249565490879442,-0.2876559039663601,False,,
+C,EMA250 x 0.8,0.88885020373259,-0.3434525697813934,False,,
+C,EMA250 x 1.2,1.1465957259277921,-0.319511439657742,False,,
+C,hysteresis x 0.8,1.0744564119412736,-0.3197840485828599,False,,
+C,hysteresis x 1.2,1.1684410021763636,-0.34141371299021783,False,,
+C,vol_target x 0.8,0.7651986139252609,-0.316024404295287,False,,
+C,vol_target x 1.2,1.146556125142732,-0.3463197719555714,False,,
+C,threshold x 0.8,0.9470059899724117,-0.3089987692988406,False,,
+C,threshold x 1.2,0.8455379945482133,-0.3282848290058541,False,,
+D,EMA100 x 0.8,0.7460767298935587,-0.2398097854973078,True,,
+D,EMA100 x 1.2,0.640750787359363,-0.25441269508171194,True,,
+D,EMA150 x 0.8,0.695116514107279,-0.2723622974540437,True,,
+D,EMA150 x 1.2,0.5216481004771274,-0.3187965220796779,False,,
+D,EMA200 x 0.8,0.7998725915312366,-0.23222413973956801,True,,
+D,EMA200 x 1.2,0.7107368526907123,-0.2312353415301338,True,,
+D,EMA250 x 0.8,0.43577380856347014,-0.2978714597826124,True,,
+D,EMA250 x 1.2,0.5512013363075021,-0.2847147929921554,True,,
+D,hysteresis x 0.8,0.7001903191370229,-0.25652897078296066,True,,
+D,hysteresis x 1.2,0.5190757546514464,-0.318446200112422,False,,
+D,vol_target x 0.8,0.431030585362576,-0.26563717864585734,True,,
+D,vol_target x 1.2,0.794911481799649,-0.28508712289154514,True,,
+D,threshold x 0.8,0.6156904662836271,-0.2934277733877194,True,,
+D,threshold x 1.2,0.8405939314096946,-0.24593253463632925,True,,
+A,single EMA200 x 0.9,0.7273671531917774,-0.4316492049658768,,"{""hysteresis"": 0.02, ""lengths"": [180], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+A,single EMA200 x 1.1,0.890583801752932,-0.38058283463003695,,"{""hysteresis"": 0.02, ""lengths"": [220], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+A,all EMA x 0.8,1.087010692350288,-0.3464983322000881,,"{""hysteresis"": 0.02, ""lengths"": [160], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+A,all EMA x 1.2,1.2542781007152128,-0.32904904648713373,,"{""hysteresis"": 0.02, ""lengths"": [240], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+A,hysteresis 0%,0.7018775705781732,-0.4252472512072615,,"{""hysteresis"": 0.0, ""lengths"": [200], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+A,hysteresis 1%,0.7723497999888316,-0.41622768253832576,,"{""hysteresis"": 0.01, ""lengths"": [200], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+A,hysteresis 3%,0.6815653667226147,-0.38648129711963486,,"{""hysteresis"": 0.03, ""lengths"": [200], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+A,hysteresis 4%,0.877537265079477,-0.38648129711963475,,"{""hysteresis"": 0.04, ""lengths"": [200], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA100 x 0.9,1.0621694501860621,-0.37194263515618964,,"{""hysteresis"": 0.02, ""lengths"": [90, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA100 x 1.1,1.0539432569479152,-0.3766120134115273,,"{""hysteresis"": 0.02, ""lengths"": [110, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA150 x 0.9,1.0217449475752165,-0.36806051497422554,,"{""hysteresis"": 0.02, ""lengths"": [100, 135, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA150 x 1.1,1.1284180874206293,-0.36401767751979974,,"{""hysteresis"": 0.02, ""lengths"": [100, 165, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA200 x 0.9,1.1058012824049666,-0.3744406826869908,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 180, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA200 x 1.1,1.158880083620066,-0.35552187329080265,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 220, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA250 x 0.9,1.0065057784504297,-0.37268149153228736,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 225], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,single EMA250 x 1.1,1.0664879168524548,-0.3752020291578274,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 275], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,all EMA x 0.8,1.073896546690749,-0.35353167998616664,,"{""hysteresis"": 0.02, ""lengths"": [80, 120, 160, 200], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,all EMA x 0.9,0.9854374655001308,-0.37131470151371215,,"{""hysteresis"": 0.02, ""lengths"": [90, 135, 180, 225], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,all EMA x 1.1,1.196856886090151,-0.3559691829054301,,"{""hysteresis"": 0.02, ""lengths"": [110, 165, 220, 275], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,all EMA x 1.2,1.2385002059565497,-0.32468705822167354,,"{""hysteresis"": 0.02, ""lengths"": [120, 180, 240, 300], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,hysteresis 0%,0.9455004365127584,-0.3582169050603343,,"{""hysteresis"": 0.0, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,hysteresis 1%,1.0744482915865063,-0.36561633409609096,,"{""hysteresis"": 0.01, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,hysteresis 3%,1.0401380579439383,-0.3686258557927944,,"{""hysteresis"": 0.03, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,hysteresis 4%,0.933467932992333,-0.3819972567847132,,"{""hysteresis"": 0.04, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+B,threshold 10%,1.0701545329726083,-0.37194263515618964,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.1, ""vol_target"": 0.4}",False
+B,threshold 15%,1.0701545329726083,-0.37194263515618964,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.15, ""vol_target"": 0.4}",False
+B,threshold 20%,1.0701545329726083,-0.37194263515618964,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.2, ""vol_target"": 0.4}",False
+B,threshold 30%,0.8206381099422564,-0.36420921532906725,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.3, ""vol_target"": 0.4}",False
+B,threshold 35%,0.8206381099422564,-0.36420921532906725,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.35, ""vol_target"": 0.4}",False
+B,threshold 40%,0.8206381099422564,-0.36420921532906725,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.4, ""vol_target"": 0.4}",False
+C,single EMA100 x 0.9,1.1409874468597758,-0.3229729014978153,,"{""hysteresis"": 0.02, ""lengths"": [90, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,single EMA100 x 1.1,1.1519951099370136,-0.32297290149781543,,"{""hysteresis"": 0.02, ""lengths"": [110, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,single EMA150 x 0.9,1.0653459103460774,-0.3223862554537008,,"{""hysteresis"": 0.02, ""lengths"": [100, 135, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,single EMA150 x 1.1,1.2035468008957322,-0.3172234334541033,,"{""hysteresis"": 0.02, ""lengths"": [100, 165, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,single EMA200 x 0.9,1.1069616542952239,-0.3323453003622666,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 180, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,single EMA200 x 1.1,1.1572244341719458,-0.2934421454118231,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 220, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,single EMA250 x 0.9,1.0923407939840821,-0.32297290149781543,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 225], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,single EMA250 x 1.1,1.1043549175313871,-0.3329021245203697,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 275], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,all EMA x 0.8,0.9655625278034412,-0.2985785752569554,,"{""hysteresis"": 0.02, ""lengths"": [80, 120, 160, 200], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,all EMA x 0.9,0.9651371929940751,-0.3317667755303312,,"{""hysteresis"": 0.02, ""lengths"": [90, 135, 180, 225], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,all EMA x 1.1,1.1876764122318848,-0.2970161911595781,,"{""hysteresis"": 0.02, ""lengths"": [110, 165, 220, 275], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,all EMA x 1.2,1.0284881285624623,-0.30982862417135393,,"{""hysteresis"": 0.02, ""lengths"": [120, 180, 240, 300], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,hysteresis 0%,0.9101004536129318,-0.30541573118852516,,"{""hysteresis"": 0.0, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,hysteresis 1%,1.0974880478500335,-0.31101146441393224,,"{""hysteresis"": 0.01, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,hysteresis 3%,1.1010828539182653,-0.292660009665917,,"{""hysteresis"": 0.03, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,hysteresis 4%,0.9204480904657089,-0.3339738453921376,,"{""hysteresis"": 0.04, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+C,vol target 30%,0.8111876540941461,-0.2835034946273476,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.3}",False
+C,vol target 35%,0.9287083376637515,-0.2934176469115308,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.35}",False
+C,vol target 45%,1.1218639544617641,-0.33761444852951794,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.45}",False
+C,vol target 50%,1.1874946151079935,-0.3315927509042046,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.5}",False
+C,threshold 10%,0.9106875962918171,-0.33696870358686193,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.1, ""vol_target"": 0.4}",False
+C,threshold 15%,0.9823300412597731,-0.30176608261431015,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.15, ""vol_target"": 0.4}",False
+C,threshold 20%,0.9470059899724117,-0.3089987692988406,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.2, ""vol_target"": 0.4}",False
+C,threshold 30%,0.8455379945482133,-0.3282848290058541,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.3, ""vol_target"": 0.4}",False
+C,threshold 35%,0.9510861626821725,-0.32045640083548865,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.35, ""vol_target"": 0.4}",False
+C,threshold 40%,0.8662865707734113,-0.3499912419898863,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.4, ""vol_target"": 0.4}",False
+D,single EMA100 x 0.9,0.6903024984886275,-0.25652897078296055,,"{""hysteresis"": 0.02, ""lengths"": [90, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,single EMA100 x 1.1,0.7194160492846291,-0.25361255890890044,,"{""hysteresis"": 0.02, ""lengths"": [110, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,single EMA150 x 0.9,0.7325275048568844,-0.25361255890890044,,"{""hysteresis"": 0.02, ""lengths"": [100, 135, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,single EMA150 x 1.1,0.6102522536923536,-0.3105791802660296,,"{""hysteresis"": 0.02, ""lengths"": [100, 165, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+D,single EMA200 x 0.9,0.7510900137432193,-0.251522191914185,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 180, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,single EMA200 x 1.1,0.7107368526907123,-0.2312353415301338,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 220, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,single EMA250 x 0.9,0.596388400696473,-0.2985676503427178,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 225], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,single EMA250 x 1.1,0.5607484751190879,-0.31613657810246154,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 275], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+D,all EMA x 0.8,0.6435191020708027,-0.24981640143398676,,"{""hysteresis"": 0.02, ""lengths"": [80, 120, 160, 200], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,all EMA x 0.9,0.5841641384627252,-0.30325972902267717,,"{""hysteresis"": 0.02, ""lengths"": [90, 135, 180, 225], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,all EMA x 1.1,0.7141018370817391,-0.2422182703618827,,"{""hysteresis"": 0.02, ""lengths"": [110, 165, 220, 275], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,all EMA x 1.2,0.575308245759734,-0.26452787864077654,,"{""hysteresis"": 0.02, ""lengths"": [120, 180, 240, 300], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,hysteresis 0%,0.5953431903490003,-0.24921894625662677,,"{""hysteresis"": 0.0, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,hysteresis 1%,0.5497893261209681,-0.31751998579901863,,"{""hysteresis"": 0.01, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",False
+D,hysteresis 3%,0.5089286607863315,-0.29831395271217653,,"{""hysteresis"": 0.03, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,hysteresis 4%,0.498922883567511,-0.27828493094909823,,"{""hysteresis"": 0.04, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.4}",True
+D,vol target 30%,0.34425486534626093,-0.23283226979735938,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.3}",True
+D,vol target 35%,0.4994396211551062,-0.27353352593991653,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.35}",True
+D,vol target 45%,0.7878276634100425,-0.2878310408220923,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.45}",True
+D,vol target 50%,0.7801586004347454,-0.2898344876079394,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.25, ""vol_target"": 0.5}",True
+D,threshold 10%,0.5955486537088248,-0.25898997405265123,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.1, ""vol_target"": 0.4}",True
+D,threshold 15%,0.6809989851023273,-0.25731289840742466,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.15, ""vol_target"": 0.4}",True
+D,threshold 20%,0.6156904662836271,-0.2934277733877194,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.2, ""vol_target"": 0.4}",True
+D,threshold 30%,0.8405939314096946,-0.24593253463632925,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.3, ""vol_target"": 0.4}",True
+D,threshold 35%,0.6492368998090188,-0.2618938878495307,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.35, ""vol_target"": 0.4}",True
+D,threshold 40%,0.7071720916007558,-0.24916259906614457,,"{""hysteresis"": 0.02, ""lengths"": [100, 150, 200, 250], ""threshold"": 0.4, ""vol_target"": 0.4}",True

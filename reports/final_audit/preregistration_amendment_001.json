@@ -1,0 +1,15 @@
+{
+  "file": "docs/FINAL_AUDIT_PREREGISTRATION.md",
+  "sha256": "ce32f959aeb29a5f914fb0c44d010d1f49243f71170f05b01ab4c9994e644911",
+  "recorded_execution_utc": "2026-11-24T21:39:58.643365+00:00",
+  "developer_context_date": "2026-11-25",
+  "forward_not_before_utc": "2026-11-25T00:00:00+00:00",
+  "clock_date_conflict": true,
+  "status": "AMENDMENT_001_FROZEN_BEFORE_ANY_NEW_RETURN_COMPUTATION",
+  "amendment_reason": "An existing preregistration_manifest.json was present before this run, but the preregistration document was absent before Add File. Preserve that manifest; bind this newly written audit protocol explicitly without overwriting prior evidence. No new audit returns have been computed.",
+  "prior_manifest_sha256": "3a1626bb2bd151c95f6a46b9c44f5d68e0f9eaf4a5282879aef690305413e777",
+  "prior_claimed_protocol_sha256": "0E319D375D2FA5A3EC36B94FD0249D11EF08442CAA1C608F47C003C2028C65A5",
+  "amendments": [
+    "001: replace orphan-manifest authority for this run with this explicit pre-computation registration; prior evidence preserved"
+  ]
+}

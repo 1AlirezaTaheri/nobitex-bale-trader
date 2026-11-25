@@ -1,0 +1,966 @@
+"""Read-only-input final audit. Historical findings are hypothesis-generating only."""
+
+import argparse
+import csv
+import json
+import math
+import shutil
+import sqlite3
+from dataclasses import asdict
+from datetime import UTC, datetime
+from decimal import Decimal as D
+from hashlib import sha256
+from pathlib import Path
+
+import numpy as np
+
+from app.config import ROOT, RiskConfig, StrategyConfig, legacy_section
+from app.portfolio_config import load_portfolio
+from backtest import final_audit_core as c
+from backtest import plt
+from backtest import run as legacy_run
+from backtest.portfolio import simulate as portfolio_simulate
+from backtest.timing_v3 import (
+    _coverage,
+    aligned_segments,
+    evaluate_segments,
+    load_data,
+    preregistration_hash,
+    split_contiguous,
+)
+from data.history import read_csv
+from exchange.base import Candle, Rules
+from risk.portfolio import PortfolioLimits
+from strategy.layered import LayeredConfig
+
+BASE = ROOT / "reports/final_audit"
+WARNINGS = [
+    "Repeated historical reuse across legacy, LayeredPortfolio, V3 and sensitivity grids; former holdout is NOT clean OOS. All historical results are hypothesis-generating only.",
+    "Old audit manifest does not authenticate the current protocol. Original document was not inspected before writing; provenance is unresolved. Amendment 001/002 explicitly disclosed.",
+    "Selected current universe has survivorship bias; no historical order books, interpolation, missing-day signals or guaranteed executable prices.",
+    "Pooled CAGR and underwater duration count evaluated days, not elapsed calendar time through gaps. Segment-end liquidations and cash resets are research conventions.",
+    "Native S0/S1 risk, precision, depth and intrabar models are NOT economically identical to price-only baselines. Their fractional exposure/B7 and explicit costs are unavailable; no rescue verdict is allowed.",
+    "Uncentered bootstrap sign tails are descriptive, not exact null-test p-values. Extreme adjusted percentile bounds are simulation-resolution limited. The cyclic timing null is NOT executable same-turnover random orders.",
+    "Daily drawdown understates intraday risk. No result authorizes LIVE or meaningful capital. Genuine post-registration forward results are not manufactured by smoke tests.",
+]
+
+
+def digest(path):
+    return sha256(Path(path).read_bytes()).hexdigest()
+
+
+def write_json(path, value):
+    with Path(path).open("x", encoding="utf-8", newline="\n") as f:
+        json.dump(value, f, sort_keys=True, indent=2, allow_nan=False)
+        f.write("\n")
+
+
+def write_csv(path, rows):
+    if not rows:
+        return
+    fields = list(dict.fromkeys(k for r in rows for k in r))
+    with Path(path).open("x", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fields, lineterminator="\n")
+        w.writeheader()
+        w.writerows(
+            {
+                k: json.dumps(v, sort_keys=True) if isinstance(v, (dict, list)) else v
+                for k, v in r.items()
+            }
+            for r in rows
+        )
+
+
+def confined(path):
+    path = Path(path).resolve()
+    if not path.is_relative_to(BASE.resolve()):
+        raise ValueError("New output must be under reports/final_audit")
+    return path
+
+
+def inventory():
+    rows = []
+    # Primary archives only. Replays/verified copies are not new research configurations.
+    for name in (
+        "sensitivity.csv",
+        "walk_forward.csv",
+        "portfolio/sensitivity.csv",
+        "portfolio/perturbation.csv",
+        "portfolio/walk_forward.csv",
+        "portfolio_recent/sensitivity.csv",
+        "portfolio_recent/perturbation.csv",
+        "portfolio_recent/walk_forward.csv",
+        "timing_v3/robustness.csv",
+        "timing_v3/acceptance.csv",
+    ):
+        p = ROOT / "reports" / name
+        if p.exists():
+            with p.open(encoding="utf-8-sig", newline="") as f:
+                count = len(list(csv.DictReader(f)))
+            rows.append(
+                {"file": p.relative_to(ROOT).as_posix(), "rows": count, "sha256": digest(p)}
+            )
+    return {
+        "archives": rows,
+        "archived_rows": sum(r["rows"] for r in rows),
+        "caveat": "Conservative configuration-row proxy; correlated reruns and cost cases included, unlogged human trials unknowable. Excludes byte-replay folders.",
+    }
+
+
+def create_snapshot(folder):
+    folder = confined(folder)
+    if folder.exists():
+        raise FileExistsError("Snapshot directory already exists; never overwrite")
+    registration = json.loads((BASE / "preregistration_amendment_001.json").read_text())
+    if digest(ROOT / registration["file"]) != registration["sha256"]:
+        raise ValueError("Final audit frozen protocol mismatch")
+    preregistration_hash()
+    cfg, limits, universe = load_portfolio()
+    if cfg.enabled:
+        raise ValueError("Portfolio default must remain disabled")
+    # Do not load Settings or .env: no credentials are needed by this research runner.
+    legacy_cfg = StrategyConfig(**legacy_section("config/strategy.yaml"))
+    risk = RiskConfig(**legacy_section("config/risk.yaml"))
+    daily, legacy, fees, source = load_data(ROOT / "reports/timing_v3/inputs", 2_000_000_000)
+    with sqlite3.connect((ROOT / "data/candles.db").as_uri() + "?mode=ro", uri=True) as db:
+        for symbol in universe.symbols:
+            if symbol not in daily:
+                daily[symbol] = [
+                    Candle(*row)
+                    for row in db.execute(
+                        "SELECT ts,o,h,l,c,v FROM candles WHERE symbol=? AND frame='1d' ORDER BY ts",
+                        (symbol,),
+                    )
+                ]
+    ev = json.loads((ROOT / "reports/universe.json").read_text(encoding="utf-8"))
+    rules = ev["coverage"]
+    archived = json.loads((ROOT / "reports/timing_v3/summary.json").read_text())
+    folder.mkdir(parents=True)
+    for s, values in {**daily, "BTC/USDT_4h": legacy}.items():
+        with (folder / (s.replace("/", "-") + ".csv")).open("x", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator="\n")
+            w.writerow(("timestamp", "open", "high", "low", "close", "volume"))
+            w.writerows(asdict(row).values() for row in values)
+    metadata = {
+        "source": source + "; additional frozen-universe assets from read-only local cache",
+        "symbols": list(daily),
+        "portfolio": cfg.model_dump(mode="json"),
+        "limits": limits.model_dump(mode="json"),
+        "legacy": legacy_cfg.model_dump(mode="json"),
+        "risk": risk.model_dump(mode="json"),
+        "fees": fees,
+        "rules": {s: rules[s]["rules"] for s in universe.symbols},
+        "universe": list(universe.symbols),
+        "inventory": inventory(),
+        "registration": registration,
+        "v3_protocol_sha256": preregistration_hash(),
+        "v3_acceptance": {
+            k: v.get("acceptance", {}) for k, v in archived.get("candidates", {}).items()
+        },
+    }
+    write_json(folder / "metadata.json", metadata)
+    for name in ("robustness.csv", "metrics.csv", "summary.json"):
+        shutil.copyfile(ROOT / "reports/timing_v3" / name, folder / ("archived_v3_" + name))
+    files = {p.name: digest(p) for p in sorted(folder.iterdir()) if p.is_file()}
+    write_json(
+        folder / "manifest.json",
+        {
+            "files": files,
+            "audit_protocol_sha256": registration["sha256"],
+            "v3_protocol_sha256": metadata["v3_protocol_sha256"],
+        },
+    )
+    return folder
+
+
+def read_snapshot(folder):
+    folder = Path(folder)
+    manifest = json.loads((folder / "manifest.json").read_text())
+    for name, expected in manifest["files"].items():
+        if Path(name).name != name or digest(folder / name) != expected:
+            raise ValueError("Snapshot checksum mismatch")
+    meta = json.loads((folder / "metadata.json").read_text())
+    daily = {
+        s: read_csv(folder / (s.replace("/", "-") + ".csv"), c.DAY, 2_000_000_000)
+        for s in meta["symbols"]
+    }
+    legacy = read_csv(folder / "BTC-USDT_4h.csv", 14400, 2_000_000_000)
+    return daily, legacy, meta, manifest
+
+
+def norm_rows(rows):
+    if not rows:
+        return []
+    base = rows[0]["equity"] / (1 + rows[0]["return"])
+    return [
+        {
+            **r,
+            **{
+                k: r[k] * 100 / base for k in ("cost", "notional", "equity") if r.get(k) is not None
+            },
+        }
+        for r in rows
+    ]
+
+
+def native(items, daily, legacy, meta, model, *, multiplier=1, omit=None):
+    """Invoke immutable native engines; reject missing warmup/coverage rather than bridge."""
+    cfg = StrategyConfig(**meta["legacy"])
+    risk = RiskConfig(**meta["risk"])
+    pcfg = LayeredConfig(**meta["portfolio"])
+    limits = PortfolioLimits(**meta["limits"])
+    if model == "S1_L1":
+        pcfg = pcfg.model_copy(
+            update={"pullback_enabled": False, "btc_filter": False, "breadth_enabled": False}
+        )
+    rules = {s: Rules(**{k: D(v) for k, v in info.items()}) for s, info in meta["rules"].items()}
+    out, coverage = [], []
+    capital = D(100)
+    look = {s: {r.ts: r for r in v} for s, v in daily.items()}
+    for item in items:
+        bars = item["data"][c.BTC]
+        first, last = bars[item["start"]].ts, bars[-1].ts + c.DAY
+        needed = [r.ts for r in bars]
+        try:
+            if model == "S0":
+                seg = next(
+                    (
+                        v
+                        for v in split_contiguous(legacy, cfg.seconds)
+                        if v[0].ts <= first and v[-1].ts + cfg.seconds >= last
+                    ),
+                    None,
+                )
+                if not seg:
+                    raise ValueError("No full contiguous 4h coverage on this common segment")
+                start = next(i for i, r in enumerate(seg) if r.ts == first)
+                selected = [r for r in seg if r.ts < last]
+                result = legacy_run(
+                    selected,
+                    cfg,
+                    risk.model_copy(
+                        update={
+                            "fee": risk.fee * multiplier,
+                            "slippage": risk.slippage * multiplier,
+                        }
+                    ),
+                    capital,
+                    rules[c.BTC],
+                    start_index=start,
+                )
+                curve = result.equity
+                trades = result.trades
+                dd4 = result.metrics["max_drawdown"]
+                extra = {"max_drawdown_4h": dd4, "blocked_bars": result.blocked_bars}
+            else:
+                syms = [s for s in meta["universe"] if s != omit]
+                if any(not set(needed).issubset(look[s]) for s in syms):
+                    raise ValueError(
+                        "Frozen universe lacks exact common timestamps including warmup"
+                    )
+                data = {s: [look[s][ts] for ts in needed] for s in syms}
+                fee = max(D(".0025"), D(meta["fees"]["maximum_fee"]))
+                result = portfolio_simulate(
+                    data,
+                    pcfg,
+                    limits,
+                    rules,
+                    fee * multiplier,
+                    D(".0015") * multiplier,
+                    capital,
+                    start=item["start"],
+                )
+                curve, trades = result.curve, result.trades
+                extra = {
+                    "rejected": dict(result.rejected),
+                    "blocked": dict(result.blocked),
+                    "unliquidated": result.stats["unliquidated_at_end"],
+                }
+            marks = {int(row.timestamp): float(row.equity) for row in curve.itertuples()}
+            previous = float(capital)
+            for ts in needed[item["start"] :]:
+                eq = marks[ts + c.DAY]
+                invested = any(t.entry_ts < ts + c.DAY and t.exit_ts >= ts for t in trades)
+                out.append(
+                    {
+                        "timestamp": ts,
+                        "segment": item["number"],
+                        "equity": eq,
+                        "return": eq / previous - 1,
+                        "exposure": None,
+                        "invested": invested,
+                        "cost": None,
+                        "notional": None,
+                        "legs": None,
+                        "trips": sum(ts <= t.exit_ts < ts + c.DAY for t in trades),
+                        "regime": c.regimes(bars)[needed.index(ts) - 1],
+                    }
+                )
+                previous = eq
+            # Terminal trades at exact final boundary belong to the last interval.
+            out[-1]["trips"] += sum(t.exit_ts == last for t in trades)
+            capital = D(str(previous))
+            coverage.append(
+                {
+                    "strategy": model,
+                    "segment": item["number"],
+                    "status": "evaluated",
+                    "days": len(needed) - item["start"],
+                    "round_trips": len(trades),
+                    **extra,
+                }
+            )
+        except (ValueError, StopIteration, KeyError) as e:
+            coverage.append(
+                {
+                    "strategy": model,
+                    "segment": item["number"],
+                    "status": "unavailable",
+                    "reason": str(e) or "Exact warmup alignment unavailable",
+                }
+            )
+    return out, coverage
+
+
+def baseline_specs():
+    specs = {
+        "B1": ("hold", {}),
+        "B2": ("hold", {"symbols": (c.BTC, c.ETH)}),
+        "B3": ("dca", {}),
+        "B6": ("cash", {}),
+        "B8": ("sma", {}),
+    }
+    for family, symbols in (("B4", (c.BTC,)), ("B5", (c.BTC, c.ETH))):
+        for pct in (25, 50, 75):
+            specs[f"{family}_{pct}"] = (
+                "mix",
+                {"weight": pct / 100, "symbols": symbols, "band": 0.05},
+            )
+    return specs
+
+
+def run_spec(items, spec, fee, slip, *, delay=0, crash=False, omit=None):
+    kind, options = spec
+    options = dict(options)
+    if kind == "candidate":
+        candidate = options.pop("candidate")
+        options["paths"] = {i["number"]: c.target_path(i, candidate, delay, omit) for i in items}
+        kind = "targets"
+    elif delay:
+        options["execution_delay"] = delay
+    if omit and kind != "targets":
+        # Leave original sleeve in cash. Do not reallocate the omitted budget.
+        original_symbols = options.get("symbols", (c.BTC,))
+        if omit in original_symbols and len(original_symbols) > 1:
+            symbols = tuple(s for s in original_symbols if s != omit)
+            options["symbols"] = symbols
+            options["weight"] = options.get("weight", 1.0) * len(symbols) / len(original_symbols)
+    return c.simulate(items, kind, fee=fee, slip=slip, crash=crash, **options)[0]
+
+
+def fit_match(items, target, symbols, fee, slip):
+    low, high = 0.0, 1.0
+    rows = []
+    weight = 0.0
+    for _ in range(32):
+        weight = (low + high) / 2
+        rows = c.simulate(items, "mix", weight=weight, symbols=symbols, fee=fee, slip=slip)[0]
+        observed = float(np.mean([r["exposure"] for r in rows]))
+        if observed < target:
+            low = weight
+        else:
+            high = weight
+    return weight, rows, observed - target
+
+
+def episodes(rows):
+    out = []
+    for r in rows:
+        if not out or (out[-1]["segment"], out[-1]["regime"]) != (r["segment"], r["regime"]):
+            out.append(
+                {"segment": r["segment"], "regime": r["regime"], "days": 0, "first": r["timestamp"]}
+            )
+        out[-1]["days"] += 1
+        out[-1]["last"] = r["timestamp"]
+    for e in out:
+        e["major_20d_proxy"] = e["days"] >= 20
+    return out
+
+
+def start_sensitivity(items, spec, fee, slip):
+    out = []
+    for item in items:
+        for start in range(item["start"], len(item["data"][c.BTC])):
+            changed = {**item, "start": start}
+            rows = run_spec([changed], spec, fee, slip)
+            eq = np.r_[100.0, [r["equity"] for r in rows]]
+            out.append(
+                {
+                    "segment": item["number"],
+                    "start": rows[0]["timestamp"],
+                    "days": len(rows),
+                    "return": float(eq[-1] / 100 - 1),
+                    "max_drawdown": float((eq / np.maximum.accumulate(eq) - 1).min()),
+                }
+            )
+    return out
+
+
+def distribution(values):
+    values = [v for v in values if v is not None and math.isfinite(v)]
+    return {
+        "count": len(values),
+        "quantiles_min_p05_median_p95_max": c.quantile(values, [0, 0.05, 0.5, 0.95, 1]),
+    }
+
+
+def superior(a, b):
+    return all(
+        a.get(k) is not None and b.get(k) is not None and a[k] > b[k] for k in ("sharpe", "calmar")
+    )
+
+
+def figures(folder, series, rolling_rows, boot_arrays, regime_rows):
+    folder.mkdir()
+    selected = [
+        k
+        for k in ("S2_A", "S2_B", "S2_C", "S2_D", "B1", "B3", "B4_25", "B4_50", "B4_75", "B8")
+        if k in series
+    ]
+    for filename, draw in (("equity", False), ("drawdowns", True)):
+        fig, ax = plt.subplots(figsize=(12, 6))
+        for name in selected:
+            for n, seg in enumerate(dict.fromkeys(r["segment"] for r in series[name])):
+                rows = [r for r in series[name] if r["segment"] == seg]
+                eq = np.array([r["equity"] for r in rows])
+                if draw:
+                    all_eq = np.array([r["equity"] for r in series[name]])
+                    ds = 100 * (all_eq / np.maximum.accumulate(np.r_[100, all_eq])[1:] - 1)
+                    eq = np.array(
+                        [d for d, r in zip(ds, series[name], strict=True) if r["segment"] == seg]
+                    )
+                ax.plot(
+                    [datetime.fromtimestamp(r["timestamp"], UTC) for r in rows],
+                    eq,
+                    label=name if n == 0 else None,
+                )
+        ax.set_ylabel("Drawdown (%)" if draw else "Net equity (USDT)")
+        ax.set_title("Hypothesis-generating only; gaps are not connected")
+        ax.legend(ncol=4, fontsize=8)
+        ax.grid(alpha=0.2)
+        fig.tight_layout()
+        fig.savefig(folder / (filename + ".png"), dpi=130, metadata={"Software": "final-audit"})
+        plt.close(fig)
+    fig, ax = plt.subplots(figsize=(11, 5))
+    for name in selected:
+        rr = rolling_rows.get(name, [])
+        for n, seg in enumerate(dict.fromkeys(r["segment"] for r in rr)):
+            local = [r for r in rr if r["segment"] == seg]
+            ax.plot(
+                [datetime.fromtimestamp(r["end"], UTC) for r in local],
+                [100 * r["return"] for r in local],
+                label=name if n == 0 else None,
+            )
+    ax.set_ylabel("Rolling 365-evaluated-day net return (%)")
+    ax.legend(ncol=4, fontsize=8)
+    ax.grid(alpha=0.2)
+    fig.tight_layout()
+    fig.savefig(folder / "rolling_12m.png", dpi=130, metadata={"Software": "final-audit"})
+    plt.close(fig)
+    fig, axes = plt.subplots(2, 2, figsize=(11, 8))
+    for row, name in enumerate(("S2_A", "S2_D")):
+        for col, label in enumerate(("Sharpe difference", "Calmar difference")):
+            values = boot_arrays.get(name, {}).get("B7")
+            if values is not None:
+                v = values[:, col]
+                axes[row, col].hist(v[np.isfinite(v)], bins=35, color="#3970a3", alpha=0.8)
+            axes[row, col].axvline(0, color="black", linestyle="--")
+            axes[row, col].set_title(name + " vs B7: " + label)
+    fig.tight_layout()
+    fig.savefig(folder / "bootstrap_differences.png", dpi=130, metadata={"Software": "final-audit"})
+    plt.close(fig)
+    fig, ax = plt.subplots(figsize=(11, 5))
+    for j, regime in enumerate(("bull", "bear", "range")):
+        vals = [
+            next(
+                (
+                    100 * r["total_return"]
+                    for r in regime_rows
+                    if r["name"] == name and r["regime"] == regime and r["scope"] == "pooled"
+                ),
+                0,
+            )
+            for name in selected
+        ]
+        ax.bar(np.arange(len(selected)) + (j - 1) * 0.25, vals, width=0.25, label=regime)
+    ax.set_xticks(range(len(selected)), selected, rotation=40)
+    ax.set_ylabel("Conditional compounded returns (%), not tradable")
+    ax.axhline(0, color="black", linewidth=0.5)
+    ax.legend()
+    fig.tight_layout()
+    fig.savefig(folder / "regime_performance.png", dpi=130, metadata={"Software": "final-audit"})
+    plt.close(fig)
+
+
+def fmt(v, pct=False):
+    return "N/A" if v is None else f"{v:.2%}" if pct else f"{v:.3f}"
+
+
+def report_text(s):
+    text = ["# Final adversarial audit", "", "## Weaknesses and data contamination FIRST", ""]
+    text += ["- " + w for w in WARNINGS]
+    text += [
+        f"- Configuration-row inventory: {s['trials']['archived_rows']} archived rows plus {s['trials']['audit_series']} audit series; Bonferroni M={s['trials']['M']}. 999 draws imply minimum adjusted tail {s['trials']['M'] / 1000:.3f}; no adjusted p<0.05 can pass.",
+        "- Amendments: FINAL_AUDIT_AMENDMENTS.md and FINAL_AUDIT_IMPLEMENTATION_NOTES.md. Native B7, exact-turnover executable random schedules, native fresh-start sensitivity and full native delayed/crash execution are unverified/unavailable, not passes.",
+        "",
+        "## Common-calendar metrics (net costs; 100 USDT initial)",
+        "",
+        "| Name | Days | Return | Max DD | Calmar | Sharpe | Worst 365d | Costs USDT |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for name, m in s["pooled"].items():
+        text.append(
+            f"| {name} | {m['days']} | {fmt(m.get('total_return'), True)} | {fmt(m.get('max_drawdown'), True)} | {fmt(m.get('calmar'))} | {fmt(m.get('sharpe'))} | {fmt(m.get('worst_12m'), True)} | {fmt(m.get('total_costs'))} |"
+        )
+    text += [
+        "",
+        "S0/S1 rows may have shorter cohorts. Never rank them against a 905-day row. See native_coverage.json and native_cohort_controls.csv. B7_S0/S1 unavailable because fractional exposure is not exposed.",
+        "",
+        "## Mechanical ranked checklist and verdicts",
+        "",
+        "No fitted composite score. Checks are listed in preregistered order.",
+    ]
+    for name, v in s["verdicts"].items():
+        text += [f"\n### {name}: category {v['category']} — {v['label']}"]
+        text += [
+            f"- {'PASS' if ok else 'FAIL / UNAVAILABLE'}: {key}" for key, ok in v["checks"].items()
+        ]
+    best = s["minimum_loss_positive_baseline"]
+    text += [
+        "",
+        "## Least historical loss with some nominal profit",
+        "",
+        f"Among fixed positive-return B4/B5 choices, **{best}** has the smallest modeled daily drawdown, not the best promised future result. Cash has zero modeled price DD and zero nominal return; exchange/USDT/IRT risks remain.",
+        "",
+        "| Candidate vs selected baseline | Return delta (pp) | Change in absolute drawdown (pp) |",
+        "|---|---:|---:|",
+    ]
+    for name, d in s["plain_comparison"].items():
+        text.append(f"| {name} | {d['return_delta_pp']:.2f} | {d['absolute_dd_delta_pp']:.2f} |")
+    text += [
+        "",
+        "Positive drawdown delta is WORSE. These are matched 905-day historical comparisons only.",
+        "",
+        "## Coverage, statistics and robustness",
+        "",
+        "See coverage.json (raw timestamp grids and excluded short segments); metrics.csv/json (pooled/segment); bootstrap.json and bootstrap_segment.json (raw/adjusted 95% intervals, 10/20/40-day sensitivity); rolling_windows.csv/rolling_summary.json; start_dates.csv/start_summary.json; monte_carlo.csv; timing_null.json; record_length.json; regimes.csv/episodes.csv; robustness.csv; yearly.csv; archived_parameter_neighborhood.csv.",
+        "Worst-month labels mean fixed 21/63/126/365 evaluated days, NOT exact calendar-month holding periods. Short segment tails cannot yield 365-day windows. Regime runs >=20 days are dependence proxies, not independent trials. Low episode counts and repeated data use defeat strong inference.",
+        "No claim survives all checks; unavailable native stress tests remain failures of evidence. B7 retrospective exposure fitting uses future sample exposure and is not an investable forward signal. Prefunded DCA knows its selected investment horizon; no external contributions are added.",
+        "",
+        "## Reliability, security, IRT and forward",
+        "",
+        "See the separate weaknesses-first operational_report.md, reliability.json, security.json, public_probes.json and FORWARD_FRAMEWORK.md. Public telemetry is a short sample, not an SLA. Real Bale delivery, actual laptop suspend, OS scheduling, withdrawal/counterparty risks and all possible LIVE bypasses are not certified.",
+        "The independent forward framework tracks A/D and fixed baselines. Clock conflicts can allow refusal/warmup smoke only. It cannot manufacture post-registration days; 3/6-month PASS only permits continued observation, never live funds.",
+        "",
+        "## Reproduce (fresh output directories only)",
+        "",
+        "```powershell",
+        ".\\.venv\\Scripts\\python.exe -m backtest.final_audit --snapshot reports/final_audit/inputs --output reports/final_audit/reproduction_001",
+        ".\\.venv\\Scripts\\python.exe -m app.forward_shadow --mode shadow --root reports/final_audit/forward_new --max-seconds 45",
+        ".\\.venv\\Scripts\\python.exe -m app.forward_report --root reports/final_audit/forward_new --output reports/final_audit/weekly_new",
+        "```",
+        "",
+        "No performance promises. No order placement or cancellation is added by this audit.",
+    ]
+    return "\n".join(text) + "\n"
+
+
+def evaluate(snapshot, output, *, starts=True):
+    output = confined(output)
+    if output.exists():
+        raise FileExistsError("Audit output already exists; use a fresh directory")
+    daily, legacy, meta, manifest = read_snapshot(snapshot)
+    segments = aligned_segments({s: daily[s] for s in (c.BTC, c.ETH)})
+    items, days = evaluate_segments(segments)
+    fee = max(0.0025, float(meta["fees"]["maximum_fee"]))
+    slip = 0.0015
+    specs = baseline_specs()
+    specs = {
+        **{
+            f"S2_{k}": (
+                "candidate",
+                {"candidate": k, "symbols": (c.BTC, c.ETH) if k == "D" else (c.BTC,)},
+            )
+            for k in "ABCD"
+        },
+        **specs,
+    }
+    output.mkdir(parents=True)
+    series = {name: run_spec(items, spec, fee, slip) for name, spec in specs.items()}
+    native_coverage = []
+    for name in ("S0", "S1_full", "S1_L1"):
+        rows, cov = native(items, daily, legacy, meta, name)
+        native_coverage += cov
+        if rows:
+            series[name] = rows
+    matches = {}
+    for name in [k for k in series if k.startswith("S2_")]:
+        symbols = specs[name][1]["symbols"]
+        target = float(np.mean([r["exposure"] for r in series[name]]))
+        weight, rows, residual = fit_match(items, target, symbols, fee, slip)
+        matched = "B7_" + name
+        series[matched] = rows
+        specs[matched] = ("mix", {"weight": weight, "symbols": symbols})
+        closest = min((25, 50, 75), key=lambda pct: (abs(pct / 100 - target), pct))
+        matches[name] = {
+            "B7": matched,
+            "B4": f"B4_{closest}",
+            "target": weight,
+            "residual": residual,
+        }
+    M = max(250, meta["inventory"]["archived_rows"] + len(series) + 3)
+    write_json(
+        output / "coverage.json", _coverage({s: daily[s] for s in (c.BTC, c.ETH)}, segments, items)
+    )
+    write_json(output / "native_coverage.json", native_coverage)
+    write_json(output / "matches.json", matches)
+    write_json(output / "input_manifest.json", manifest)
+    stats, metric_rows = {}, []
+    rolled, rolling_summary, starts_rows, starts_summary = {}, {}, [], {}
+    boot, bootseg, arrays, nulls, lengths = {}, {}, {}, {}, {}
+    regimes, episode_rows, yearly, robust, native_controls = [], [], [], [], []
+    curves = []
+    for name, rows in series.items():
+        print("Evaluating", name, flush=True)
+        stats[name] = c.metrics(rows)
+        groups = {
+            "pooled": rows,
+            **{
+                str(seg): norm_rows([r for r in rows if r["segment"] == seg])
+                for seg in dict.fromkeys(r["segment"] for r in rows)
+            },
+        }
+        for scope, local in groups.items():
+            metric_rows.append({"name": name, "scope": scope, **c.metrics(local)})
+            local_ep = episodes(local)
+            if scope == "pooled":
+                episode_rows += [{"name": name, **e} for e in local_ep]
+            for regime in ("bull", "bear", "range", "unknown"):
+                chosen = norm_rows([r for r in local if r["regime"] == regime])
+                if chosen:
+                    regimes.append(
+                        {
+                            "name": name,
+                            "scope": scope,
+                            "regime": regime,
+                            "episodes": sum(e["regime"] == regime for e in local_ep),
+                            "major_20d_proxies": sum(
+                                e["regime"] == regime and e["major_20d_proxy"] for e in local_ep
+                            ),
+                            **c.metrics(chosen),
+                        }
+                    )
+        controls = {
+            key: series[val] for key, val in matches.get(name, {}).items() if key in ("B7", "B4")
+        }
+        boot[name], arrays[name] = c.bootstrap(rows, controls, M)
+        bootseg[name] = {}
+        for seg in dict.fromkeys(r["segment"] for r in rows):
+            chosen = norm_rows([r for r in rows if r["segment"] == seg])
+            ctrls = {
+                k: norm_rows([r for r in v if r["segment"] == seg]) for k, v in controls.items()
+            }
+            bootseg[name][str(seg)] = c.bootstrap(chosen, ctrls, M)[0]
+        rolled[name] = c.rolling(rows)
+        rolling_summary[name] = {
+            "return": distribution([r["return"] for r in rolled[name]]),
+            "drawdown": distribution([r["max_drawdown"] for r in rolled[name]]),
+            "positive_fraction": float(np.mean([r["return"] > 0 for r in rolled[name]]))
+            if rolled[name]
+            else None,
+        }
+        if name in matches:
+            for label, ctrl in {"B1": series["B1"], "B3": series["B3"], **controls}.items():
+                lookup = {(r["start"], r["end"]): r for r in c.rolling(ctrl)}
+                pairs = [
+                    (r, lookup[(r["start"], r["end"])])
+                    for r in rolled[name]
+                    if (r["start"], r["end"]) in lookup
+                ]
+                rolling_summary[name]["wins_vs_" + label] = (
+                    float(np.mean([a["return"] > b["return"] for a, b in pairs])) if pairs else None
+                )
+        cohort = [i for i in items if i["number"] in {r["segment"] for r in rows}]
+        nulls[name] = c.timing_null(cohort, rows)
+        lengths[name] = {
+            "vs_zero": c.record_length(rows, None, M),
+            **{label: c.record_length(rows, ctrl, M) for label, ctrl in controls.items()},
+        }
+        for year in sorted({datetime.fromtimestamp(r["timestamp"], UTC).year for r in rows}):
+            yearly.append(
+                {
+                    "name": name,
+                    "year": year,
+                    **c.metrics(
+                        norm_rows(
+                            [
+                                r
+                                for r in rows
+                                if datetime.fromtimestamp(r["timestamp"], UTC).year == year
+                            ]
+                        )
+                    ),
+                }
+            )
+        for scope, local in groups.items():
+            if scope != "pooled":
+                robust.append({"name": name, "scenario": "segment_" + scope, **c.metrics(local)})
+        trimmed = [
+            r for i in cohort for r in [r for r in rows if r["segment"] == i["number"]][20:-20]
+        ]
+        robust.append(
+            {
+                "name": name,
+                "scenario": "drop_gap_edges_20d_omission_only",
+                **c.metrics(norm_rows(trimmed)),
+            }
+        )
+        if name in specs:
+            for scenario, mul, delay, crash in (
+                ("cost_1x", 1, 0, False),
+                ("cost_2x", 2, 0, False),
+                ("cost_3x", 3, 0, False),
+                ("crash_spread_3x", 1, 0, True),
+                ("one_day_delay", 1, 1, False),
+            ):
+                stressed = run_spec(
+                    items, specs[name], fee * mul, slip * mul, delay=delay, crash=crash
+                )
+                if stressed is None:
+                    robust.append(
+                        {
+                            "name": name,
+                            "scenario": scenario,
+                            "status": "unavailable",
+                            "reason": "No execution-path delay adapter for non-timing baseline",
+                        }
+                    )
+                    continue
+                m = c.metrics(stressed)
+                row = {"name": name, "scenario": scenario, **m}
+                for label, val in matches.get(name, {}).items():
+                    if label in ("B7", "B4"):
+                        other = run_spec(items, specs[val], fee * mul, slip * mul, crash=crash)
+                        cm = c.metrics(other)
+                        row["beats_" + label] = superior(m, cm)
+                        row["comparison_note"] = (
+                            "Delay stress uses unchanged-calendar fixed baselines; cost/crash stresses apply identically"
+                        )
+                robust.append(row)
+            if len(specs[name][1].get("symbols", (c.BTC,))) > 1:
+                for omit in (c.BTC, c.ETH):
+                    local = run_spec(items, specs[name], fee, slip, omit=omit)
+                    robust.append({"name": name, "scenario": "omit_" + omit, **c.metrics(local)})
+            if starts:
+                sensitivity = start_sensitivity(items, specs[name], fee, slip)
+                starts_rows += [{"name": name, **r} for r in sensitivity]
+                starts_summary[name] = {
+                    "return": distribution([r["return"] for r in sensitivity]),
+                    "drawdown": distribution([r["max_drawdown"] for r in sensitivity]),
+                    "note": "Fresh accounts; varying terminal horizon includes short-period bias",
+                }
+        else:
+            starts_summary[name] = {
+                "status": "unavailable",
+                "reason": "Native fresh-start engine reruns not implemented",
+            }
+            for mult in (1, 2, 3):
+                local, cov = native(cohort, daily, legacy, meta, name, multiplier=mult)
+                robust.append({"name": name, "scenario": f"cost_{mult}x", **c.metrics(local)})
+            for scenario in ("crash_spread_3x", "one_day_delay"):
+                robust.append(
+                    {
+                        "name": name,
+                        "scenario": scenario,
+                        "status": "unavailable",
+                        "reason": "Native fill metadata unavailable without changing frozen engine",
+                    }
+                )
+            if name.startswith("S1"):
+                for omit in meta["universe"]:
+                    if omit != c.BTC:
+                        local, cov = native(cohort, daily, legacy, meta, name, omit=omit)
+                        robust.append(
+                            {"name": name, "scenario": "omit_" + omit, **c.metrics(local)}
+                        )
+            for baseline, spec in baseline_specs().items():
+                native_controls.append(
+                    {
+                        "native_strategy": name,
+                        "baseline": baseline,
+                        **c.metrics(run_spec(cohort, spec, fee, slip)),
+                    }
+                )
+        curves += [{"name": name, **{k: v for k, v in r.items() if k != "weights"}} for r in rows]
+    # Complete comparisons for segment and omission diagnostics, without selecting a new control.
+    for r in robust:
+        if r["name"] not in matches or "total_return" not in r:
+            continue
+        for label in ("B7", "B4"):
+            key = "beats_" + label
+            if key in r:
+                continue
+            source = series[matches[r["name"]][label]]
+            if r["scenario"].startswith("segment_"):
+                segment = int(r["scenario"].split("_")[-1])
+                source = norm_rows([x for x in source if x["segment"] == segment])
+            elif r["scenario"].startswith("drop_gap_edges"):
+                source = norm_rows(
+                    [
+                        x
+                        for i in items
+                        for x in [x for x in source if x["segment"] == i["number"]][20:-20]
+                    ]
+                )
+            r[key] = superior(r, c.metrics(source))
+    verdicts = {}
+    labels = {
+        1: "A simple baseline is the best risk-adjusted choice",
+        2: "Worth forward observation only",
+        3: "Shows initial evidence",
+    }
+    for name in ("S0", "S1_full", "S1_L1", "S2_A", "S2_B", "S2_C", "S2_D"):
+        m = stats.get(name, {})
+        stress = next((r for r in robust if r["name"] == name and r["scenario"] == "cost_2x"), {})
+        match = matches.get(name, {})
+        b7 = stats.get(match.get("B7"), {})
+        b4 = stats.get(match.get("B4"), {})
+        relevant = [r for r in robust if r["name"] == name]
+        checks = {
+            "1_valid_comparable_data_and_no_provenance_drift": False,
+            "2_positive_2x_cost_return": stress.get("total_return", -1) > 0,
+            "3_dd_le_60pct_B1": bool(m)
+            and abs(m["max_drawdown"]) <= 0.6 * abs(stats["B1"]["max_drawdown"]),
+            "4_sharpe_and_calmar_above_B7_and_B4": superior(m, b7) and superior(m, b4),
+            "5_all_stresses_positive_edge": bool(match)
+            and all(
+                r.get("total_return", -1) > 0
+                and r.get("beats_B7", False)
+                and r.get("beats_B4", False)
+                for r in relevant
+            ),
+            "6_costs_le_25pct_positive_gross": m.get("costs_pct_gross_profit") is not None
+            and m["costs_pct_gross_profit"] <= 0.25,
+            "7_adjusted_statistical_bar": False,
+        }
+        old = meta.get("v3_acceptance", {}).get(name[-1], {}) if name.startswith("S2_") else {}
+        cat = (
+            3
+            if all(checks.values())
+            else 2
+            if checks["2_positive_2x_cost_return"]
+            and superior(m, b7)
+            and checks["6_costs_le_25pct_positive_gross"]
+            and bool(old)
+            and all(old.values())
+            else 1
+        )
+        verdicts[name] = {
+            "category": cat,
+            "label": labels[cat],
+            "checks": checks,
+            "legacy_fixed_V3_acceptance": old,
+        }
+    best = min(
+        (k for k in stats if k.startswith(("B4_", "B5_")) and stats[k]["total_return"] > 0),
+        key=lambda k: (abs(stats[k]["max_drawdown"]), int(k.split("_")[-1])),
+    )
+    summary = {
+        "warnings": WARNINGS,
+        "days": days,
+        "trials": {**meta["inventory"], "audit_series": len(series) + 3, "M": M},
+        "fee_per_side": fee,
+        "slippage_per_side": slip,
+        "pooled": stats,
+        "verdicts": verdicts,
+        "minimum_loss_positive_baseline": best,
+        "plain_comparison": {
+            k: {
+                "return_delta_pp": 100 * (v["total_return"] - stats[best]["total_return"]),
+                "absolute_dd_delta_pp": 100
+                * (abs(v["max_drawdown"]) - abs(stats[best]["max_drawdown"])),
+            }
+            for k, v in stats.items()
+            if k.startswith("S2_")
+        },
+    }
+    write_json(output / "summary.json", summary)
+    write_json(output / "metrics.json", metric_rows)
+    write_csv(output / "metrics.csv", metric_rows)
+    write_csv(output / "curves.csv", curves)
+    write_csv(output / "native_cohort_controls.csv", native_controls)
+    write_csv(
+        output / "rolling_windows.csv", [{"name": k, **r} for k, v in rolled.items() for r in v]
+    )
+    write_json(output / "rolling_summary.json", rolling_summary)
+    write_csv(output / "start_dates.csv", starts_rows)
+    write_json(output / "start_summary.json", starts_summary)
+    write_json(output / "bootstrap.json", boot)
+    write_json(output / "bootstrap_segment.json", bootseg)
+    write_csv(
+        output / "monte_carlo.csv",
+        [{"name": k, **v["mc_12m_drawdown_probability"]} for k, v in boot.items()],
+    )
+    write_json(output / "timing_null.json", nulls)
+    write_json(output / "record_length.json", lengths)
+    write_csv(output / "regimes.csv", regimes)
+    write_csv(output / "episodes.csv", episode_rows)
+    write_csv(output / "yearly.csv", yearly)
+    write_csv(output / "robustness.csv", robust)
+    shutil.copyfile(
+        Path(snapshot) / "archived_v3_robustness.csv",
+        output / "archived_parameter_neighborhood.csv",
+    )
+    figures(output / "charts", series, rolled, arrays, regimes)
+    with (output / "report.md").open("x", encoding="utf-8", newline="\n") as f:
+        f.write(report_text(summary))
+    write_json(
+        output / "artifact_hashes.json",
+        {
+            p.relative_to(output).as_posix(): digest(p)
+            for p in sorted(output.rglob("*"))
+            if p.is_file()
+        },
+    )
+    return summary
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--snapshot", type=Path, default=BASE / "inputs")
+    p.add_argument("--create-snapshot", action="store_true")
+    p.add_argument("--output", type=Path, default=BASE / "results")
+    args = p.parse_args()
+    try:
+        if args.create_snapshot:
+            create_snapshot(args.snapshot)
+        s = evaluate(args.snapshot, args.output)
+        print(
+            json.dumps(
+                {
+                    "status": "HYPOTHESIS_GENERATING_ONLY",
+                    "days": s["days"],
+                    "M": s["trials"]["M"],
+                    "output": str(args.output),
+                },
+                indent=2,
+            )
+        )
+        return 0
+    except (ValueError, OSError, KeyError, ArithmeticError) as error:
+        print("Final audit refused:", type(error).__name__, str(error))
+        return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,307 @@
+{
+  "accounts": {
+    "A": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B1": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B3": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B4_25": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B4_50": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B4_75": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B7_A": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B7_D": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "B8": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    },
+    "D": {
+      "clean_rebased_return_excluding_gaps": null,
+      "costs": 0.0,
+      "costs_pct_gross_profit": null,
+      "current_exposure": 0.0,
+      "equity": 100.0,
+      "gross_profit": 0.0,
+      "max_drawdown": 0.0,
+      "net_return": 0.0,
+      "round_trips": 0,
+      "trade_legs": 0
+    }
+  },
+  "as_of_execution_timestamp": 1795582072,
+  "checkpoints": {
+    "12": {
+      "candidates": {
+        "A": {
+          "checks": {
+            "dd_le_60pct_B1": true,
+            "minimum_days": false,
+            "positive_gross_and_costs_le_25pct": false,
+            "return_ge_B7_minus_2pp": true,
+            "uninterrupted": true
+          },
+          "observed_intervals": 0,
+          "status": "PENDING"
+        },
+        "D": {
+          "checks": {
+            "dd_le_60pct_B1": true,
+            "minimum_days": false,
+            "positive_gross_and_costs_le_25pct": false,
+            "return_ge_B7_minus_2pp": true,
+            "uninterrupted": true
+          },
+          "observed_intervals": 0,
+          "status": "PENDING"
+        }
+      },
+      "due_timestamp": null,
+      "minimum_observed_intervals": 320
+    },
+    "3": {
+      "candidates": {
+        "A": {
+          "checks": {
+            "dd_le_60pct_B1": true,
+            "minimum_days": false,
+            "positive_gross_and_costs_le_25pct": false,
+            "return_ge_B7_minus_2pp": true,
+            "uninterrupted": true
+          },
+          "observed_intervals": 0,
+          "status": "PENDING"
+        },
+        "D": {
+          "checks": {
+            "dd_le_60pct_B1": true,
+            "minimum_days": false,
+            "positive_gross_and_costs_le_25pct": false,
+            "return_ge_B7_minus_2pp": true,
+            "uninterrupted": true
+          },
+          "observed_intervals": 0,
+          "status": "PENDING"
+        }
+      },
+      "due_timestamp": null,
+      "minimum_observed_intervals": 80
+    },
+    "6": {
+      "candidates": {
+        "A": {
+          "checks": {
+            "dd_le_60pct_B1": true,
+            "minimum_days": false,
+            "positive_gross_and_costs_le_25pct": false,
+            "return_ge_B7_minus_2pp": true,
+            "uninterrupted": true
+          },
+          "observed_intervals": 0,
+          "status": "PENDING"
+        },
+        "D": {
+          "checks": {
+            "dd_le_60pct_B1": true,
+            "minimum_days": false,
+            "positive_gross_and_costs_le_25pct": false,
+            "return_ge_B7_minus_2pp": true,
+            "uninterrupted": true
+          },
+          "observed_intervals": 0,
+          "status": "PENDING"
+        }
+      },
+      "due_timestamp": null,
+      "minimum_observed_intervals": 160
+    }
+  },
+  "first_timestamp": null,
+  "interrupted": false,
+  "latest_hash": null,
+  "matched_risk_constant_mix": {
+    "candidates": {
+      "A": {
+        "closest_realized_dd_descriptive_only": null,
+        "comparisons": [
+          {
+            "absolute_drawdown_distance": 0.0,
+            "baseline": "B4_25",
+            "baseline_max_drawdown": 0.0,
+            "baseline_return": 0.0,
+            "clean_annualized_volatility": {
+              "A": null,
+              "B4_25": null
+            },
+            "strategy_minus_baseline_return": 0.0
+          },
+          {
+            "absolute_drawdown_distance": 0.0,
+            "baseline": "B4_50",
+            "baseline_max_drawdown": 0.0,
+            "baseline_return": 0.0,
+            "clean_annualized_volatility": {
+              "A": null,
+              "B4_50": null
+            },
+            "strategy_minus_baseline_return": 0.0
+          },
+          {
+            "absolute_drawdown_distance": 0.0,
+            "baseline": "B4_75",
+            "baseline_max_drawdown": 0.0,
+            "baseline_return": 0.0,
+            "clean_annualized_volatility": {
+              "A": null,
+              "B4_75": null
+            },
+            "strategy_minus_baseline_return": 0.0
+          }
+        ]
+      },
+      "D": {
+        "closest_realized_dd_descriptive_only": null,
+        "comparisons": [
+          {
+            "absolute_drawdown_distance": 0.0,
+            "baseline": "B4_25",
+            "baseline_max_drawdown": 0.0,
+            "baseline_return": 0.0,
+            "clean_annualized_volatility": {
+              "B4_25": null,
+              "D": null
+            },
+            "strategy_minus_baseline_return": 0.0
+          },
+          {
+            "absolute_drawdown_distance": 0.0,
+            "baseline": "B4_50",
+            "baseline_max_drawdown": 0.0,
+            "baseline_return": 0.0,
+            "clean_annualized_volatility": {
+              "B4_50": null,
+              "D": null
+            },
+            "strategy_minus_baseline_return": 0.0
+          },
+          {
+            "absolute_drawdown_distance": 0.0,
+            "baseline": "B4_75",
+            "baseline_max_drawdown": 0.0,
+            "baseline_return": 0.0,
+            "clean_annualized_volatility": {
+              "B4_75": null,
+              "D": null
+            },
+            "strategy_minus_baseline_return": 0.0
+          }
+        ]
+      }
+    },
+    "method": "All registered B4 weights; closest absolute marked MaxDD distance is descriptive hindsight, not an investable selection or exact risk match.",
+    "minimum_clean_intervals": 20,
+    "status": "INSUFFICIENT_OBSERVATIONS"
+  },
+  "missing_boundaries": [],
+  "observed_intervals": 0,
+  "outstanding_missed_boundaries_after_last_snapshot": [],
+  "snapshots": 0,
+  "warnings": [
+    "No clean historical holdout; this is forward SHADOW only, not executable orders or permission to invest.",
+    "Short regimes can flatter any method. PASS only permits continued observation. No parameter changes; any change starts a new clock.",
+    "Hash chains detect inconsistency, not a malicious rewrite/deletion of the entire root; export the latest hash to an independent location weekly.",
+    "Economic marked equity includes downtime exposure; unobserved interval returns are null in clean performance. Interruption forbids checkpoint PASS."
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "assets": {
+    "BTC/USDT": {
+      "count": 2951,
+      "first": "2018-10-08T20:30:00+00:00",
+      "last": "2026-11-18T20:30:00+00:00",
+      "unmatched_timestamps": 201,
+      "zero_volume_rows": 2444
+    },
+    "ETH/USDT": {
+      "count": 2750,
+      "first": "2019-04-25T19:30:00+00:00",
+      "last": "2026-11-18T20:30:00+00:00",
+      "unmatched_timestamps": 0,
+      "zero_volume_rows": 2245
+    }
+  },
+  "common_segments": [
+    {
+      "count": 149,
+      "eligible_after_300_warmup": false,
+      "eligible_observations": 0,
+      "end": "2019-09-20T19:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 70200,
+      "segment": 0,
+      "start": "2019-04-25T19:30:00+00:00"
+    },
+    {
+      "count": 182,
+      "eligible_after_300_warmup": false,
+      "eligible_observations": 0,
+      "end": "2020-03-20T20:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 73800,
+      "segment": 1,
+      "start": "2019-09-21T20:30:00+00:00"
+    },
+    {
+      "count": 183,
+      "eligible_after_300_warmup": false,
+      "eligible_observations": 0,
+      "end": "2020-09-19T19:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 70200,
+      "segment": 2,
+      "start": "2020-03-21T19:30:00+00:00"
+    },
+    {
+      "count": 183,
+      "eligible_after_300_warmup": false,
+      "eligible_observations": 0,
+      "end": "2021-03-21T20:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 73800,
+      "segment": 3,
+      "start": "2020-09-20T20:30:00+00:00"
+    },
+    {
+      "count": 183,
+      "eligible_after_300_warmup": false,
+      "eligible_observations": 0,
+      "end": "2021-09-20T19:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 70200,
+      "segment": 4,
+      "start": "2021-03-22T19:30:00+00:00"
+    },
+    {
+      "count": 182,
+      "eligible_after_300_warmup": false,
+      "eligible_observations": 0,
+      "end": "2022-03-21T20:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 73800,
+      "segment": 5,
+      "start": "2021-09-21T20:30:00+00:00"
+    },
+    {
+      "count": 183,
+      "eligible_after_300_warmup": false,
+      "eligible_observations": 0,
+      "end": "2022-09-20T19:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 70200,
+      "segment": 6,
+      "start": "2022-03-22T19:30:00+00:00"
+    },
+    {
+      "count": 1000,
+      "eligible_after_300_warmup": true,
+      "eligible_observations": 700,
+      "end": "2025-06-16T20:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 73800,
+      "segment": 7,
+      "start": "2022-09-21T20:30:00+00:00"
+    },
+    {
+      "count": 505,
+      "eligible_after_300_warmup": true,
+      "eligible_observations": 205,
+      "end": "2026-11-18T20:30:00+00:00",
+      "grid_offset_seconds_mod_86400": 73800,
+      "segment": 8,
+      "start": "2025-07-02T20:30:00+00:00"
+    }
+  ],
+  "common_timestamp_count": 2750,
+  "eligible_segment_count": 2,
+  "excluded_reason": "common segments of 300 candles or fewer cannot supply 300 warmup candles plus an execution candle; no gap is bridged",
+  "excluded_segment_count": 7,
+  "raw_asset_segments": {
+    "BTC/USDT": [
+      {
+        "contiguous_common_pairs": 0,
+        "count": 165,
+        "end": "2019-03-21T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Partial single-asset coverage; unmatched timestamps are excluded from the common calendar.",
+        "segment": 0,
+        "start": "2018-10-08T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 0
+      },
+      {
+        "contiguous_common_pairs": 148,
+        "count": 183,
+        "end": "2019-09-20T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Partial single-asset coverage; unmatched timestamps are excluded from the common calendar.",
+        "segment": 1,
+        "start": "2019-03-22T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 149
+      },
+      {
+        "contiguous_common_pairs": 181,
+        "count": 182,
+        "end": "2020-03-20T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 2,
+        "start": "2019-09-21T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 182
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2020-09-19T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 3,
+        "start": "2020-03-21T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2021-03-21T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 4,
+        "start": "2020-09-20T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2021-09-20T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 5,
+        "start": "2021-03-22T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 181,
+        "count": 182,
+        "end": "2022-03-21T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 6,
+        "start": "2021-09-21T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 182
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2022-09-20T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 7,
+        "start": "2022-03-22T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 999,
+        "count": 1000,
+        "end": "2025-06-16T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 8,
+        "start": "2022-09-21T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 1000
+      },
+      {
+        "contiguous_common_pairs": 504,
+        "count": 507,
+        "end": "2026-11-18T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Partial single-asset coverage; unmatched timestamps are excluded from the common calendar.",
+        "segment": 9,
+        "start": "2025-06-30T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 505
+      }
+    ],
+    "ETH/USDT": [
+      {
+        "contiguous_common_pairs": 148,
+        "count": 149,
+        "end": "2019-09-20T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 0,
+        "start": "2019-04-25T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 149
+      },
+      {
+        "contiguous_common_pairs": 181,
+        "count": 182,
+        "end": "2020-03-20T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 1,
+        "start": "2019-09-21T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 182
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2020-09-19T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 2,
+        "start": "2020-03-21T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2021-03-21T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 3,
+        "start": "2020-09-20T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2021-09-20T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 4,
+        "start": "2021-03-22T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 181,
+        "count": 182,
+        "end": "2022-03-21T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 5,
+        "start": "2021-09-21T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 182
+      },
+      {
+        "contiguous_common_pairs": 182,
+        "count": 183,
+        "end": "2022-09-20T19:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 70200,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 6,
+        "start": "2022-03-22T19:30:00+00:00",
+        "timestamps_on_other_asset_grid": 183
+      },
+      {
+        "contiguous_common_pairs": 999,
+        "count": 1000,
+        "end": "2025-06-16T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 7,
+        "start": "2022-09-21T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 1000
+      },
+      {
+        "contiguous_common_pairs": 504,
+        "count": 505,
+        "end": "2026-11-18T20:30:00+00:00",
+        "grid_offset_seconds_mod_86400": 73800,
+        "interpretation": "Fully aligned with counterpart; see common_segments.",
+        "segment": 8,
+        "start": "2025-07-02T20:30:00+00:00",
+        "timestamps_on_other_asset_grid": 505
+      }
+    ]
+  },
+  "zero_volume_interpretation": "Raw UDF v=0 matched cache on sampled older BTC/ETH rows; parser regression added; strategy is price-only."
+}

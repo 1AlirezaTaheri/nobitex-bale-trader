@@ -1,0 +1,10 @@
+{
+  "credential_value_exposed": false,
+  "finding_source": "test_secret_scan_only_returns_category_counts_never_values / literal-constructed synthetic variable",
+  "limits": "Review is scoped to this reported fixture, not proof of project-wide secret absence.",
+  "literal_only_fixture_confirmed": true,
+  "real_secret_confirmed": false,
+  "scan": "operations/security_final.json",
+  "source": "tests/test_final_audit_ops.py",
+  "source_sha256": "c606f7ad5f517b8bff41a027a89a3ccf86a2caab4a519740210a4e05d80b517e"
+}

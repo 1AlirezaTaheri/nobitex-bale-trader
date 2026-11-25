@@ -1,0 +1,86 @@
+{
+  "accessed_utc": "2026-11-25T04:41:47.957984+00:00",
+  "live_refusals": [
+    {
+      "path": "legacy",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 1.3145180000001346,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "portfolio",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 1.3997073999998975,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "timing_A",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 1.4005420000003141,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "timing_D",
+      "exit_code": 2,
+      "pass": true,
+      "seconds": 1.2939000999999735,
+      "storage_isolated": true,
+      "no_credentials_loaded": true
+    },
+    {
+      "path": "forward_shadow",
+      "exit_code": 2,
+      "pass": true
+    },
+    {
+      "path": "product_shadow",
+      "exit_code": 1,
+      "pass": false
+    },
+    {
+      "path": "product_weekly",
+      "exit_code": 2,
+      "pass": true
+    }
+  ],
+  "security": {
+    "warnings": [
+      "Heuristic scan is NOT proof of secret absence or compromise freedom. Values are never printed. No Git repository is present, so historical exposure/remote commits cannot be audited.",
+      "No offline vulnerability advisory database was supplied; dependency vulnerability scan NOT RUN. pip check is compatibility only."
+    ],
+    "files_scanned": 334,
+    "findings": [
+      {
+        "file": ".env",
+        "counts": {
+          "credential_assignment": 1,
+          "bot_token_shape": 1
+        },
+        "classification": "manual_review_required_no_values_exposed"
+      },
+      {
+        "file": "tests/test_final_audit_ops.py",
+        "counts": {
+          "bot_token_shape": 1
+        },
+        "classification": "synthetic_fixture_review"
+      }
+    ],
+    "env_ignored": true,
+    "env_example_present": true,
+    "git_present": false,
+    "offline_scanner_installed": false,
+    "vulnerability_scan": "NOT_RUN_NO_OFFLINE_ADVISORY_DATABASE",
+    "redaction_and_messenger_contract": "See full offline JUnit: test_notify_config.py; unknown IDs/forwarded/stale commands and redaction, not real Bale delivery"
+  },
+  "real_bale_requests": 0,
+  "real_order_requests": 0,
+  "dependency_installations": 0,
+  "advisory_vulnerability_scan": "UNVERIFIED"
+}

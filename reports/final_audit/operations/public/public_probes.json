@@ -1,0 +1,55 @@
+{
+  "IRT": {
+    "BTCIRT": {
+      "conflicting_or_invalid_pages": 0,
+      "exact_common_matches": 905,
+      "exists_on_this_probe": true,
+      "fx_evaluation": "UNAVAILABLE_UNLESS_COMPLETE_VERIFIED_OVERLAP",
+      "genuine_validated_rows": 905,
+      "needed": 905,
+      "unit_status": "NOT_VERIFIED_IRT_VS_IRR_FROM_PRIMARY_RESPONSE",
+      "unit_verified": false
+    },
+    "USDTIRT": {
+      "conflicting_or_invalid_pages": 0,
+      "exact_common_matches": 0,
+      "exists_on_this_probe": false,
+      "fx_evaluation": "UNAVAILABLE_INCOMPLETE_OR_UNVERIFIED_UNITS",
+      "genuine_validated_rows": 0,
+      "needed": 905,
+      "unit_status": "NOT_VERIFIED_IRT_VS_IRR_FROM_PRIMARY_RESPONSE",
+      "unit_verified": false
+    }
+  },
+  "cpu_seconds": 0.65625,
+  "elapsed_seconds": 15.254653600000893,
+  "execution_clock_unix": 1795561015,
+  "file_growth": {
+    "projected_30day_db_bytes_linear": 1391946651,
+    "projected_30day_log_bytes_linear": 282229417,
+    "request_log_bytes": 1661,
+    "telemetry_db_bytes": 8192,
+    "validity": "VERY_LOW_CONFIDENCE_STARTUP_DOMINATED_DO_NOT_SIZE_PRODUCTION_FROM_THIS"
+  },
+  "latency_seconds_p50_p95_max": [
+    0.4239621000015177,
+    1.0193228999982236,
+    1.2119699000031687
+  ],
+  "observed_execution_utc": "2026-11-24T22:57:10.770660+00:00",
+  "rate_limit_hits": 0,
+  "requests": 15,
+  "retry_count": 0,
+  "startup_first_options_seconds": 1.2119699000031687,
+  "startup_to_shadow_ready_seconds": null,
+  "status_counts": {
+    "200": 12,
+    "403": 3
+  },
+  "timeout_count": 0,
+  "warnings": [
+    "Tiny bounded public sample, not an SLA. Initial setup and one-off page downloads dominate file-growth projections. No retries were attempted; retry rate=0 by design, not evidence that retries never occur.",
+    "Historical IRT translation is unavailable unless quote units AND every exact daily timestamp are verified. Do not infer or interpolate FX."
+  ],
+  "working_set_bytes": 122449920
+}
