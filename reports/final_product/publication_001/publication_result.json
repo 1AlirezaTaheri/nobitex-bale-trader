@@ -1,0 +1,29 @@
+{
+  "forbidden_public_paths": [],
+  "github_actions_observed": [
+    {
+      "conclusion": null,
+      "head_sha": "01d107daca0593cd3b72bfe1e297e1784676e491",
+      "html_url": "https://github.com/1AlirezaTaheri/nobitex-bale-trader/actions/runs/45563932913",
+      "id": 45563932913,
+      "status": "in_progress"
+    }
+  ],
+  "limitations": [
+    "Remote CI conclusions are only the state observed at the verification time.",
+    "Heuristic secret scanning cannot prove absence of all secrets.",
+    "Operator Bale delivery and investment performance remain unverified."
+  ],
+  "local_public_copy_validation": "304 passed; Ruff check and format check exited 0.",
+  "public_completion_sha256": "f2331a82fb4ee4d0cb590c7508ef49072e1dacb53d44d54e13a5358e38ba4032",
+  "published_file_count_at_verification": 601,
+  "receipt_scope": "Verifies the initial public commit; a subsequent evidence-only commit will add this receipt.",
+  "remote_default_branch": "main",
+  "remote_tree_matches_local_commit": true,
+  "repository_url": "https://github.com/1AlirezaTaheri/nobitex-bale-trader",
+  "sealed_completion_hash_matches": true,
+  "unauthenticated_public_api_read": "PASS",
+  "verified_initial_commit": "01d107daca0593cd3b72bfe1e297e1784676e491",
+  "verified_utc": "2026-11-25T06:53:43.583722+00:00",
+  "visibility": "public"
+}
